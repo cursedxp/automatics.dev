@@ -2,19 +2,22 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white shadow-sm">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center p-3">
-        <ul className="flex gap-4">
-          <li>
+        <div className="flex items-center">
+          <p className="text-2xl font-bold">ThoughtLink</p>
+        </div>
+        <ul className="flex gap-12">
+          <li className="hover:scale-105 transition-all duration-300">
             <Link href="/case-studies">Case studies</Link>
           </li>
-          <li>
+          <li className="hover:scale-105 transition-all duration-300">
             <Link href="/about-us">About Us</Link>
           </li>
-          <li>
+          <li className="hover:scale-105 transition-all duration-300">
             <Link href="/blog">Blog</Link>
           </li>
-          <li>
+          <li className="hover:scale-105 transition-all duration-300">
             <Link href="/contact-us">Contact Us</Link>
           </li>
         </ul>
