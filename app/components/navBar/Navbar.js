@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="w-full bg-white shadow-sm">
+    <div className="w-full">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center p-3">
         <div className="flex items-center">
           <p className="text-2xl font-bold">ThoughtLink</p>
