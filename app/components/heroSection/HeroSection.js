@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function HeroSection() {
   return (
-    <section className="">
+    <section>
       <div className="relative flex flex-col items-center justify-center px-10 py-40">
         <h1 className="text-8xl text-center mb-10">
           <motion.span
