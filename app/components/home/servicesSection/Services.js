@@ -54,7 +54,7 @@ export default function Services() {
       >
         <motion.article
           variants={item}
-          className="rounded-2xl p-4 bg-white relative transition-colors duration-300 hover:bg-black hover:text-white group cursor-pointer flex flex-col min-h-[400px]"
+          className="rounded-2xl p-8 bg-white relative transition-colors duration-300 hover:bg-black hover:text-white group cursor-pointer flex flex-col min-h-[400px]"
         >
           <div className="flex items-center justify-center rounded-full bg-black transition-colors duration-300 w-14 h-14 group-hover:bg-white">
             <HiCommandLine className="w-6 h-6 text-white transition-colors duration-300 group-hover:text-black" />
@@ -71,7 +71,7 @@ export default function Services() {
 
         <motion.article
           variants={item}
-          className="rounded-2xl p-4 bg-white relative transition-colors duration-300 hover:bg-black hover:text-white group cursor-pointer flex flex-col min-h-[400px]"
+          className="rounded-2xl p-8 bg-white relative transition-colors duration-300 hover:bg-black hover:text-white group cursor-pointer flex flex-col min-h-[400px]"
         >
           <div className="flex items-center justify-center rounded-full bg-black transition-colors duration-300 w-14 h-14 group-hover:bg-white">
             <HiSwatch className="w-6 h-6 text-white transition-colors duration-300 group-hover:text-black" />
@@ -88,7 +88,7 @@ export default function Services() {
 
         <motion.article
           variants={item}
-          className="rounded-2xl p-4 bg-white relative transition-colors duration-300 hover:bg-black hover:text-white group cursor-pointer flex flex-col min-h-[400px]"
+          className="rounded-2xl p-8 bg-white relative transition-colors duration-300 hover:bg-black hover:text-white group cursor-pointer flex flex-col min-h-[400px]"
         >
           <div className="flex items-center justify-center rounded-full bg-black transition-colors duration-300 w-14 h-14 group-hover:bg-white">
             <HiDocumentText className="w-6 h-6 text-white transition-colors duration-300 group-hover:text-black" />
@@ -105,7 +105,7 @@ export default function Services() {
 
         <motion.article
           variants={item}
-          className="rounded-2xl p-4 bg-white relative transition-colors duration-300 hover:bg-black hover:text-white group cursor-pointer flex flex-col min-h-[400px]"
+          className="rounded-2xl p-8 bg-white relative transition-colors duration-300 hover:bg-black hover:text-white group cursor-pointer flex flex-col min-h-[400px]"
         >
           <div className="flex items-center justify-center rounded-full bg-black transition-colors duration-300 w-14 h-14 group-hover:bg-white">
             <HiSquares2X2 className="w-6 h-6 text-white transition-colors duration-300 group-hover:text-black" />
