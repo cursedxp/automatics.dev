@@ -6,7 +6,7 @@ export default function WhyUsSection() {
         <h2 className="text-6xl mb-8">
           The Thinking Partner Behind Every Great Solution
         </h2>
-        <p className="text-gray-500">
+        <p className="text-gray-500 text-xl">
           At ThoughtLink, we don’t just build software—we solve real business
           problems. By combining thoughtful strategy with custom-built
           solutions, we help you move faster, work smarter, and grow with
