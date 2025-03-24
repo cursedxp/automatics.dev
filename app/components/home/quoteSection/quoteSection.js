@@ -19,7 +19,7 @@ export default function QuoteSection() {
         itemScope
         itemType="https://schema.org/Quotation"
       >
-        <p className="block font-playfair-display" itemProp="text">
+        <p className="block font-playfair-display leading-16" itemProp="text">
           Technology like art is a soaring exercise of the human imagination.
         </p>
         <cite className="text-gray-500 text-xl" itemProp="author">
