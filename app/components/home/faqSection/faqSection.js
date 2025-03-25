@@ -48,7 +48,7 @@ export default function FaqSection() {
   ];
 
   return (
-    <section ref={ref} className="flex w-full gap-10 my-24">
+    <section ref={ref} className="flex w-full gap-10 my-40">
       <motion.div
         className="flex flex-col w-1/2"
         initial={{ opacity: 0, x: -50 }}

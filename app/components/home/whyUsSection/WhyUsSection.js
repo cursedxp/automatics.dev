@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function WhyUsSection() {
   return (
-    <section className="flex w-full gap-10 my-20">
+    <section className="flex w-full gap-10 my-40">
       <div className="flex flex-col w-1/2">
         <h2 className="text-6xl mb-8">
           The Thinking Partner Behind Every Great Solution

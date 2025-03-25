@@ -31,7 +31,7 @@ export default function Services() {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center my-24">
+    <section className="flex flex-col items-center justify-center my-40">
       <h2 id="services-title" className="text-6xl mb-12">
         Tailored Solutions for Your Business
       </h2>
