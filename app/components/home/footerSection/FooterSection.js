@@ -22,23 +22,23 @@ const FooterSection = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-black">
-                  Home
+                <Link href="/case-studies" className="text-black">
+                  Case studies
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-black">
+                <Link href="/about-us" className="text-black">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-black">
-                  Services
+                <Link href="/blog" className="text-black">
+                  Blog
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-black">
-                  Contact
+                <Link href="/contact-us" className="text-black">
+                  Contact Us
                 </Link>
               </li>
             </ul>
