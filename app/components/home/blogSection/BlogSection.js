@@ -49,34 +49,34 @@ const BlogSection = () => {
         role="list"
       >
         {blogPosts.map((post) => (
-          <article
+          <Link
             key={post.id}
-            className="bg-white rounded-2xl overflow-hidden group-hover:bg-black group-hover:text-white transition-all duration-300"
-            role="listitem"
+            href={`/blog/${post.id}`}
+            className="block h-full"
+            aria-label={`Read more about ${post.title}`}
           >
-            <figure className="relative h-48">
-              <Image
-                src={post.image}
-                alt={post.title}
-                fill
-                className="object-cover"
-              />
-            </figure>
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                {post.title}
-              </h3>
-              <p className="text-gray-600 mb-4">{post.excerpt}</p>
-              <Link
-                href={`/blog/${post.id}`}
-                className="inline-flex items-center text-blue-600 hover:text-blue-800"
-                aria-label={`Read more about ${post.title}`}
-              >
-                Read More
-                <HiChevronRight className="w-5 h-5 ml-2" aria-hidden="true" />
-              </Link>
-            </div>
-          </article>
+            <article
+              className="bg-white rounded-2xl overflow-hidden group-hover:bg-black group-hover:text-white transition-all duration-300 cursor-pointer h-full flex flex-col"
+              role="listitem"
+            >
+              <figure className="relative h-48 flex-shrink-0">
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  fill
+                  className="object-cover"
+                />
+              </figure>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-white">
+                  {post.title}
+                </h3>
+                <p className="text-gray-600 mb-4 group-hover:text-gray-300 flex-grow">
+                  {post.excerpt}
+                </p>
+              </div>
+            </article>
+          </Link>
         ))}
       </div>
     </section>
