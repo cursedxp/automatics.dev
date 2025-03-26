@@ -5,6 +5,7 @@ import WhyUsSection from "./components/home/whyUsSection/WhyUsSection";
 import FaqSection from "./components/home/faqSection/faqSection";
 import QuoteSection from "./components/home/quoteSection/quoteSection";
 import BlogSection from "./components/home/blogSection/BlogSection";
+import FooterSection from "./components/home/footerSection/FooterSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <QuoteSection />
       <BlogSection />
       <FaqSection />
+      <FooterSection />
     </div>
   );
 }
