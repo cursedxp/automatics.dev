@@ -28,7 +28,7 @@ export default function HeroSection() {
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.6 }}
-        className="text-center text-gray-500 px-30 text-xl mb-10"
+        className="text-center text-gray-500 sm:px-30 px-10 text-xl mb-10"
       >
         At ThoughtLink, we transform your business challenges into custom
         digital solutions. From automation to tailored interfaces, we connect
@@ -96,7 +96,7 @@ export default function HeroSection() {
           </motion.div>
         </div>
       </div>
-      <div className="absolute lg:top-[260px] md:top-[260px] sm:top-[160px] top-[145px] right-1/2 w-20 h-20 transform">
+      <div className="absolute lg:top-[260px] md:top-[260px] sm:top-[160px] top-[145px] right-1/2 -translate-x-1/2 w-20 h-20 transform">
         <motion.div
           className="h-10 w-fit text-black flex justify-center items-center"
           initial={{
