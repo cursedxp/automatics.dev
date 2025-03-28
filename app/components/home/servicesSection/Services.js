@@ -31,8 +31,8 @@ export default function Services() {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center my-40">
-      <h2 id="services-title" className="text-6xl mb-12">
+    <section className="flex flex-col items-center justify-center my-40 xl:px-10 lg:px-10">
+      <h2 id="services-title" className="text-6xl mb-12 text-center">
         Tailored Solutions for Your Business
       </h2>
       <p className="text-center text-gray-500 px-30 text-xl mb-12">
@@ -49,7 +49,7 @@ export default function Services() {
           amount: 0.3,
           margin: "-100px",
         }}
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:px-10 sm:px-10"
         aria-labelledby="services-title"
       >
         <motion.article

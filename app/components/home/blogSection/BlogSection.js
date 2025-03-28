@@ -30,7 +30,7 @@ const blogPosts = [
 const BlogSection = () => {
   return (
     <section
-      className="flex-col w-full gap-10 my-40"
+      className="flex-col w-full gap-10 my-40 xl:px-10 lg:px-10 md:px-10 sm:px-10"
       aria-labelledby="blog-heading"
     >
       <header className="text-center mb-12">
@@ -45,7 +45,7 @@ const BlogSection = () => {
       </header>
 
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8"
         role="list"
       >
         {blogPosts.map((post) => (

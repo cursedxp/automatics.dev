@@ -48,14 +48,19 @@ export default function FaqSection() {
   ];
 
   return (
-    <section ref={ref} className="flex w-full gap-10 my-40">
+    <section
+      ref={ref}
+      className="flex w-full gap-10 my-40 xl:px-10 lg:px-10 md:px-10 sm:px-10"
+    >
       <motion.div
         className="flex flex-col w-1/2"
         initial={{ opacity: 0, x: -50 }}
         animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h2 className="text-6xl mb-8">Frequently Asked Questions</h2>
+        <h2 className="md:text-5xl lg:text-6xl mb-8">
+          Frequently Asked Questions
+        </h2>
         <p className="text-gray-500 text-xl">
           We&apos;re here to help. Our team of experts is ready to assist you
           with any questions about our services, or business solutions. We aim
