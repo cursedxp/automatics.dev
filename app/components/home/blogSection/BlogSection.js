@@ -30,7 +30,7 @@ const blogPosts = [
 const BlogSection = () => {
   return (
     <section
-      className="flex-col w-full gap-10 my-40 xl:px-10 lg:px-10 md:px-10 sm:px-10"
+      className="flex-col w-full gap-10 my-40 xl:px-10 lg:px-10 md:px-10 sm:px-10 px-10"
       aria-labelledby="blog-heading"
     >
       <header className="text-center mb-12">

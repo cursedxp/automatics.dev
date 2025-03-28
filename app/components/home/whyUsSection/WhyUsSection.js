@@ -3,7 +3,7 @@ export default function WhyUsSection() {
   return (
     <section className="flex w-full gap-4 my-40 xl:px-10 lg:px-10 md:px-10 sm:px-10">
       <div className="flex flex-col w-1/2">
-        <h2 className="mb-8 md:text-5xl lg:text-6xl sm:text-4xl">
+        <h2 className="mb-8 md:text-5xl lg:text-6xl sm:text-4xl text-4xl">
           The Thinking Partner Behind Every Great Solution
         </h2>
         <p className="text-gray-500 text-xl">

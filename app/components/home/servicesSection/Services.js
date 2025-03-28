@@ -31,7 +31,7 @@ export default function Services() {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center my-40 xl:px-10 lg:px-10">
+    <section className="flex flex-col items-center justify-center my-40 xl:px-10 lg:px-10 px-10">
       <h2 id="services-title" className="text-6xl mb-12 text-center">
         Tailored Solutions for Your Business
       </h2>
@@ -46,8 +46,8 @@ export default function Services() {
         whileInView="show"
         viewport={{
           once: true,
-          amount: 0.3,
-          margin: "-100px",
+          amount: 0.2,
+          margin: "0px",
         }}
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:px-10 sm:px-10"
         aria-labelledby="services-title"
