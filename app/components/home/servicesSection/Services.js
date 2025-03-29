@@ -31,11 +31,11 @@ export default function Services() {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center my-40 xl:px-10 lg:px-10 px-10">
+    <section className="flex flex-col items-center justify-center my-20 xl:px-10 lg:px-10 px-10">
       <h2 id="services-title" className="text-6xl mb-12 text-center">
         Tailored Solutions for Your Business
       </h2>
-      <p className="text-center text-gray-500 px-30 text-xl mb-12">
+      <p className="text-center text-gray-500 text-xl mb-12">
         We craft custom digital solutions that adapt to your business needs.
         From seamless interfaces to smart automation, our services bring your
         ideas to life with clarity and impact.

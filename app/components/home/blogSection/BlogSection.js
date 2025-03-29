@@ -30,14 +30,14 @@ const blogPosts = [
 const BlogSection = () => {
   return (
     <section
-      className="flex-col w-full gap-10 my-40 xl:px-10 lg:px-10 md:px-10 sm:px-10 px-10"
+      className="flex-col w-full gap-10 my-20 xl:px-10 lg:px-10 md:px-10 sm:px-10 px-10"
       aria-labelledby="blog-heading"
     >
       <header className="text-center mb-12">
         <h2 id="blog-heading" className="text-6xl mb-8">
           Insights & Industry Updates
         </h2>
-        <p className="text-center text-gray-500 px-30 text-xl mb-12">
+        <p className="text-center text-gray-500 text-xl mb-12">
           Stay informed with our latest insights, industry trends, and expert
           perspectives on technology, digital transformation, and business
           innovation.

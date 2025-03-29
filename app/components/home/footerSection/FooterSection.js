@@ -4,7 +4,7 @@ import { FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 
 const FooterSection = () => {
   return (
-    <footer className="py-12 xl:px-10 lg:px-10 md:px-10 sm:px-10">
+    <footer className="py-12 xl:px-10 lg:px-10 md:px-10 sm:px-10 px-10">
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div className="space-y-4">

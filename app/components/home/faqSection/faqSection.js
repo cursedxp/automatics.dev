@@ -50,15 +50,15 @@ export default function FaqSection() {
   return (
     <section
       ref={ref}
-      className="flex w-full gap-10 my-40 xl:px-10 lg:px-10 md:px-10 sm:px-10"
+      className="flex flex-col sm:flex-row w-full gap-10 my-20 xl:px-10 lg:px-10 md:px-10 sm:px-10 px-10"
     >
       <motion.div
-        className="flex flex-col w-1/2"
+        className="flex flex-col sm:w-1/2"
         initial={{ opacity: 0, x: -50 }}
         animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h2 className="md:text-5xl lg:text-6xl mb-8">
+        <h2 className="md:text-5xl lg:text-6xl sm:text-4xl text-6xl mb-8">
           Frequently Asked Questions
         </h2>
         <p className="text-gray-500 text-xl">
@@ -75,7 +75,7 @@ export default function FaqSection() {
         </Link>
       </motion.div>
       <motion.div
-        className="flex flex-col w-1/2 space-y-4 bg-white rounded-2xl p-8"
+        className="flex flex-col w-full sm:w-1/2 space-y-4 bg-white rounded-2xl p-8"
         initial={{ opacity: 0, x: 50 }}
         animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
         transition={{ duration: 0.6, ease: "easeOut" }}

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function HeroSection() {
   return (
-    <section className="relative flex flex-col items-center justify-center 2xl:py-40 xl:py-40 lg:pt-40 md:pt-40 sm:pt-20 py-20">
+    <section className="relative flex flex-col items-center justify-center 2xl:py-40 xl:py-40 lg:pt-40 md:pt-40 sm:pt-20 my-20">
       <h1 className="text-center mb-10 md:text-8xl sm:text-7xl text-6xl">
         <motion.span
           initial={{ y: -50, opacity: 0 }}
@@ -44,7 +44,7 @@ export default function HeroSection() {
           <HiPhone className="w-4 h-4" />
           Book A Call
         </motion.button>
-        <div className="flex items-center">
+        {/* <div className="flex items-center">
           <ul className="flex">
             <motion.li
               initial={{ x: -20, opacity: 0 }}
@@ -94,9 +94,9 @@ export default function HeroSection() {
           >
             <Link href="/testimonials">Our Testimonials</Link>
           </motion.div>
-        </div>
+        </div> */}
       </div>
-      <div className="absolute lg:top-[260px] md:top-[260px] sm:top-[160px] top-[145px] right-1/2 -translate-x-1/2 w-20 h-20 transform">
+      <div className="absolute lg:top-[260px] md:top-[260px] sm:top-[160px] top-[65px] right-1/2 -translate-x-1/2 w-20 h-20 transform">
         <motion.div
           className="h-10 w-fit text-black flex justify-center items-center"
           initial={{

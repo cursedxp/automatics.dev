@@ -5,7 +5,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="w-screen overflow-scroll bg-gray-100">
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
       </body>
     </html>

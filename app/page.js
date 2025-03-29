@@ -9,7 +9,7 @@ import FooterSection from "./components/home/footerSection/FooterSection";
 
 export default function Home() {
   return (
-    <div className="max-w-screen-xl mx-auto items-center h-full">
+    <div className="flex flex-col max-w-screen-xl mx-auto items-center h-full">
       <HeroSection />
       <WhyUsSection />
       <Services />
