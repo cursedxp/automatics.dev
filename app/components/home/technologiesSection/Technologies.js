@@ -1,253 +1,26 @@
 "use client";
 import { motion } from "framer-motion";
-import { useState } from "react";
-
-const categories = {
-  frontend: {
-    name: "Frontend",
-    technologies: [
-      {
-        name: "Next.js",
-        description: "React framework for production",
-        logo: (
-          <svg className="w-16 h-16" viewBox="0 0 24 24">
-            <rect
-              x="2"
-              y="2"
-              width="20"
-              height="20"
-              rx="4"
-              fill="currentColor"
-            />
-          </svg>
-        ),
-      },
-      {
-        name: "Framer",
-        description: "Animation library",
-        logo: (
-          <svg className="w-16 h-16" viewBox="0 0 24 24">
-            <rect
-              x="2"
-              y="2"
-              width="20"
-              height="20"
-              rx="4"
-              fill="currentColor"
-            />
-          </svg>
-        ),
-      },
-      {
-        name: "React",
-        description: "UI library for web",
-        logo: (
-          <svg className="w-16 h-16" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10" fill="currentColor" />
-          </svg>
-        ),
-      },
-      {
-        name: "TypeScript",
-        description: "Typed JavaScript",
-        logo: (
-          <svg className="w-16 h-16" viewBox="0 0 24 24">
-            <rect
-              x="2"
-              y="2"
-              width="20"
-              height="20"
-              rx="4"
-              fill="currentColor"
-            />
-          </svg>
-        ),
-      },
-      {
-        name: "Tailwind",
-        description: "Utility-first CSS",
-        logo: (
-          <svg className="w-16 h-16" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10" fill="currentColor" />
-          </svg>
-        ),
-      },
-    ],
-  },
-  backend: {
-    name: "Backend",
-    technologies: [
-      {
-        name: "Node.js",
-        description: "JavaScript runtime",
-        logo: (
-          <svg className="w-16 h-16" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10" fill="currentColor" />
-          </svg>
-        ),
-      },
-      {
-        name: "MongoDB",
-        description: "NoSQL database",
-        logo: (
-          <svg className="w-16 h-16" viewBox="0 0 24 24">
-            <rect
-              x="2"
-              y="2"
-              width="20"
-              height="20"
-              rx="4"
-              fill="currentColor"
-            />
-          </svg>
-        ),
-      },
-      {
-        name: "PostgreSQL",
-        description: "SQL database",
-        logo: (
-          <svg className="w-16 h-16" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10" fill="currentColor" />
-          </svg>
-        ),
-      },
-    ],
-  },
-  cms: {
-    name: "CMS",
-    technologies: [
-      {
-        name: "Contentful",
-        description: "Headless CMS platform",
-        logo: (
-          <svg className="w-16 h-16" viewBox="0 0 24 24">
-            <rect
-              x="2"
-              y="2"
-              width="20"
-              height="20"
-              rx="4"
-              fill="currentColor"
-            />
-          </svg>
-        ),
-      },
-      {
-        name: "Sanity.io",
-        description: "Real-time content platform",
-        logo: (
-          <svg className="w-16 h-16" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10" fill="currentColor" />
-          </svg>
-        ),
-      },
-      {
-        name: "Strapi",
-        description: "Open-source headless CMS",
-        logo: (
-          <svg className="w-16 h-16" viewBox="0 0 24 24">
-            <rect
-              x="2"
-              y="2"
-              width="20"
-              height="20"
-              rx="4"
-              fill="currentColor"
-            />
-          </svg>
-        ),
-      },
-      {
-        name: "Prismic",
-        description: "Headless CMS solution",
-        logo: (
-          <svg className="w-16 h-16" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10" fill="currentColor" />
-          </svg>
-        ),
-      },
-    ],
-  },
-  payment: {
-    name: "Payment",
-    technologies: [
-      {
-        name: "Stripe",
-        description: "Payment processing",
-        logo: (
-          <svg className="w-16 h-16" viewBox="0 0 24 24">
-            <rect
-              x="2"
-              y="2"
-              width="20"
-              height="20"
-              rx="4"
-              fill="currentColor"
-            />
-          </svg>
-        ),
-      },
-      {
-        name: "PayPal",
-        description: "Digital payments",
-        logo: (
-          <svg className="w-16 h-16" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10" fill="currentColor" />
-          </svg>
-        ),
-      },
-      {
-        name: "Square",
-        description: "Payment solutions",
-        logo: (
-          <svg className="w-16 h-16" viewBox="0 0 24 24">
-            <rect
-              x="2"
-              y="2"
-              width="20"
-              height="20"
-              rx="4"
-              fill="currentColor"
-            />
-          </svg>
-        ),
-      },
-      {
-        name: "iZettle",
-        description: "Payment services",
-        logo: (
-          <svg className="w-16 h-16" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10" fill="currentColor" />
-          </svg>
-        ),
-      },
-    ],
-  },
-  devops: {
-    name: "DevOps",
-    technologies: [
-      {
-        name: "Docker",
-        description: "Container platform",
-        logo: (
-          <svg className="w-16 h-16" viewBox="0 0 24 24">
-            <rect
-              x="2"
-              y="2"
-              width="20"
-              height="20"
-              rx="4"
-              fill="currentColor"
-            />
-          </svg>
-        ),
-      },
-    ],
-  },
-};
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import techData from "../../../data/technologies";
 
 export default function Technologies() {
-  const [activeCategory, setActiveCategory] = useState("frontend");
+  const [activeCategory, setActiveCategory] = useState("cms");
+  const [technologies, setTechnologies] = useState({});
+
+  useEffect(() => {
+    try {
+      const techJson = require("../../../data/technologies.json");
+      setTechnologies(techJson);
+    } catch (error) {
+      console.error("Error loading technologies:", error);
+    }
+  }, []);
+
+  // Early return while data is loading
+  if (!technologies || Object.keys(technologies).length === 0) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <section className="flex flex-col items-center justify-center my-20 px-10">
@@ -265,7 +38,7 @@ export default function Technologies() {
       <div className="w-full max-w-4xl">
         {/* Category Tabs */}
         <div className="flex flex-wrap justify-center gap-4 mb-8">
-          {Object.entries(categories).map(([key, category]) => (
+          {Object.entries(technologies).map(([key, category]) => (
             <button
               key={key}
               onClick={() => setActiveCategory(key)}
@@ -282,12 +55,19 @@ export default function Technologies() {
 
         {/* Technologies Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {categories[activeCategory].technologies.map((tech, index) => (
+          {technologies[activeCategory].technologies.map((tech, index) => (
             <div
-              key={tech.name}
+              key={`${activeCategory}-${tech.name}-${index}`}
               className="flex flex-col items-center justify-center p-6 bg-white rounded-2xl group transition-all duration-300 hover:shadow-xl"
             >
-              <div className="mb-4 text-black">{tech.logo}</div>
+              <div className="relative w-16 h-16 mb-4">
+                <Image
+                  src={tech.logo}
+                  alt={`${tech.name} logo`}
+                  fill
+                  className="object-contain"
+                />
+              </div>
               <h3 className="text-lg font-semibold text-black mb-2">
                 {tech.name}
               </h3>

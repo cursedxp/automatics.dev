@@ -1,0 +1,117 @@
+{
+  "cms": {
+    "name": "CMS",
+    "technologies": [
+      {
+        "name": "Contentful",
+        "description": "Headless CMS platform",
+        "logo": "/assets/techLogos/contentful.svg"
+      },
+      {
+        "name": "Zapier",
+        "description": "Automate your work",
+        "logo": "/assets/techLogos/zapier.svg"
+      },
+      {
+        "name": "Strapi",
+        "description": "Open-source headless CMS",
+        "logo": "/assets/techLogos/strapi.svg"
+      },
+      {
+        "name": "Hubspot",
+        "description": "Marketing automation platform",
+        "logo": "/assets/techLogos/hubspot.svg"
+      }
+    ]
+  },
+  "frontend": {
+    "name": "Frontend",
+    "technologies": [
+      {
+        "name": "Next.js",
+        "description": "React framework for production",
+        "logo": "/assets/techLogos/nextjs.svg"
+      },
+      {
+        "name": "Framer",
+        "description": "Animation library",
+        "logo": "/assets/techLogos/framer.svg"
+      },
+      {
+        "name": "React",
+        "description": "UI library for web",
+        "logo": "/assets/techLogos/react.svg"
+      },
+      {
+        "name": "Tailwind",
+        "description": "Utility-first CSS",
+        "logo": "/assets/techLogos/tailwind.svg"
+      }
+    ]
+  },
+  "backend": {
+    "name": "Backend",
+    "technologies": [
+      {
+        "name": "Node.js",
+        "description": "JavaScript runtime",
+        "logo": "/assets/techLogos/nodejs.svg"
+      },
+      {
+        "name": "MongoDB",
+        "description": "NoSQL database",
+        "logo": "/assets/techLogos/mongodb.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "description": "SQL database",
+        "logo": "/assets/techLogos/postgresql.svg"
+      }
+    ]
+  },
+  "payment": {
+    "name": "Payment",
+    "technologies": [
+      {
+        "name": "Stripe",
+        "description": "Payment processing",
+        "logo": "/assets/techLogos/stripe.svg"
+      },
+      {
+        "name": "Paypal",
+        "description": "Payment processing",
+        "logo": "/assets/techLogos/paypal.svg"
+      }
+    ]
+  },
+  "ux": {
+    "name": "UX",
+    "technologies": [
+      {
+        "name": "Figma",
+        "description": "Design tool",
+        "logo": "/assets/techLogos/figma.svg"
+      },
+      {
+        "name": "Sketch",
+        "description": "Design tool",
+        "logo": "/assets/techLogos/sketch.svg"
+      },
+      {
+        "name": "Adobe XD",
+        "description": "Design tool",
+        "logo": "/assets/techLogos/adobe-xd.svg"
+      }
+    ]
+  },
+  "devops": {
+    "name": "DevOps",
+    "technologies": [
+      {
+        "name": "Docker",
+        "description": "Container platform",
+        "logo": "/assets/techLogos/docker.svg"
+      }
+    ]
+  }
+}
