@@ -1,0 +1,42 @@
+{
+  "title": "Frequently Asked Questions",
+  "description": "We're here to help. Our team of experts is ready to assist you with any questions about our services, or business solutions. We aim to respond within 24 hours on business days.",
+  "cta": {
+    "text": "Book A Call",
+    "href": "/contact"
+  },
+  "items": [
+    {
+      "question": "What services do you offer for web development?",
+      "answer": "We provide comprehensive web development services including custom website development, e-commerce solutions, web applications, and enterprise software. Our services are tailored to meet your specific business needs and goals."
+    },
+    {
+      "question": "What technologies do you work with?",
+      "answer": "We work with a wide range of modern technologies including React, Next.js, Node.js, and various databases. Our tech stack is chosen based on your project requirements to ensure optimal performance and scalability."
+    },
+    {
+      "question": "How do you determine pricing for projects?",
+      "answer": "Our pricing is based on several factors including project complexity, required features, timeline, and specific requirements. We offer transparent pricing models and will provide a detailed quote after understanding your needs."
+    },
+    {
+      "question": "Do you provide ongoing support and maintenance?",
+      "answer": "Yes, we offer comprehensive support and maintenance packages to ensure your website or application runs smoothly. This includes regular updates, security patches, performance optimization, and technical support."
+    },
+    {
+      "question": "What makes your development team different from others?",
+      "answer": "Our team combines technical expertise with a deep understanding of business needs. We focus on delivering high-quality, scalable solutions while maintaining excellent communication throughout the development process."
+    },
+    {
+      "question": "How do you handle project communication and updates?",
+      "answer": "We maintain transparent communication through regular meetings, progress reports, and dedicated project management tools. You'll have direct access to your project team and receive regular updates on development progress."
+    },
+    {
+      "question": "What is your approach to website design and user experience?",
+      "answer": "We prioritize user-centered design principles, creating intuitive and engaging interfaces that drive results. Our design process includes user research, wireframing, prototyping, and iterative testing to ensure optimal user experience."
+    },
+    {
+      "question": "Do you offer content management solutions?",
+      "answer": "Yes, we provide custom content management solutions that allow you to easily update and manage your website content. We can integrate with popular CMS platforms or develop custom solutions based on your needs."
+    }
+  ]
+}
