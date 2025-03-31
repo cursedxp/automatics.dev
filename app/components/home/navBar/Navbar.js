@@ -85,7 +85,7 @@ export default function Navbar() {
       {isOpen && (
         <motion.div
           ref={mobileMenuRef}
-          className="absolute top-3 right-3 w-60 h-fit p-8 z-10 bg-black text-white rounded-2xl "
+          className="absolute top-3 right-3 w-60 h-90 p-8 z-10 bg-black text-white rounded-2xl "
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
