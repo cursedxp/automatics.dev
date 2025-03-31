@@ -6,6 +6,7 @@ import FaqSection from "./components/home/faqSection/faqSection";
 import QuoteSection from "./components/home/quoteSection/quoteSection";
 import BlogSection from "./components/home/blogSection/BlogSection";
 import FooterSection from "./components/home/footerSection/FooterSection";
+import Technologies from "./components/home/technologiesSection/Technologies";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <HeroSection />
       <WhyUsSection />
       <Services />
+      <Technologies />
       <QuoteSection />
       <BlogSection />
       <FaqSection />
