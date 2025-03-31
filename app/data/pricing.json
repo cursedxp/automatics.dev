@@ -1,0 +1,59 @@
+{
+  "pricing": {
+    "name": "Pricing",
+    "tiers": [
+      {
+        "name": "Testing",
+        "price": "$2,999",
+        "description": "Perfect for validating your idea and getting initial feedback",
+        "sectionDescription": "Quick validation of your concept with essential features and feedback",
+        "features": [
+          "Basic UI/UX Design",
+          "Core Functionality Testing",
+          "Performance Analysis",
+          "Security Assessment",
+          "User Feedback Collection",
+          "Basic Documentation"
+        ],
+        "cta": "Start Testing",
+        "popular": false
+      },
+      {
+        "name": "Sprint",
+        "price": "$4,999",
+        "description": "Ideal for rapid development and quick market entry",
+        "sectionDescription": "Fast-track your project with comprehensive development and support",
+        "features": [
+          "Advanced UI/UX Design",
+          "Full Feature Development",
+          "Performance Optimization",
+          "Security Implementation",
+          "User Testing & Feedback",
+          "Comprehensive Documentation",
+          "Deployment Support",
+          "2 Weeks of Maintenance"
+        ],
+        "cta": "Start Sprint",
+        "popular": true
+      },
+      {
+        "name": "Custom",
+        "price": "Custom",
+        "description": "Tailored solution for complex business needs",
+        "sectionDescription": "Enterprise-grade solutions with dedicated support and customization",
+        "features": [
+          "Custom UI/UX Design",
+          "Full-Scale Development",
+          "Advanced Security Features",
+          "Scalability Planning",
+          "Enterprise Integration",
+          "24/7 Support",
+          "Custom Maintenance Plan",
+          "Dedicated Project Manager"
+        ],
+        "cta": "Contact Us",
+        "popular": false
+      }
+    ]
+  }
+}
