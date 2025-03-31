@@ -2,11 +2,12 @@ import Image from "next/image";
 import HeroSection from "./components/home/heroSection/HeroSection";
 import Services from "./components/home/servicesSection/Services";
 import WhyUsSection from "./components/home/whyUsSection/WhyUsSection";
-import FaqSection from "./components/home/faqSection/faqSection";
-import QuoteSection from "./components/home/quoteSection/quoteSection";
-import BlogSection from "./components/home/blogSection/BlogSection";
-import FooterSection from "./components/home/footerSection/FooterSection";
 import Technologies from "./components/home/technologiesSection/Technologies";
+import QuoteSection from "./components/home/quoteSection/quoteSection";
+import PricingSection from "./components/home/pricingSection/pricingSection";
+import BlogSection from "./components/home/blogSection/BlogSection";
+import FaqSection from "./components/home/faqSection/faqSection";
+import FooterSection from "./components/home/footerSection/FooterSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <Technologies />
       <QuoteSection />
+      <PricingSection />
       <BlogSection />
       <FaqSection />
       <FooterSection />
