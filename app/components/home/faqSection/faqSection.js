@@ -50,10 +50,10 @@ export default function FaqSection() {
   return (
     <section
       ref={ref}
-      className="flex flex-col sm:flex-row w-full gap-10 my-20 xl:px-10 lg:px-10 md:px-10 sm:px-10 px-10"
+      className="flex flex-col gap-8 sm:flex-col md:flex-col lg:flex-row lg:gap-4 w-full my-20 xl:px-10 lg:px-10 md:px-10 sm:px-10 px-10"
     >
       <motion.div
-        className="flex flex-col sm:w-1/2"
+        className="flex flex-col sm:w-full"
         initial={{ opacity: 0, x: -50 }}
         animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -68,14 +68,14 @@ export default function FaqSection() {
         </p>
         <Link
           href="/contact"
-          className="bg-black text-white px-4 py-2 rounded-full flex items-center gap-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer w-fit mt-4"
+          className="bg-black text-white px-4 py-2 rounded-full flex items-center gap-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer w-fit mt-8"
         >
           <HiPhone className="w-4 h-4" />
           Book A Call
         </Link>
       </motion.div>
       <motion.div
-        className="flex flex-col w-full sm:w-1/2 space-y-4 bg-white rounded-2xl p-8"
+        className="flex flex-col w-full sm:w-1/2 space-y-4 bg-white rounded-2xl p-8 sm:w-full"
         initial={{ opacity: 0, x: 50 }}
         animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
         transition={{ duration: 0.6, ease: "easeOut" }}

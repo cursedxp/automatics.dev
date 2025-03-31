@@ -45,7 +45,7 @@ const BlogSection = () => {
       </header>
 
       <div
-        className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8"
+        className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 md:gap-4"
         role="list"
       >
         {blogPosts.map((post) => (

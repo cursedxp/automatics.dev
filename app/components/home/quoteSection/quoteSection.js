@@ -8,7 +8,7 @@ export default function QuoteSection() {
   return (
     <motion.section
       ref={ref}
-      className="flex-col w-full gap-10 my-40"
+      className="flex-col w-full gap-10 my-20 sm:my-20"
       aria-label="Inspirational Quote"
       initial={{ filter: "blur(10px)", y: 50 }}
       animate={isInView && { filter: "blur(0px)", y: 0 }}
