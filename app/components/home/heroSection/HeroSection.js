@@ -96,7 +96,7 @@ export default function HeroSection() {
           </motion.div>
         </div> */}
       </div>
-      <div className="absolute lg:top-[260px] md:top-[260px] sm:top-[160px] top-[65px] right-1/2 -translate-x-1/2 w-20 h-20 transform">
+      <div className="absolute xs:top-[120px] lg:top-[260px] md:top-[260px] sm:top-[160px] top-[65px] right-1/2 -translate-x-1/2 w-20 h-20 transform">
         <motion.div
           className="h-10 w-fit text-black flex justify-center items-center"
           initial={{
