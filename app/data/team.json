@@ -1,0 +1,18 @@
+{
+  "teamMembers": [
+    {
+      "id": 1,
+      "name": "John Smith",
+      "role": "Founder & Lead Developer",
+      "description": "10+ years of experience in full-stack development and digital transformation. Passionate about creating scalable, user-centric solutions.",
+      "image": "/assets/images/team-member-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sarah Johnson",
+      "role": "Product Strategy Director",
+      "description": "Expert in product strategy and digital innovation. Led multiple successful digital transformation projects for Fortune 500 companies.",
+      "image": "/assets/images/team-member-2.jpg"
+    }
+  ]
+}
