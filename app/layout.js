@@ -1,7 +1,7 @@
 import "./globals.css";
 import Navbar from "./components/home/navBar/Navbar";
 import { Metadata } from "next";
-
+import Footer from "./components/home/footer/Footer";
 export const metadata = {
   title: {
     default: "ThoughtLink - Your Digital Solutions Partner",
@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
       <body className="w-screen overflow-scroll bg-gray-100">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

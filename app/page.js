@@ -7,7 +7,6 @@ import QuoteSection from "./components/home/quoteSection/quoteSection";
 import PricingSection from "./components/home/pricingSection/pricingSection";
 import BlogSection from "./components/home/blogSection/BlogSection";
 import FaqSection from "./components/home/faqSection/faqSection";
-import FooterSection from "./components/home/footerSection/FooterSection";
 
 export default function Home() {
   return (
@@ -20,7 +19,6 @@ export default function Home() {
       <PricingSection />
       <BlogSection />
       <FaqSection />
-      <FooterSection />
     </div>
   );
 }
