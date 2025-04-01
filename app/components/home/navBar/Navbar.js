@@ -40,7 +40,7 @@ export default function Navbar() {
           </li>
           <li className="hover:scale-105 transition-all duration-300">
             <Link href="/about-us" aria-label="about us">
-              About Us
+              ThoughtLink
             </Link>
           </li>
           <li className="hover:scale-105 transition-all duration-300">
@@ -104,10 +104,10 @@ export default function Navbar() {
             <li>
               <Link
                 href="/about-us"
-                aria-label="About"
+                aria-label="about-us"
                 className="hover:scale-105 transition-all duration-300"
               >
-                About Us
+                ThoughtLink
               </Link>
             </li>
             <li>
