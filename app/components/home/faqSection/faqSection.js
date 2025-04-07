@@ -36,7 +36,7 @@ export default function FaqSection() {
         <p className="text-gray-500 text-xl">{faqData.description}</p>
         <Link
           href={faqData.cta.href}
-          className="bg-black text-white px-4 py-2 rounded-full flex items-center gap-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer w-fit mt-8"
+          className="bg-black text-white px-6 py-3 rounded-full flex items-center gap-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer w-fit mt-8"
         >
           <HiPhone className="w-4 h-4" />
           {faqData.cta.text}

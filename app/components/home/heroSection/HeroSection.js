@@ -39,7 +39,7 @@ export default function HeroSection() {
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="bg-black text-white px-4 py-2 rounded-full flex items-center gap-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer"
+          className="bg-black text-white px-6 py-3 rounded-full flex items-center gap-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer"
         >
           <HiPhone className="w-4 h-4" />
           Book A Call

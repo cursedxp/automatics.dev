@@ -21,7 +21,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="w-full">
+    <header className="w-full ">
       <nav
         className="max-w-screen-xl mx-auto flex justify-between items-center p-3"
         aria-label="Main navigation"
@@ -66,7 +66,7 @@ export default function Navbar() {
         </ul>
         <Link
           href="#"
-          className="hidden lg:flex items-center gap-2 bg-black text-white px-4 py-2 rounded-full hover:scale-105 hover:shadow-lg hover:cursor-pointer"
+          className="hidden lg:flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full hover:scale-105 hover:shadow-lg hover:cursor-pointer"
           role="button"
           aria-label="Book a call"
         >
