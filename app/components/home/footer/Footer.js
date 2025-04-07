@@ -5,7 +5,7 @@ import { FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="py-12 xl:px-10 lg:px-10 md:px-10 sm:px-10 px-10">
-      <div className="max-w-screen-xl mx-auto px-4">
+      <div className="max-w-screen-xl mx-auto ">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-black">ThoughtLink</h3>
@@ -23,14 +23,6 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/services"
-                  className="text-black hover:scale-105 transition-all duration-300"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/about-us"
                   className="text-black hover:scale-105 transition-all duration-300"
                 >
@@ -42,7 +34,7 @@ const Footer = () => {
                   href="/blog"
                   className="text-black hover:scale-105 transition-all duration-300"
                 >
-                  Updates
+                  Insights
                 </Link>
               </li>
               <li>

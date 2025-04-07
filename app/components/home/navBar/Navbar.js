@@ -34,18 +34,13 @@ export default function Navbar() {
         {/* Desktop Navbar */}
         <ul className="gap-12 hidden lg:flex" role="list">
           <li className="hover:scale-105 transition-all duration-300">
-            <Link href="/services" aria-label="services">
-              Services
-            </Link>
-          </li>
-          <li className="hover:scale-105 transition-all duration-300">
             <Link href="/about-us" aria-label="about us">
               ThoughtLink
             </Link>
           </li>
           <li className="hover:scale-105 transition-all duration-300">
             <Link href="/blog" aria-label="Blog">
-              Updates
+              Insights
             </Link>
           </li>
           <li className="hover:scale-105 transition-all duration-300">
