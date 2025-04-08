@@ -239,11 +239,11 @@ export default function AboutUs() {
         transition={{ duration: 0.8 }}
         className="w-full mt-12 sm:mt-16 md:mt-20"
       >
-        <div className="bg-black text-white rounded-2xl p-6 sm:p-8 md:p-12 text-center flex flex-col items-center">
+        <div className="text-black rounded-2xl p-6 sm:p-8 md:p-12 text-center flex flex-col items-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 sm:mb-6">
             Ready to Build Your Digital Future?
           </h2>
-          <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto mb-6 sm:mb-8 px-4">
+          <p className="text-gray-500 text-base sm:text-lg max-w-2xl mx-auto mb-6 sm:mb-8 px-4">
             Let&apos;s discuss how we can help transform your business with
             custom digital solutions. Book a call with our team today.
           </p>
@@ -251,7 +251,7 @@ export default function AboutUs() {
             href="/contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-white text-black px-6 py-3 rounded-full text-base sm:text-lg w-fit font-semibold hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2"
+            className="bg-black text-white px-6 py-3 rounded-full text-base sm:text-lg w-fit font-semibold hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2"
           >
             <HiPhone className="w-4 h-4" />
             Book a Call

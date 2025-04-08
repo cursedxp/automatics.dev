@@ -21,6 +21,7 @@ export default function FaqSection() {
 
   return (
     <section
+      id="faq"
       ref={ref}
       className="flex flex-col gap-8 sm:flex-col md:flex-col lg:flex-row lg:gap-4 w-full my-20 xl:px-10 lg:px-10 md:px-10 sm:px-10 px-10"
     >

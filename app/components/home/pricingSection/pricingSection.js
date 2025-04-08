@@ -8,7 +8,10 @@ export default function PricingSection() {
   const { tiers } = pricingData.pricing;
 
   return (
-    <section className="flex flex-col items-center justify-center my-20 px-10 sm:px-0">
+    <section
+      id="pricing"
+      className="flex flex-col items-center justify-center my-20 px-10 sm:px-0"
+    >
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

@@ -1,8 +1,17 @@
+"use client";
 import Link from "next/link";
 import { HiPhone, HiMail } from "react-icons/hi";
 import { FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
+  const scrollToSection = (e, sectionId) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className="py-12 xl:px-10 lg:px-10 md:px-10 sm:px-10 px-10">
       <div className="max-w-screen-xl mx-auto ">
@@ -39,16 +48,18 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/pricing"
+                  href="/#pricing"
                   className="text-black hover:scale-105 transition-all duration-300"
+                  onClick={(e) => scrollToSection(e, "pricing")}
                 >
                   Pricing
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/faq"
+                  href="/#faq"
                   className="text-black hover:scale-105 transition-all duration-300"
+                  onClick={(e) => scrollToSection(e, "faq")}
                 >
                   FAQ
                 </Link>

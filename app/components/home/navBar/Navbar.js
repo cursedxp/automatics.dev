@@ -13,6 +13,15 @@ export default function Navbar() {
     }
   };
 
+  const scrollToSection = (e, sectionId) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false); // Close mobile menu after clicking
+  };
+
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, true);
     return () => {
@@ -44,12 +53,20 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="hover:scale-105 transition-all duration-300">
-            <Link href="/pricing" aria-label="pricing">
+            <Link
+              href="/#pricing"
+              aria-label="pricing"
+              onClick={(e) => scrollToSection(e, "pricing")}
+            >
               Pricing
             </Link>
           </li>
           <li className="hover:scale-105 transition-all duration-300">
-            <Link href="/faq" aria-label="faq">
+            <Link
+              href="/#faq"
+              aria-label="faq"
+              onClick={(e) => scrollToSection(e, "faq")}
+            >
               FAQ
             </Link>
           </li>
@@ -111,24 +128,26 @@ export default function Navbar() {
                 aria-label="Blog"
                 className="hover:scale-105 transition-all duration-300"
               >
-                Updates
+                Insights
               </Link>
             </li>
 
             <li>
               <Link
-                href="/pricing"
+                href="/#pricing"
                 aria-label="Pricing"
                 className="hover:scale-105 transition-all duration-300"
+                onClick={(e) => scrollToSection(e, "pricing")}
               >
                 Pricing
               </Link>
             </li>
             <li>
               <Link
-                href="/faq"
+                href="/#faq"
                 aria-label="FAQ"
                 className="hover:scale-105 transition-all duration-300"
+                onClick={(e) => scrollToSection(e, "faq")}
               >
                 FAQ
               </Link>
