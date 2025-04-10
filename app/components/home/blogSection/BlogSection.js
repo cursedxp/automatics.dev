@@ -1,33 +1,59 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { HiChevronRight } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { useFetchPosts } from "@/app/hooks/useFetchPosts";
 
-const blogPosts = [
-  {
-    id: 1,
-    title: "The Importance of Digital Transformation",
-    excerpt:
-      "Understanding the critical role of digital transformation in modern businesses and key success factors...",
-    image: "/assets/images/blog.jpg",
-  },
-  {
-    id: 2,
-    title: "AI and the Future of Business",
-    excerpt:
-      "How artificial intelligence is reshaping business processes and its impact on the future of work...",
-    image: "/assets/images/blog.jpg",
-  },
-  {
-    id: 3,
-    title: "Customer Experience Optimization",
-    excerpt:
-      "Effective strategies and best practices for enhancing customer satisfaction and loyalty...",
-    image: "/assets/images/blog.jpg",
-  },
-];
+export default function BlogSection() {
+  const { posts, isLoading, error } = useFetchPosts();
 
-const BlogSection = () => {
+  // Filter to get only the latest 3 posts
+  const blogPosts = posts.slice(0, 3);
+
+  if (isLoading) {
+    return (
+      <section className="flex-col w-full gap-10 my-20 xl:px-10 lg:px-10 md:px-10 sm:px-10 px-10">
+        <header className="text-center mb-12">
+          <h2 className="text-6xl mb-8">Insights & Industry Updates</h2>
+          <p className="text-center text-gray-500 text-xl mb-12">
+            Stay informed with our latest insights, industry trends, and expert
+            perspectives on technology, digital transformation, and business
+            innovation.
+          </p>
+        </header>
+        <div className="flex justify-center items-center h-64">
+          <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-black"></div>
+        </div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section className="flex-col w-full gap-10 my-20 xl:px-10 lg:px-10 md:px-10 sm:px-10 px-10">
+        <header className="text-center mb-12">
+          <h2 className="text-6xl mb-8">Insights & Industry Updates</h2>
+          <p className="text-center text-gray-500 text-xl mb-12">
+            Stay informed with our latest insights, industry trends, and expert
+            perspectives on technology, digital transformation, and business
+            innovation.
+          </p>
+        </header>
+        <div className="flex justify-center items-center h-64">
+          <div className="text-red-500 text-lg max-w-4xl border border-red-300 rounded-md p-4">
+            Error loading posts: {error}
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  if (blogPosts.length === 0) {
+    return null;
+  }
+
   return (
     <section
       className="flex-col w-full gap-10 my-20 xl:px-10 lg:px-10 md:px-10 sm:px-10 px-10"
@@ -51,8 +77,8 @@ const BlogSection = () => {
         {blogPosts.map((post) => (
           <Link
             key={post.id}
-            href={`/blog/${post.id}`}
-            className="block h-full"
+            href={`/blog/${post.slug}`}
+            className="block h-full group"
             aria-label={`Read more about ${post.title}`}
           >
             <article
@@ -81,6 +107,4 @@ const BlogSection = () => {
       </div>
     </section>
   );
-};
-
-export default BlogSection;
+}
