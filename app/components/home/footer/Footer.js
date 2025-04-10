@@ -48,18 +48,16 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/#pricing"
+                  href="/pricing"
                   className="text-black hover:scale-105 transition-all duration-300"
-                  onClick={(e) => scrollToSection(e, "pricing")}
                 >
                   Pricing
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/#faq"
+                  href="/faq"
                   className="text-black hover:scale-105 transition-all duration-300"
-                  onClick={(e) => scrollToSection(e, "faq")}
                 >
                   FAQ
                 </Link>
