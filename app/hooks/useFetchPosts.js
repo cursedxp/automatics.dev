@@ -1,10 +1,4 @@
-import { createClient } from "contentful";
 import { useState, useEffect } from "react";
-
-const client = createClient({
-  space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
-  accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
-});
 
 export const useFetchPosts = () => {
   const [posts, setPosts] = useState([]);
@@ -14,12 +8,17 @@ export const useFetchPosts = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await client.getEntries({
-          content_type: "blog",
-          order: "-sys.createdAt",
-        });
+        // Get the current origin for absolute URL
+        const origin = window.location.origin;
+        const response = await fetch(`${origin}/api/posts`);
 
-        const transformedPosts = response.items.map((item) => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch posts");
+        }
+
+        const items = await response.json();
+
+        const transformedPosts = items.map((item) => {
           // Get the cover image URL if it exists
           const coverImageUrl = item.fields.coverImage?.fields?.file?.url
             ? `https:${item.fields.coverImage.fields.file.url}`
