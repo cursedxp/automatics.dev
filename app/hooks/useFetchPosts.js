@@ -8,9 +8,13 @@ export const useFetchPosts = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Get the current origin for absolute URL
-        const origin = window.location.origin;
-        const response = await fetch(`${origin}/api/posts`);
+        // For Vercel and other deployment platforms, we need to use an absolute URL
+        const host =
+          typeof window !== "undefined"
+            ? window.location.origin
+            : process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000";
+
+        const response = await fetch(`${host}/api/posts`);
 
         if (!response.ok) {
           throw new Error("Failed to fetch posts");

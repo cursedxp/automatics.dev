@@ -3,7 +3,7 @@ import Link from "next/link";
 import { HiArrowLeft, HiCalendar, HiClock, HiTag } from "react-icons/hi";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS, MARKS } from "@contentful/rich-text-types";
-import { getPostBySlug } from "@/app/hooks/usePost";
+import { getPostBySlugServer } from "@/app/lib/contentful";
 
 // Rich text renderer options
 const renderOptions = {
@@ -59,7 +59,7 @@ export default async function BlogPostPage({ params }) {
     );
   }
 
-  const post = await getPostBySlug(slug);
+  const post = await getPostBySlugServer(slug);
 
   if (!post) {
     return (

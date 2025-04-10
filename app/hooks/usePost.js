@@ -10,7 +10,7 @@ function calculateReadTime(content) {
 
 export async function getPostBySlug(slug) {
   try {
-    // Get the current origin (works in both browser and server environments)
+    // Get the current origi
     const origin =
       typeof window !== "undefined"
         ? window.location.origin
