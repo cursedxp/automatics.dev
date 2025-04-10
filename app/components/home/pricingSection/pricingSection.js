@@ -4,26 +4,28 @@ import { HiCheck } from "react-icons/hi2";
 import Link from "next/link";
 import pricingData from "@/app/data/pricing.json";
 
-export default function PricingSection() {
+export default function PricingSection({ hideHeader = false }) {
   const { tiers } = pricingData.pricing;
 
   return (
     <section
       id="pricing"
-      className="flex flex-col items-center justify-center my-20 px-10 sm:px-0"
+      className="flex flex-col items-center justify-center w-full"
     >
-      <motion.div
-        initial={{ y: 20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        className="text-center mb-12"
-      >
-        <h2 className="text-6xl mb-4">Choose Your Path</h2>
-        <p className="text-gray-500 text-xl sm:px-10">
-          Select the perfect plan that aligns with your project needs and
-          timeline
-        </p>
-      </motion.div>
+      {!hideHeader && (
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-6xl mb-4">Choose Your Path</h2>
+          <p className="text-gray-500 text-xl sm:px-10">
+            Select the perfect plan that aligns with your project needs and
+            timeline
+          </p>
+        </motion.div>
+      )}
 
       <motion.div
         initial={{ opacity: 0 }}
@@ -36,7 +38,7 @@ export default function PricingSection() {
         transition={{
           staggerChildren: 0.2,
         }}
-        className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-4"
+        className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto w-full"
       >
         {tiers.map((tier, index) => (
           <motion.div
@@ -83,7 +85,7 @@ export default function PricingSection() {
             </ul>
             <div className="mt-auto">
               <Link
-                href="/contact"
+                href="/contact-us"
                 className="block w-full text-center py-3 rounded-full font-semibold bg-black text-white group-hover:bg-white group-hover:text-black transition-all"
               >
                 {tier.cta}
