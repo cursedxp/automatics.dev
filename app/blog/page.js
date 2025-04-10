@@ -4,7 +4,7 @@ import { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { HiChevronRight } from "react-icons/hi";
-import blogPostsData from "../data/blog-posts.json";
+import { useFetchPosts } from "@/app/hooks/useFetchPosts";
 
 // Number of posts to load initially and on each scroll
 const POSTS_PER_LOAD = 6;
@@ -16,11 +16,26 @@ export default function BlogPage() {
   const observerRef = useRef(null);
   const loadMoreRef = useRef(null);
 
+  const { posts, isLoading: isLoadingPosts, error } = useFetchPosts();
+
+  // Add debugging logs
+  useEffect(() => {
+    console.log("Posts from Contentful:", posts);
+    console.log("Loading state:", isLoadingPosts);
+    console.log("Error state:", error);
+  }, [posts, isLoadingPosts, error]);
+
   // Initialize visible posts
   useEffect(() => {
-    setVisiblePosts(blogPostsData.slice(0, POSTS_PER_LOAD));
-    setHasMore(blogPostsData.length > POSTS_PER_LOAD);
-  }, []);
+    if (posts && posts.length > 0) {
+      console.log(
+        "Setting visible posts with:",
+        posts.slice(0, POSTS_PER_LOAD)
+      );
+      setVisiblePosts(posts.slice(0, POSTS_PER_LOAD));
+      setHasMore(posts.length > POSTS_PER_LOAD);
+    }
+  }, [posts]);
 
   // Setup intersection observer for infinite scroll
   useEffect(() => {
@@ -57,13 +72,13 @@ export default function BlogPage() {
     // Simulate API delay
     setTimeout(() => {
       const currentLength = visiblePosts.length;
-      const nextPosts = blogPostsData.slice(
+      const nextPosts = posts.slice(
         currentLength,
         currentLength + POSTS_PER_LOAD
       );
 
       setVisiblePosts((prevPosts) => [...prevPosts, ...nextPosts]);
-      setHasMore(currentLength + POSTS_PER_LOAD < blogPostsData.length);
+      setHasMore(currentLength + POSTS_PER_LOAD < posts.length);
       setIsLoading(false);
     }, 500);
   };
@@ -84,52 +99,84 @@ export default function BlogPage() {
       {/* Blog Posts List */}
       <section className="w-full">
         <div className="flex flex-col gap-24 max-w-7xl mx-auto">
-          {visiblePosts.map((post, index) => (
-            <Link
-              key={`${post.id}-${index}`}
-              href={`/blog/${post.id}`}
-              className="block"
-              aria-label={`Read more about ${post.title}`}
-            >
-              <article
-                className="group-hover:bg-black group-hover:text-white transition-all duration-300 cursor-pointer flex flex-col md:flex-row"
-                role="listitem"
-              >
-                <figure className="relative h-48 md:h-96 md:w-1/2 flex-shrink-0 md:mr-6 rounded-2xl overflow-hidden">
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    fill
-                    className="object-cover"
-                  />
-                </figure>
-                <div className="flex flex-col flex-grow md:w-2/3">
-                  <span className="text-sm text-gray-500 mb-2 xs:my-2 sm:my-4">
-                    {post.date}
-                  </span>
-                  <span className="inline-block text-white bg-black text-xs px-3 py-2 rounded-md mb-8 border  w-fit">
-                    {post.category}
-                  </span>
-                  <h3 className="text-4xl text-gray-900 group-hover:text-white mb-4">
-                    {post.title}
-                  </h3>
-                  <p className="text-black mb-4 group-hover:text-gray-300 line-clamp-4 ">
-                    {post.excerpt}
-                  </p>
-                </div>
-              </article>
-            </Link>
-          ))}
+          {isLoadingPosts && (
+            <div className="flex justify-center items-center h-64">
+              <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-black"></div>
+            </div>
+          )}
+
+          {error && (
+            <div className="flex justify-center items-center h-64">
+              <div className="text-red-500 text-lg max-w-4xl border border-red-300 rounded-md p-4">
+                Error loading posts: {error}
+              </div>
+            </div>
+          )}
+
+          {!isLoadingPosts && !error && posts.length === 0 && (
+            <div className="flex justify-center items-center h-64">
+              <div className="text-gray-500 text-lg max-w-4xl border border-gray-300 rounded-md p-4">
+                No posts found
+              </div>
+            </div>
+          )}
+
+          {!isLoadingPosts && !error && posts.length > 0 && (
+            <>
+              {visiblePosts.map((post, index) => (
+                <Link
+                  key={`${post.id}-${index}`}
+                  href={`/blog/${post.slug}`}
+                  className="block"
+                  aria-label={`Read more about ${post.title}`}
+                >
+                  <article
+                    className="group hover:bg-black rounded-2xl hover:text-white transition-all duration-300 cursor-pointer flex flex-col md:flex-row"
+                    role="listitem"
+                  >
+                    <figure className="relative h-48 md:h-96 md:w-1/2 flex-shrink-0 md:mr-6 rounded-2xl overflow-hidden">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        priority={index === 0}
+                      />
+                    </figure>
+                    <div className="flex flex-col flex-grow md:w-2/3 pt-4 md:pt-0">
+                      <span className="text-sm text-gray-500 mb-2 xs:my-2 sm:my-4">
+                        {post.publishDate}
+                      </span>
+                      {post.isFeatured && (
+                        <span className="inline-block text-white bg-black group-hover:bg-white group-hover:text-black text-xs px-3 py-2 rounded-md mb-4 border w-fit">
+                          Featured
+                        </span>
+                      )}
+                      <h3 className="text-4xl text-gray-900 group-hover:text-white mb-4">
+                        {post.title}
+                      </h3>
+                      <p className="text-black group-hover:text-gray-300 line-clamp-4">
+                        {post.excerpt}
+                      </p>
+                    </div>
+                  </article>
+                </Link>
+              ))}
+            </>
+          )}
         </div>
 
         {/* Loading indicator and intersection observer target */}
-        <div ref={loadMoreRef} className="w-full py-8 text-center">
-          {isLoading && (
-            <div className="flex justify-center">
-              <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 black"></div>
-            </div>
-          )}
-        </div>
+        {!isLoadingPosts && hasMore && (
+          <div ref={loadMoreRef} className="w-full py-8 text-center">
+            {isLoading && (
+              <div className="flex justify-center">
+                <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-black"></div>
+              </div>
+            )}
+          </div>
+        )}
       </section>
     </main>
   );
