@@ -4,16 +4,20 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { HiMail, HiPhone, HiLocationMarker } from "react-icons/hi";
 import Link from "next/link";
+import { sendEmail } from "../lib/emailjs";
+
+const initialFormState = {
+  name: "",
+  email: "",
+  title: "",
+  message: "",
+};
 
 export default function ContactUs() {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  const [formState, setFormState] = useState(initialFormState);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,21 +30,30 @@ export default function ContactUs() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(null);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const templateParams = {
+        name: formState.name,
+        email: formState.email,
+        title: formState.title,
+        message: formState.message,
+      };
 
-    // In a real app, you would send the form data to your API here
-    console.log("Form submitted:", formState);
+      const result = await sendEmail(templateParams);
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormState({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
+      if (!result.success) {
+        throw new Error("Failed to send email");
+      }
+
+      setIsSubmitted(true);
+      setFormState(initialFormState);
+    } catch (err) {
+      setError("Failed to send message. Please try again later.");
+      console.error("Form submission error:", err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -139,13 +152,6 @@ export default function ContactUs() {
                 </div>
               </div>
             </div>
-
-            {/* Map Placeholder */}
-            <div className="bg-gray-200 rounded-2xl h-[300px] w-full flex items-center justify-center">
-              <p className="text-gray-500 text-lg">
-                Interactive Map Coming Soon
-              </p>
-            </div>
           </motion.div>
 
           {/* Contact Form */}
@@ -155,7 +161,7 @@ export default function ContactUs() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
           >
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
+            <div className="bg-white rounded-2xl p-8 ">
               <h2 className="text-2xl font-semibold mb-6">Send Us a Message</h2>
 
               {isSubmitted ? (
@@ -177,6 +183,11 @@ export default function ContactUs() {
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {error && (
+                    <div className="bg-red-100 text-red-800 p-4 rounded-lg">
+                      {error}
+                    </div>
+                  )}
                   <div>
                     <label
                       htmlFor="name"
@@ -217,16 +228,16 @@ export default function ContactUs() {
 
                   <div>
                     <label
-                      htmlFor="subject"
+                      htmlFor="title"
                       className="block text-sm font-medium text-gray-700 mb-1"
                     >
                       Subject
                     </label>
                     <input
                       type="text"
-                      id="subject"
-                      name="subject"
-                      value={formState.subject}
+                      id="title"
+                      name="title"
+                      value={formState.title}
                       onChange={handleChange}
                       required
                       className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all"
