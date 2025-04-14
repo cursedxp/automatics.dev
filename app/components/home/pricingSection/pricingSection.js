@@ -60,8 +60,8 @@ export default function PricingSection({ hideHeader = false }) {
               <div className="flex items-center gap-3 mb-2">
                 <h3 className="text-2xl font-bold">{tier.name}</h3>
                 {tier.popular && (
-                  <div className="bg-black text-white px-3 py-1 rounded-full text-sm">
-                    Most Popular
+                  <div className="bg-yellow-400 text-white px-3 py-1 rounded-full text-sm">
+                    👑 Most Popular
                   </div>
                 )}
               </div>
