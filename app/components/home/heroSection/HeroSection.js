@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function HeroSection() {
   return (
-    <section className="relative flex flex-col items-center justify-center 2xl:py-40 xl:py-40 lg:pt-40 md:pt-40 sm:pt-20 my-20">
+    <section className="relative flex flex-col items-center justify-center 2xl:py-40 xl:py-40 lg:pt-40 md:pt-40 sm:pt-20 my-20 bg-[url('/assets/images/bg.svg')] bg-repeat bg-[length:75px_75px]">
       <h1 className="text-center mb-10 md:text-8xl sm:text-7xl text-6xl">
         <motion.span
           initial={{ y: -50, opacity: 0 }}
