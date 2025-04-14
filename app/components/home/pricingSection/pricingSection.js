@@ -54,39 +54,41 @@ export default function PricingSection({ hideHeader = false }) {
               duration: 0.8,
               ease: [0.04, 0.62, 0.23, 0.98],
             }}
-            className={`relative bg-white rounded-2xl p-8 transition-colors duration-300 hover:bg-black hover:text-white group cursor-pointer flex flex-col min-h-[600px] ${
-              tier.popular ? "border-2 border-black" : ""
-            }`}
+            className={`relative bg-white rounded-2xl p-8 transition-all duration-300 hover:shadow-xl cursor-pointer flex flex-col min-h-[600px]`}
           >
             <div className="text-left mb-8">
               <div className="flex items-center gap-3 mb-2">
                 <h3 className="text-2xl font-bold">{tier.name}</h3>
                 {tier.popular && (
-                  <div className="bg-black text-white px-3 py-1 rounded-full text-sm group-hover:bg-white group-hover:text-black transition-colors duration-300">
+                  <div className="bg-black text-white px-3 py-1 rounded-full text-sm">
                     Most Popular
                   </div>
                 )}
               </div>
-              <p className="text-sm text-gray-500 mb-4 group-hover:text-gray-400">
+              <p className="text-sm text-gray-500 mb-4">
                 {tier.sectionDescription}
               </p>
               <div className="text-4xl font-bold mb-4">{tier.price}</div>
-              <p className="text-gray-600 group-hover:text-gray-300">
-                {tier.description}
-              </p>
+              <p className="text-gray-600">{tier.description}</p>
             </div>
             <ul className="space-y-4 mb-8 flex-grow">
               {tier.features.map((feature) => (
                 <li key={feature} className="flex items-center gap-2">
-                  <HiCheck className="w-5 h-5 text-green-500 group-hover:text-green-400" />
+                  <span className="w-2 h-2 rounded-full bg-black"></span>
                   <span>{feature}</span>
                 </li>
               ))}
+              {tier.name === "Sprint" && (
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-black"></span>
+                  <span>All in testing</span>
+                </li>
+              )}
             </ul>
             <div className="mt-auto">
               <Link
                 href="/contact-us"
-                className="block w-full text-center py-3 rounded-full font-semibold bg-black text-white group-hover:bg-white group-hover:text-black transition-all"
+                className="block w-full text-center py-3 rounded-full font-semibold bg-black text-white hover:bg-gray-800 transition-all"
               >
                 {tier.cta}
               </Link>
