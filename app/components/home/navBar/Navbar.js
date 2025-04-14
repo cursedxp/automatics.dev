@@ -30,7 +30,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="w-full ">
+    <header className="w-full sticky top-0 z-50 bg-gray-100/80 backdrop-blur-sm border-b border-gray-100">
       <nav
         className="max-w-screen-xl mx-auto flex justify-between items-center p-3"
         aria-label="Main navigation"
