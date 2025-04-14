@@ -45,7 +45,7 @@ export default function FaqPage() {
         >
           <Link
             href={faqData.cta.href}
-            className="bg-black text-white px-6 py-3 rounded-full inline-flex items-center gap-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer"
+            className="bg-blue-600 text-white px-6 py-3 rounded-full inline-flex items-center gap-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer hover:bg-blue-700 transition-colors duration-300"
           >
             <HiPhone className="w-4 h-4" />
             {faqData.cta.text}

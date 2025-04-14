@@ -251,7 +251,7 @@ export default function AboutUs() {
             href="/contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-black text-white px-6 py-3 rounded-full text-base sm:text-lg w-fit font-semibold hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2"
+            className="bg-blue-600 text-white px-6 py-3 rounded-full text-base sm:text-lg w-fit font-semibold hover:bg-blue-700 transition-colors duration-300 flex items-center gap-2"
           >
             <HiPhone className="w-4 h-4" />
             Book a Call
