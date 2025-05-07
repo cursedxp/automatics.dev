@@ -7,8 +7,8 @@ export default function WhyUsSection() {
           The Thinking Partner Behind Every Great Solution
         </h2>
         <p className="text-gray-500 text-xl mb-4">
-          At ThoughtLink, we don’t just build software—we solve real business
-          problems. By combining thoughtful strategy with custom-built
+          At Automatics, we don&apos;t just build software—we solve real
+          business problems. By combining thoughtful strategy with custom-built
           solutions, we help you move faster, work smarter, and grow with
           confidence.
         </p>

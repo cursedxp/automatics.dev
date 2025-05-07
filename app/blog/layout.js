@@ -2,13 +2,13 @@ import { Metadata } from "next";
 
 export const metadata = {
   title: {
-    default: "Blog | ThoughtLink",
-    template: "%s | ThoughtLink Blog",
+    default: "Blog | Automatics",
+    template: "%s | Automatics Blog",
   },
   description:
     "Stay informed with our latest insights, industry trends, and expert perspectives on technology, digital transformation, and business innovation.",
   keywords: [
-    "ThoughtLink",
+    "Automatics",
     "blog",
     "digital transformation",
     "technology insights",
@@ -16,7 +16,7 @@ export const metadata = {
     "business innovation",
   ],
   openGraph: {
-    title: "Blog | ThoughtLink",
+    title: "Blog | Automatics",
     description:
       "Stay informed with our latest insights, industry trends, and expert perspectives on technology, digital transformation, and business innovation.",
     type: "website",

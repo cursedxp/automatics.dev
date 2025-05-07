@@ -111,10 +111,10 @@ export default function ContactUs() {
                 <div>
                   <h3 className="text-xl font-semibold mb-1">Email Us</h3>
                   <a
-                    href="mailto:hi@thoughtlink.io"
+                    href="mailto:hi@automatics.io"
                     className="text-gray-500 hover:text-black transition-colors"
                   >
-                    hi@thoughtlink.io
+                    hi@automatics.io
                   </a>
                 </div>
               </div>

@@ -30,9 +30,9 @@ export default function HeroSection() {
         transition={{ duration: 1, delay: 0.6 }}
         className="text-center text-gray-500 sm:px-30 px-10 text-xl mb-10"
       >
-        At ThoughtLink, we transform your business challenges into custom
-        digital solutions. From automation to tailored interfaces, we connect
-        your ideas with the right technology—efficiently and thoughtfully.
+        At Automatics, we transform your business challenges into custom digital
+        solutions. From automation to tailored interfaces, we connect your ideas
+        with the right technology—efficiently and thoughtfully.
       </motion.p>
       <div className="flex justify-center gap-4">
         <motion.button

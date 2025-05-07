@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto ">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-black">ThoughtLink</h3>
+            <h3 className="text-xl font-bold text-black">Automatics</h3>
             <p className="text-black">
               Empowering businesses with innovative solutions and cutting-edge
               technology.
@@ -35,7 +35,7 @@ const Footer = () => {
                   href="/about-us"
                   className="text-black hover:scale-105 transition-all duration-300"
                 >
-                  ThoughtLink
+                  Automatics
                 </Link>
               </li>
               <li>
@@ -103,10 +103,10 @@ const Footer = () => {
               <div className="flex items-center gap-2 text-black">
                 <HiMail className="w-5 h-5" />
                 <a
-                  href="mailto:hi@thoughtlink.io"
+                  href="mailto:hi@automatics.io"
                   className="text-black hover:scale-105 transition-all duration-300"
                 >
-                  hi@thoughtlink.io
+                  hi@automatics.io
                 </a>
               </div>
               <div className="flex items-center gap-2 text-black">
@@ -145,7 +145,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 mt-8 pt-8 text-center text-black">
           <p>
-            &copy; {new Date().getFullYear()} ThoughtLink. All rights reserved.
+            &copy; {new Date().getFullYear()} Automatics. All rights reserved.
           </p>
         </div>
       </div>

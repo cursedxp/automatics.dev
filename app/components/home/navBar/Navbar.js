@@ -37,14 +37,14 @@ export default function Navbar() {
       >
         <div className="flex items-center">
           <Link href="/" className="text-2xl font-bold">
-            <h1>ThoughtLink</h1>
+            <h1>Automatics</h1>
           </Link>
         </div>
         {/* Desktop Navbar */}
         <ul className="gap-12 hidden lg:flex" role="list">
           <li className="hover:scale-105 transition-all duration-300">
             <Link href="/about-us" aria-label="about us">
-              ThoughtLink
+              Automatics
             </Link>
           </li>
           <li className="hover:scale-105 transition-all duration-300">
@@ -111,7 +111,7 @@ export default function Navbar() {
                 aria-label="about-us"
                 className="hover:scale-105 transition-all duration-300"
               >
-                ThoughtLink
+                Automatics
               </Link>
             </li>
             <li>

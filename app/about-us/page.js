@@ -20,7 +20,7 @@ export default function AboutUs() {
             transition={{ duration: 1, delay: 0.2 }}
             className="text-center"
           >
-            ThoughtLink
+            Automatics
           </motion.span>
         </h1>
         <motion.p
@@ -60,7 +60,7 @@ export default function AboutUs() {
               not bloated platforms they need to adapt to.
             </p>
             <p className="text-gray-500 text-base sm:text-lg">
-              At ThoughtLink, we help businesses build smart, focused digital
+              At Automatics, we help businesses build smart, focused digital
               systems instead of forcing them into someone else&apos;s mold. We
               use low-code tools, modular architecture, and fast iteration to
               build exactly what you need, when you need it.
@@ -75,7 +75,7 @@ export default function AboutUs() {
           >
             <Image
               src="/assets/images/built.jpg"
-              alt="Building the future - ThoughtLink's approach to custom digital solutions"
+              alt="Building the future - Automatics's approach to custom digital solutions"
               fill
               className="object-cover rounded-2xl"
               priority
@@ -102,7 +102,7 @@ export default function AboutUs() {
           >
             <Image
               src="/assets/images/digital.jpg"
-              alt="Purpose-driven digital systems - ThoughtLink's custom solutions"
+              alt="Purpose-driven digital systems - Automatics's custom solutions"
               fill
               className="object-cover rounded-2xl"
             />
@@ -123,7 +123,7 @@ export default function AboutUs() {
               same tools?
             </p>
             <p className="text-gray-500 text-base sm:text-lg">
-              At ThoughtLink, we believe internal systems deserve the same level
+              At Automatics, we believe internal systems deserve the same level
               of care and design as customer-facing products. We build internal
               tools that are tailored to your unique workflows, company culture,
               and operational logic.
@@ -170,7 +170,7 @@ export default function AboutUs() {
           >
             <Image
               src="/assets/images/partnership.jpg"
-              alt="ThoughtLink's partnership approach - Building lasting relationships"
+              alt="Automatics's partnership approach - Building lasting relationships"
               fill
               className="object-cover rounded-2xl grayscale"
             />
@@ -192,7 +192,7 @@ export default function AboutUs() {
             id="team-heading"
             className="text-3xl xs:text-5xl sm:text-6xl md:text-5xl lg:text-6xl mb-4 sm:mb-6"
           >
-            Meet the Minds Behind ThoughtLink
+            Meet the Minds Behind Automatics
           </h2>
           <p className="text-gray-500 text-base sm:text-lg max-w-2xl mx-auto px-4">
             Our team brings together diverse expertise and perspectives to
@@ -212,7 +212,7 @@ export default function AboutUs() {
               <figure className="relative w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-4 sm:mb-6">
                 <Image
                   src={member.image}
-                  alt={`${member.name} - ${member.role} at ThoughtLink`}
+                  alt={`${member.name} - ${member.role} at Automatics`}
                   fill
                   className="object-cover rounded-full"
                 />
