@@ -1,11 +1,21 @@
 "use client";
 import { motion } from "framer-motion";
 import { HiPhone } from "react-icons/hi2";
-import Image from "next/image";
-import Link from "next/link";
+import Particles from "@/app/components/common/Particles";
+
 export default function HeroSection() {
   return (
-    <section className="relative flex flex-col items-center justify-center 2xl:py-40 xl:py-40 lg:pt-40 md:pt-40 sm:pt-20 my-20 bg-[url('/assets/images/bg.svg')] bg-repeat bg-[length:75px_75px]">
+    <section className="relative flex flex-col items-center justify-center 2xl:py-40 xl:py-40 lg:pt-40 md:pt-40 sm:pt-20 mb-20 overflow-hidden w-screen">
+      <div className="absolute inset-0 -z-10 overflow-hidden blur-xs">
+        <Particles
+          id="hero-particles"
+          className="z-0"
+          color="#000000"
+          particleCount={70}
+          speed={1}
+          size={{ min: 1, max: 3 }}
+        />
+      </div>
       <h1 className="text-center mb-10 md:text-8xl sm:text-7xl text-6xl">
         <motion.span
           initial={{ y: -50, opacity: 0 }}
