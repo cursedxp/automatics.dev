@@ -3,6 +3,7 @@ import Link from "next/link";
 import { HiOutlineMenu, HiPhone } from "react-icons/hi";
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import Logo from "@/app/components/common/Logo";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const mobileMenuRef = useRef(null);
@@ -37,7 +38,7 @@ export default function Navbar() {
       >
         <div className="flex items-center">
           <Link href="/" className="text-2xl font-bold">
-            <h1>Automatics</h1>
+            <Logo className="w-35" />
           </Link>
         </div>
         {/* Desktop Navbar */}

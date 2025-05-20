@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { HiPhone, HiMail } from "react-icons/hi";
 import { FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
-
+import Logo from "@/app/components/common/Logo";
 const Footer = () => {
   const scrollToSection = (e, sectionId) => {
     e.preventDefault();
@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto ">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-black">Automatics</h3>
+            <Logo className="w-35" />
             <p className="text-black">
               Empowering businesses with innovative solutions and cutting-edge
               technology.
