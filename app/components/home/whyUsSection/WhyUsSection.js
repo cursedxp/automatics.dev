@@ -1,12 +1,23 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   HiOutlineCog6Tooth,
   HiOutlineStar,
   HiOutlineChartBar,
 } from "react-icons/hi2";
+
 export default function WhyUsSection() {
   return (
-    <section className="flex flex-col w-full gap-4 xl:px-10 lg:px-10 md:px-10 sm:px-10 py-20 bg-white rounded-2xl shadow-2xl xs:px-8">
+    <motion.section
+      className="flex flex-col w-full gap-4 xl:px-10 lg:px-10 md:px-10 sm:px-10 py-20 bg-white rounded-2xl shadow-2xl xs:px-8"
+      animate={{ y: [-3, 3, -3] }}
+      transition={{
+        duration: 3,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    >
       <div className="flex w-full gap-6 mb-10 xs:flex-col md:flex-row">
         <div className="flex flex-col sm:w-1/2 w-full">
           <h2 className="mb-8 md:text-5xl lg:text-6xl sm:text-4xl text-5xl lg:leading-18 sm:leading-12 xs:text-4xl xs:leading-10">
@@ -64,6 +75,6 @@ export default function WhyUsSection() {
           </p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
