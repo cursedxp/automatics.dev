@@ -41,8 +41,8 @@ export default function HeroSection() {
         className="text-center text-gray-500 sm:px-30 px-10 text-xl mb-10 max-w-6xl"
       >
         We help SMEs reclaim time by automating processes and building custom
-        digital solutions. No tech team? Overwhelmed by manual work? We've got
-        you covered with efficient technology that lets you focus on growing
+        digital solutions. No tech team? Overwhelmed by manual work? We&apos;ve
+        got you covered with efficient technology that lets you focus on growing
         your business.
       </motion.p>
       <div className="flex justify-center gap-4">
