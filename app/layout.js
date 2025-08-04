@@ -8,7 +8,7 @@ export const metadata = {
     template: "%s | Automatics",
   },
   description:
-    "Learn about Automatics's mission to build custom digital solutions. We're more than just a tech company - we're your partner in building the future of digital solutions.",
+    "Learn about Automatics&apos;s mission to build custom digital solutions. We&apos;re more than just a tech company - we&apos;re your partner in building the future of digital solutions.",
   keywords: [
     "Automatics",
     "digital solutions",
@@ -19,7 +19,7 @@ export const metadata = {
   openGraph: {
     title: "Automatics - Your Digital Solutions Partner",
     description:
-      "Learn about Automatics's mission to build custom digital solutions. We're more than just a tech company - we're your partner in building the future of digital solutions.",
+      "Learn about Automatics&apos;s mission to build custom digital solutions. We&apos;re more than just a tech company - we&apos;re your partner in building the future of digital solutions.",
     type: "website",
   },
 };
