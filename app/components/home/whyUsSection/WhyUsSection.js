@@ -12,7 +12,7 @@ export default function WhyUsSection() {
           <h2 className="mb-8 md:text-5xl lg:text-6xl sm:text-4xl text-5xl">
             The Thinking Partner Behind Every Great Solution
           </h2>
-          <p className="text-gray-500 text-xl mb-4">
+          <p className="text-gray-500 text-base mb-4">
             At automatics, we&apos;re more than just software engineers
             we&apos;re your dedicated technology partners. Founded by a solution
             architect and a product designer, we only take on projects in
@@ -29,10 +29,10 @@ export default function WhyUsSection() {
           />
         </div>
       </div>
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 mt-10 border-y border-dashed border-gray-300 py-10 gap-y-8 gap-x-6">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 mt-10 py-10 px-6 gap-y-8 gap-x-6 bg-white rounded-2xl items-center">
         {/* Column 1 */}
         <div className="flex flex-col items-start">
-          <div className="flex items-center mb-2">
+          <div className="flex items-center mb-2 ">
             <HiOutlineCog6Tooth className="w-6 h-6 text-gray-900 mr-4" />
             <h3 className="text-lg text-gray-800">No Management Overhead</h3>
           </div>

@@ -36,9 +36,11 @@ export default function Services() {
         Tailored Solutions for Your Business
       </h2>
       <p className="text-center text-gray-500 text-xl mb-12 sm:px-10">
-        We craft custom digital solutions that adapt to your business needs.
-        From seamless interfaces to smart automation, our services bring your
-        ideas to life with clarity and impact.
+        One size doesn&apos;t fit all in business. That&apos;s why we craft
+        solutions tailored to your needs whether it&apos;s automating workflows,
+        designing intuitive interfaces, or building powerful CMS systems. We
+        leverage the latest technology to deliver results quickly and
+        effectively.
       </p>
       <motion.div
         variants={container}
