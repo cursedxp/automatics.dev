@@ -5,7 +5,7 @@ import Particles from "@/app/components/common/Particles";
 
 export default function HeroSection() {
   return (
-    <section className="relative flex flex-col items-center justify-center 2xl:py-40 xl:py-40 lg:pt-40 md:pt-40 sm:pt-20 mb-20 overflow-hidden w-screen">
+    <section className="relative flex flex-col items-center justify-center 2xl:py-40 xl:py-40 lg:pt-40 md:pt-40 sm:pt-20 mb-10 overflow-hidden w-screen">
       <div className="absolute inset-0 -z-10 overflow-hidden blur-xs">
         <Particles
           id="hero-particles"
@@ -29,7 +29,7 @@ export default function HeroSection() {
           initial={{ filter: "blur(10px)", opacity: 0 }}
           animate={{ filter: "blur(0px)", opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="block mt-6 md:text-8xl text-6xl"
+          className="block mt-4 md:text-8xl text-6xl"
         >
           Save both.
         </motion.span>
@@ -41,16 +41,15 @@ export default function HeroSection() {
         className="text-center text-gray-500 sm:px-30 px-10 text-xl mb-10 max-w-6xl"
       >
         We help SMEs reclaim time by automating processes and building custom
-        digital solutions. No tech team? Overwhelmed by manual work? We&apos;ve
-        got you covered with efficient technology that lets you focus on growing
-        your business.
+        digital solutions. No tech team? We&apos;ve got you covered with
+        technology that lets you focus on growing your business.
       </motion.p>
       <div className="flex justify-center gap-4">
         <motion.button
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="bg-blue-600 text-white px-6 py-3 rounded-full flex items-center gap-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer hover:bg-blue-700 transition-colors duration-300"
+          className="bg-black text-white px-6 py-3 rounded-full flex items-center gap-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer hover:bg-gray-800 transition-colors duration-300"
         >
           <HiPhone className="w-4 h-4" />
           Book A Call

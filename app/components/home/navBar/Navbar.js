@@ -71,7 +71,7 @@ export default function Navbar() {
         </ul>
         <Link
           href="#"
-          className="hidden lg:flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-full hover:scale-105 hover:shadow-lg hover:cursor-pointer hover:bg-blue-700 transition-colors duration-300"
+          className="hidden lg:flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full hover:scale-105 hover:shadow-lg hover:cursor-pointer hover:bg-gray-800 transition-colors duration-300"
           role="button"
           aria-label="Book a call"
         >
@@ -156,7 +156,7 @@ export default function Navbar() {
               <Link
                 href="/book-a-call"
                 aria-label="Book a call"
-                className="bg-white text-black rounded-full py-2 px-6 flex items-center gap-2"
+                className="bg-black text-white rounded-full py-2 px-6 flex items-center gap-2"
               >
                 <HiPhone className="w-4 h-4" />
                 Book A Call
