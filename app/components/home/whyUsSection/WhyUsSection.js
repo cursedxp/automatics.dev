@@ -1,8 +1,8 @@
 import Image from "next/image";
 import {
-  HiOutlineCog6Tooth, // No Management Overhead
-  HiOutlineStar, // Senior Expertise
-  HiOutlineChartBar, // Results-Driven Approach
+  HiOutlineCog6Tooth,
+  HiOutlineStar,
+  HiOutlineChartBar,
 } from "react-icons/hi2";
 export default function WhyUsSection() {
   return (
@@ -29,14 +29,6 @@ export default function WhyUsSection() {
           />
         </div>
       </div>
-      {/* 
-        Responsive grid: 
-        - 1 column on mobile (default)
-        - 2 columns on small screens (sm: 640px+)
-        - 3 columns on medium screens (md: 768px+)
-        - 2 columns on large screens (lg: 1024px+) for better readability
-        - 3 columns on extra large screens (xl: 1280px+)
-      */}
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 mt-10 border-y border-dashed border-gray-300 py-10 gap-y-8 gap-x-6">
         {/* Column 1 */}
         <div className="flex flex-col items-start">

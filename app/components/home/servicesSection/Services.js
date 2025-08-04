@@ -1,9 +1,9 @@
 "use client";
 import {
-  HiCommandLine,
-  HiSwatch,
-  HiDocumentText,
-  HiSquares2X2,
+  HiOutlineCommandLine,
+  HiOutlineSwatch,
+  HiOutlineDocumentText,
+  HiOutlineSquares2X2,
 } from "react-icons/hi2";
 import { motion } from "framer-motion";
 
@@ -57,14 +57,16 @@ export default function Services() {
           className="rounded-2xl p-8 bg-white relative transition-colors duration-300 hover:bg-black hover:text-white group cursor-pointer flex flex-col min-h-[400px]"
         >
           <div className="flex items-center justify-center rounded-full bg-black transition-colors duration-300 w-14 h-14 group-hover:bg-white">
-            <HiCommandLine className="w-6 h-6 text-white transition-colors duration-300 group-hover:text-black" />
+            <HiOutlineCommandLine className="w-6 h-6 text-white transition-colors duration-300 group-hover:text-black" />
           </div>
           <div className="mt-auto">
-            <h2 className="text-2xl font-bold mb-3">Automation</h2>
+            <h2 className="text-2xl font-bold mb-3">
+              Smart Process Automation
+            </h2>
             <p className="text-base">
-              We develop custom automation solutions that streamline workflows
-              and boost efficiency. Our systems eliminate repetitive tasks,
-              enabling your team to focus on what truly matters.
+              Eliminating repetitive tasks and manual processes that slow you
+              down. We&apos;ll integrate smart automation to boost your
+              team&apos;s efficiency.
             </p>
           </div>
         </motion.article>
@@ -74,14 +76,14 @@ export default function Services() {
           className="rounded-2xl p-8 bg-white relative transition-colors duration-300 hover:bg-black hover:text-white group cursor-pointer flex flex-col min-h-[400px]"
         >
           <div className="flex items-center justify-center rounded-full bg-black transition-colors duration-300 w-14 h-14 group-hover:bg-white">
-            <HiSwatch className="w-6 h-6 text-white transition-colors duration-300 group-hover:text-black" />
+            <HiOutlineSwatch className="w-6 h-6 text-white transition-colors duration-300 group-hover:text-black" />
           </div>
           <div className="mt-auto">
             <h2 className="text-2xl font-bold mb-3">UI/UX Design</h2>
             <p className="text-base">
-              We create intuitive and responsive user interfaces that enhance
-              user experience. Our designs transform complex workflows into
-              simple, elegant solutions.
+              Creating user-friendly, responsive interfaces. Our product design
+              expertise ensures that the software works well and delights your
+              team and customers.
             </p>
           </div>
         </motion.article>
@@ -91,14 +93,14 @@ export default function Services() {
           className="rounded-2xl p-8 bg-white relative transition-colors duration-300 hover:bg-black hover:text-white group cursor-pointer flex flex-col min-h-[400px]"
         >
           <div className="flex items-center justify-center rounded-full bg-black transition-colors duration-300 w-14 h-14 group-hover:bg-white">
-            <HiDocumentText className="w-6 h-6 text-white transition-colors duration-300 group-hover:text-black" />
+            <HiOutlineDocumentText className="w-6 h-6 text-white transition-colors duration-300 group-hover:text-black" />
           </div>
           <div className="mt-auto">
-            <h2 className="text-2xl font-bold mb-3">CMS Solutions</h2>
+            <h2 className="text-2xl font-bold mb-3">CMS Systems</h2>
             <p className="text-base">
-              We build flexible content management systems tailored to your
-              workflow. Our solutions empower your team to manage content
-              efficiently and effectively.
+              Implementing content management systems tailored to your workflow.
+              Manage your data and content with ease and without technical
+              headaches.
             </p>
           </div>
         </motion.article>
@@ -108,14 +110,14 @@ export default function Services() {
           className="rounded-2xl p-8 bg-white relative transition-colors duration-300 hover:bg-black hover:text-white group cursor-pointer flex flex-col min-h-[400px]"
         >
           <div className="flex items-center justify-center rounded-full bg-black transition-colors duration-300 w-14 h-14 group-hover:bg-white">
-            <HiSquares2X2 className="w-6 h-6 text-white transition-colors duration-300 group-hover:text-black" />
+            <HiOutlineSquares2X2 className="w-6 h-6 text-white transition-colors duration-300 group-hover:text-black" />
           </div>
           <div className="mt-auto">
             <h2 className="text-2xl font-bold mb-3">Business Apps</h2>
             <p className="text-base">
-              We transform your vision into tailored software solutions that fit
-              your needs. Our collaborative approach ensures systems that align
-              perfectly with your goals.
+              Turning your ideas into robust applications. From internal tools
+              to customer-facing apps, we build software that fits your unique
+              business processes and workflows.
             </p>
           </div>
         </motion.article>
