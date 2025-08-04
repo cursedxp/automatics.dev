@@ -16,22 +16,22 @@ export default function HeroSection() {
           size={{ min: 1, max: 3 }}
         />
       </div>
-      <h1 className="text-center mb-10 md:text-8xl sm:text-7xl text-6xl">
+      <h1 className="text-center mb-10 md:text-8xl sm:text-7xl text-6xl font-bold">
         <motion.span
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="text-center"
+          className="text-center "
         >
-          Connecting Ideas
+          Time is money.
         </motion.span>
         <motion.span
           initial={{ filter: "blur(10px)", opacity: 0 }}
           animate={{ filter: "blur(0px)", opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="font-playfair-display block mt-12 md:text-8xl text-6xl"
+          className="block mt-6 md:text-8xl text-6xl"
         >
-          Real-World Solutions
+          Save both.
         </motion.span>
       </h1>
       <motion.p
@@ -40,9 +40,10 @@ export default function HeroSection() {
         transition={{ duration: 1, delay: 0.6 }}
         className="text-center text-gray-500 sm:px-30 px-10 text-xl mb-10 max-w-6xl"
       >
-        At Automatics, we transform your business challenges into custom digital
-        solutions. From automation to tailored interfaces, we connect your ideas
-        with the right technology—efficiently and thoughtfully.
+        We help SMEs reclaim time by automating processes and building custom
+        digital solutions. No tech team? Overwhelmed by manual work? We've got
+        you covered with efficient technology that lets you focus on growing
+        your business.
       </motion.p>
       <div className="flex justify-center gap-4">
         <motion.button
@@ -106,7 +107,7 @@ export default function HeroSection() {
           </motion.div>
         </div> */}
       </div>
-      <div className="absolute xs:top-[120px] lg:top-[260px] md:top-[260px] sm:top-[160px] top-[65px] right-1/2 -translate-x-1/2 w-20 h-20 transform">
+      {/* <div className="absolute xs:top-[120px] lg:top-[260px] md:top-[260px] sm:top-[160px] top-[65px] right-1/2 -translate-x-1/2 w-20 h-20 transform">
         <motion.div
           className="h-10 w-fit text-black flex justify-center items-center"
           initial={{
@@ -132,7 +133,7 @@ export default function HeroSection() {
             <div className="w-[80px] h-0.5 bg-black"></div>
           </div>
         </motion.div>
-      </div>
+      </div> */}
     </section>
   );
 }
