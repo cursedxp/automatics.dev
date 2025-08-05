@@ -10,7 +10,7 @@ export default function PricingSection({ hideHeader = false }) {
   return (
     <section
       id="pricing"
-      className="flex flex-col items-center justify-center w-full"
+      className="flex flex-col items-center justify-center w-full my-20"
     >
       {!hideHeader && (
         <motion.div

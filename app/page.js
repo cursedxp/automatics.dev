@@ -7,6 +7,7 @@ import QuoteSection from "./components/home/quoteSection/quoteSection";
 import PricingSection from "./components/home/pricingSection/pricingSection";
 import BlogSection from "./components/home/blogSection/BlogSection";
 import FaqSection from "./components/home/faqSection/faqSection";
+import ProcessSection from "./components/home/processSection/ProcessSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <Technologies />
       <QuoteSection />
+      <ProcessSection />
       <PricingSection />
       <BlogSection />
       <FaqSection />
