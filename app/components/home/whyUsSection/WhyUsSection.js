@@ -79,10 +79,9 @@ export default function WhyUsSection() {
                 </h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We focus on delivering measurable results that drive your
-                business forward. Every feature we build is designed with clear
-                KPIs and success metrics, ensuring you see tangible improvements
-                in your operations and bottom line.
+                We don&apos;t sell &quot;seats&quot; or bill hours – we deliver
+                outcomes. Every project is measured by the value it creates for
+                your business, not the time we spend building it.
               </p>
             </div>
           </div>
