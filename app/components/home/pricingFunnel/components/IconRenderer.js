@@ -1,0 +1,46 @@
+import {
+  HiOutlineUser,
+  HiOutlineUsers,
+  HiOutlineBuildingOffice2,
+  HiOutlineBolt,
+  HiOutlineCalendar,
+  HiOutlineCalendarDays,
+  HiOutlineArrowPath,
+  HiOutlineCurrencyDollar,
+  HiOutlineBanknotes,
+  HiOutlineCreditCard,
+  HiOutlineBuildingLibrary,
+  HiOutlineSparkles,
+  HiOutlineRocketLaunch,
+  HiOutlineBuildingOffice,
+  HiOutlineDocument,
+  HiOutlineChatBubbleLeft,
+  HiOutlineStar,
+  HiOutlineHandThumbUp,
+  HiMiniViewfinderCircle,
+} from "react-icons/hi2";
+
+export const renderIcon = (iconName, className = "w-8 h-8") => {
+  const iconMap = {
+    HiOutlineUser: <HiOutlineUser className={className} />,
+    HiOutlineUsers: <HiOutlineUsers className={className} />,
+    HiOutlineBuildingOffice2: <HiOutlineBuildingOffice2 className={className} />,
+    HiOutlineBolt: <HiOutlineBolt className={className} />,
+    HiOutlineCalendar: <HiOutlineCalendar className={className} />,
+    HiOutlineCalendarDays: <HiOutlineCalendarDays className={className} />,
+    HiOutlineArrowPath: <HiOutlineArrowPath className={className} />,
+    HiOutlineCurrencyDollar: <HiOutlineCurrencyDollar className={className} />,
+    HiOutlineBanknotes: <HiOutlineBanknotes className={className} />,
+    HiOutlineCreditCard: <HiOutlineCreditCard className={className} />,
+    HiOutlineBuildingLibrary: <HiOutlineBuildingLibrary className={className} />,
+    HiMiniViewfinderCircle: <HiMiniViewfinderCircle className={className} />,
+    HiOutlineSparkles: <HiOutlineSparkles className={className} />,
+    HiOutlineRocketLaunch: <HiOutlineRocketLaunch className={className} />,
+    HiOutlineBuildingOffice: <HiOutlineBuildingOffice className={className} />,
+    HiOutlineDocument: <HiOutlineDocument className={className} />,
+    HiOutlineChatBubbleLeft: <HiOutlineChatBubbleLeft className={className} />,
+    HiOutlineStar: <HiOutlineStar className={className} />,
+    HiOutlineHandThumbUp: <HiOutlineHandThumbUp className={className} />,
+  };
+  return iconMap[iconName] || null;
+};

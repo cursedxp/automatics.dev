@@ -4,7 +4,8 @@ import Services from "./components/home/servicesSection/Services";
 import WhyUsSection from "./components/home/whyUsSection/WhyUsSection";
 import Technologies from "./components/home/technologiesSection/Technologies";
 import QuoteSection from "./components/home/quoteSection/quoteSection";
-import PricingSection from "./components/home/pricingSection/pricingSection";
+import PricingFunnel from "./components/home/pricingFunnel/PricingFunnel";
+import WhyPricingModelWorksSection from "./components/home/whyPricingModelWorksSection/WhyPricingModelWorksSection";
 import BlogSection from "./components/home/blogSection/BlogSection";
 import FaqSection from "./components/home/faqSection/faqSection";
 import ProcessSection from "./components/home/processSection/ProcessSection";
@@ -18,7 +19,8 @@ export default function Home() {
       <Technologies />
       <QuoteSection />
       <ProcessSection />
-      <PricingSection />
+      <PricingFunnel />
+      <WhyPricingModelWorksSection />
       <BlogSection />
       <FaqSection />
     </div>
