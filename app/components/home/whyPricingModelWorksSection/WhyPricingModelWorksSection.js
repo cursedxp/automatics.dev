@@ -23,13 +23,13 @@ export default function WhyPricingModelWorksSection() {
 
         {/* Three Column Features */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="text-center">
-            <div className="flex justify-center mb-4">
-              <HiOutlineCurrencyDollar className="w-12 h-12 text-gray-900" />
+          <div>
+            <div className="flex items-center gap-3 mb-4">
+              <HiOutlineCurrencyDollar className="w-8 h-8 text-gray-900" />
+              <h3 className="text-2xl font-bold text-gray-900">
+                No Hourly Bills
+              </h3>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              No Hourly Bills
-            </h3>
             <p className="text-gray-600 text-base leading-relaxed">
               Forget about tracking hours or dealing with surprise invoices. You
               pay a predictable flat monthly rate based on how many tasks we can
@@ -38,13 +38,13 @@ export default function WhyPricingModelWorksSection() {
             </p>
           </div>
 
-          <div className="text-center">
-            <div className="flex justify-center mb-4">
-              <HiOutlineDocument className="w-12 h-12 text-gray-900" />
+          <div>
+            <div className="flex items-center gap-3 mb-4">
+              <HiOutlineDocument className="w-8 h-8 text-gray-900" />
+              <h3 className="text-2xl font-bold text-gray-900">
+                Unlimited Requests
+              </h3>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Unlimited Requests
-            </h3>
             <p className="text-gray-600 text-base leading-relaxed">
               There's no limit to the number of ideas, improvements, or bug fixes
               you can propose. Simply add them to your backlog and we'll plan and
@@ -52,13 +52,13 @@ export default function WhyPricingModelWorksSection() {
             </p>
           </div>
 
-          <div className="text-center">
-            <div className="flex justify-center mb-4">
-              <HiOutlineArrowPath className="w-12 h-12 text-gray-900" />
+          <div>
+            <div className="flex items-center gap-3 mb-4">
+              <HiOutlineArrowPath className="w-8 h-8 text-gray-900" />
+              <h3 className="text-2xl font-bold text-gray-900">
+                Adjust as Needed
+              </h3>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Adjust as Needed
-            </h3>
             <p className="text-gray-600 text-base leading-relaxed">
               Our subscription model is month-to-month with complete flexibility.
               Need to speed up development? Increase parallel tasks. Need to slow
