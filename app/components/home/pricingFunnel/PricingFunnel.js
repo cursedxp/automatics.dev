@@ -1,7 +1,10 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 import { PLANS_DATA, FUNNEL_QUESTIONS } from "./constants";
-import { PricingFunnelProvider, usePricingFunnel } from "./context/PricingFunnelContext";
+import {
+  PricingFunnelProvider,
+  usePricingFunnel,
+} from "./context/PricingFunnelContext";
 import { useStepNavigation } from "./hooks/useStepNavigation";
 import PricingTableContent from "./components/PricingTableContent";
 import FunnelStepContent from "./components/FunnelStepContent";
@@ -14,11 +17,13 @@ function Header() {
       initial={{ y: 20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="text-center mb-8"
+      className="text-center my-20"
     >
-      <h2 className="text-6xl mb-4">Choose Your Path</h2>
-      <p className="text-gray-500 text-xl sm:px-10">
-        Select the perfect plan that aligns with your project needs and timeline
+      <h2 className="text-6xl mb-4">Flexible Pricing</h2>
+      <p className="text-gray-500 text-xl sm:px-10 max-w-4xl mx-auto">
+        Our pricing is transparent, predictable, and scales with your needs.
+        Subscribe to the number of parallel tasks, and submit unlimited requests
+        to your project queue.
       </p>
     </motion.div>
   );
@@ -45,7 +50,10 @@ function FunnelCard() {
             className="overflow-hidden"
           >
             <div className="p-8">
-              <PricingTableContent plans={PLANS_DATA} onLearnMore={handleLearnMore} />
+              <PricingTableContent
+                plans={PLANS_DATA}
+                onLearnMore={handleLearnMore}
+              />
             </div>
           </motion.div>
         ) : state.showResult ? (
@@ -67,9 +75,13 @@ function FunnelCard() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className={`grid grid-cols-1 ${state.showSidebar ? 'lg:grid-cols-3' : 'lg:grid-cols-1'}`}
+            className={`grid grid-cols-1 ${
+              state.showSidebar ? "lg:grid-cols-3" : "lg:grid-cols-1"
+            }`}
           >
-            <div className={state.showSidebar ? "lg:col-span-2" : "lg:col-span-1"}>
+            <div
+              className={state.showSidebar ? "lg:col-span-2" : "lg:col-span-1"}
+            >
               <FunnelStepContent
                 question={FUNNEL_QUESTIONS[state.currentStep]}
                 stepNumber={state.currentStep + 1}
@@ -90,7 +102,7 @@ function PricingFunnelContent() {
       id="pricing"
       className="flex flex-col items-center justify-center w-full my-20"
     >
-      <div className="max-w-7xl mx-auto w-full">
+      <div className="max-w-7xl mx-auto w-full px-8">
         <Header />
         <FunnelCard />
       </div>
