@@ -15,12 +15,21 @@ export default function TeamSizeStep({
 
   return (
     <BaseStep question={question} stepNumber={stepNumber} totalSteps={totalSteps}>
-      <SliderInput
-        question={question}
-        sliderValue={sliderValue}
-        setSliderValue={setSliderValue}
-        onAnswer={onAnswer}
-      />
+      <div>
+        <SliderInput
+          question={question}
+          sliderValue={sliderValue}
+          setSliderValue={setSliderValue}
+        />
+        <div className="text-center mt-8">
+          <button
+            onClick={() => onAnswer(sliderValue)}
+            className="px-8 py-3 bg-black text-white rounded-full font-semibold hover:bg-gray-800 transition-all"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
     </BaseStep>
   );
 }
