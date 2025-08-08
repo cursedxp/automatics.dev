@@ -33,7 +33,7 @@ export default function WhyPricingModelWorksSection() {
             <p className="text-gray-600 text-base leading-relaxed">
               Forget about tracking hours or dealing with surprise invoices. You
               pay a predictable flat monthly rate based on how many tasks we can
-              work on simultaneously – whether that's 1 task at a time, 2 tasks
+              work on simultaneously – whether that&apos;s 1 task at a time, 2 tasks
               at a time, or more.
             </p>
           </div>
@@ -46,8 +46,8 @@ export default function WhyPricingModelWorksSection() {
               </h3>
             </div>
             <p className="text-gray-600 text-base leading-relaxed">
-              There's no limit to the number of ideas, improvements, or bug fixes
-              you can propose. Simply add them to your backlog and we'll plan and
+              There&apos;s no limit to the number of ideas, improvements, or bug fixes
+              you can propose. Simply add them to your backlog and we&apos;ll plan and
               execute them systematically in our ongoing monthly cycles.
             </p>
           </div>
