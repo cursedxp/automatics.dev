@@ -1,42 +1,46 @@
 {
   "title": "Frequently Asked Questions",
-  "description": "We're here to help. Our team of experts is ready to assist you with any questions about our services, or business solutions. We aim to respond within 24 hours on business days.",
+  "description": "We're here to help. Our team of experts is ready to assist you with any questions about our services, pricing model, or business solutions. We aim to respond within 24 hours on business days.",
   "cta": {
     "text": "Book A Call",
-    "href": "/contact"
+    "href": "#pricing"
   },
   "items": [
     {
-      "question": "What services do you offer for web development?",
-      "answer": "We provide comprehensive web development services including custom website development, e-commerce solutions, web applications, and enterprise software. Our services are tailored to meet your specific business needs and goals."
+      "question": "What services does automatics provide?",
+      "answer": "We specialize in four core areas: Smart Process Automation (eliminating repetitive tasks), UI/UX Design (creating user-friendly interfaces), CMS Systems (tailored content management), and Business Apps (custom applications). We also offer premium add-on services like CTO-as-a-Service and UX Strategy Service for executive-level expertise."
+    },
+    {
+      "question": "How does the Plan-Build-Ship process work?",
+      "answer": "We work in monthly iterations: Plan (quick discovery meeting to identify pain points and set OKRs), Build (our team implements solutions while you focus on your business), and Ship (deliver completed improvements, review results, gather feedback). This ensures steady progress without long wait times."
+    },
+    {
+      "question": "Can I change or cancel my subscription anytime?",
+      "answer": "Yes! Our subscription model is completely flexible with no long-term contracts. Need to speed up development? Increase parallel tasks. Need to slow down? Scale back anytime. You're in full control of your subscription level month-to-month."
+    },
+    {
+      "question": "What does 'unlimited requests' mean?",
+      "answer": "There's no limit to the number of ideas, improvements, or bug fixes you can propose. Simply add them to your backlog and we'll plan and execute them systematically in our monthly cycles. The number of parallel tasks depends on your subscription tier."
     },
     {
       "question": "What technologies do you work with?",
-      "answer": "We work with a wide range of modern technologies including React, Next.js, Node.js, and various databases. Our tech stack is chosen based on your project requirements to ensure optimal performance and scalability."
-    },
-    {
-      "question": "How do you determine pricing for projects?",
-      "answer": "Our pricing is based on several factors including project complexity, required features, timeline, and specific requirements. We offer transparent pricing models and will provide a detailed quote after understanding your needs."
+      "answer": "We work with modern technologies including React, Next.js, Node.js, Python, TypeScript, and various databases. We leverage the latest technology to deliver results quickly and effectively, choosing the best tools for your specific project requirements."
     },
     {
       "question": "Do you provide ongoing support and maintenance?",
-      "answer": "Yes, we offer comprehensive support and maintenance packages to ensure your website or application runs smoothly. This includes regular updates, security patches, performance optimization, and technical support."
+      "answer": "Yes, support is built into our subscription model. The Growth plan includes 2 weeks of maintenance, while Enterprise plans include custom maintenance and 24/7 support. All plans include regular updates, security patches, and performance optimization as part of the monthly cycle."
     },
     {
-      "question": "What makes your development team different from others?",
-      "answer": "Our team combines technical expertise with a deep understanding of business needs. We focus on delivering high-quality, scalable solutions while maintaining excellent communication throughout the development process."
+      "question": "What are your Premium Add-on Services for executive-level expertise?",
+      "answer": "We offer two premium services for companies needing senior leadership without full-time executive hires. CTO-as-a-Service provides on-demand technical leadership including technology roadmapping, vendor management, system architecture, and risk mitigation (fraction of $200K+/year cost). UX Strategy Service delivers expert design leadership with UX vision, research planning, design audits, and team coaching (fraction of $150K+/year cost). Both services give you decades of executive experience on-demand."
     },
     {
-      "question": "How do you handle project communication and updates?",
-      "answer": "We maintain transparent communication through regular meetings, progress reports, and dedicated project management tools. You'll have direct access to your project team and receive regular updates on development progress."
+      "question": "How quickly can I get started?",
+      "answer": "Very quickly! Our Essential plan is perfect for rapid validation (under 4 weeks), while Growth and Enterprise plans can accommodate various timelines from ASAP to long-term planned projects. We start with a quick discovery meeting and can begin work immediately after."
     },
     {
-      "question": "What is your approach to website design and user experience?",
-      "answer": "We prioritize user-centered design principles, creating intuitive and engaging interfaces that drive results. Our design process includes user research, wireframing, prototyping, and iterative testing to ensure optimal user experience."
-    },
-    {
-      "question": "Do you offer content management solutions?",
-      "answer": "Yes, we provide custom content management solutions that allow you to easily update and manage your website content. We can integrate with popular CMS platforms or develop custom solutions based on your needs."
+      "question": "What if I need help determining the right plan?",
+      "answer": "Use our interactive pricing funnel on the homepage! Answer a few questions about your team size, project complexity, budget, timeline, and support needs, and we'll recommend the perfect plan for your situation. You can also book a call with our team for personalized guidance."
     }
   ]
 }

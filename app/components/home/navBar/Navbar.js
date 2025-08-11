@@ -54,14 +54,24 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="hover:scale-105 transition-all duration-300">
-            <Link href="/pricing" aria-label="pricing">
+            <a
+              href="#pricing"
+              onClick={(e) => scrollToSection(e, 'pricing')}
+              aria-label="pricing"
+              className="cursor-pointer"
+            >
               Pricing
-            </Link>
+            </a>
           </li>
           <li className="hover:scale-105 transition-all duration-300">
-            <Link href="/faq" aria-label="faq">
+            <a
+              href="#faq"
+              onClick={(e) => scrollToSection(e, 'faq')}
+              aria-label="faq"
+              className="cursor-pointer"
+            >
               FAQ
-            </Link>
+            </a>
           </li>
           <li className="hover:scale-105 transition-all duration-300">
             <Link href="/contact-us" aria-label="contact us">
@@ -126,22 +136,24 @@ export default function Navbar() {
             </li>
 
             <li>
-              <Link
-                href="/pricing"
+              <a
+                href="#pricing"
+                onClick={(e) => scrollToSection(e, 'pricing')}
                 aria-label="Pricing"
-                className="hover:scale-105 transition-all duration-300"
+                className="hover:scale-105 transition-all duration-300 cursor-pointer"
               >
                 Pricing
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                href="/faq"
+              <a
+                href="#faq"
+                onClick={(e) => scrollToSection(e, 'faq')}
                 aria-label="FAQ"
-                className="hover:scale-105 transition-all duration-300"
+                className="hover:scale-105 transition-all duration-300 cursor-pointer"
               >
                 FAQ
-              </Link>
+              </a>
             </li>
             <li>
               <Link
