@@ -2,7 +2,7 @@ export default function PlanCard({ plan, index, plans }) {
   return (
     <div
       className={`relative p-8 transition-all duration-300 flex flex-col text-sm min-h-[500px] ${
-        index < plans.length - 1 ? "border-r border-gray-200" : ""
+        index < plans.length - 1 ? "" : ""
       }`}
     >
       <div className="text-left mb-8">
