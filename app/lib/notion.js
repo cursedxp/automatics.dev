@@ -33,7 +33,7 @@ export const createFunnelSubmission = async (answers) => {
       },
       Status: {
         select: {
-          name: 'pending',
+          name: 'Pending',
         },
       },
       CreatedAt: {
@@ -177,7 +177,7 @@ export const updatePageWithBooking = async (pageId, bookingDetails) => {
       properties: {
         Status: {
           select: {
-            name: 'booked',
+            name: 'Booked',
           },
         },
         BookingId: {

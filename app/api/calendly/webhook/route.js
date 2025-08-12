@@ -92,7 +92,7 @@ async function processWebhook(payload, retryCount = 0) {
       if (page) {
         await updatePageWithBooking(page.id, {
           bookingId,
-          status: 'canceled',
+          status: 'Canceled',
           canceledAt: new Date().toISOString(),
         });
       }
@@ -154,7 +154,7 @@ export async function POST(request) {
     const signature = request.headers.get('x-calendly-webhook-signature');
     
     // Verify webhook signature if secret is configured
-    if (process.env.CALENDLY_WEBHOOK_SECRET) {
+    if (process.env.CALENDLY_WEBHOOK_SECRET && signature) {
       const isValid = verifyWebhookSignature(
         rawBody,
         signature,
@@ -168,6 +168,9 @@ export async function POST(request) {
           { status: 401 }
         );
       }
+    } else {
+      // Log that signature verification is skipped
+      console.log('Webhook signature verification skipped (no secret or signature)');
     }
     
     // Parse the webhook payload
