@@ -94,12 +94,12 @@ async function processWebhook(payload, retryCount = 0) {
     let bookingDetails = {};
     
     if (payload.event === 'invitee.created') {
-      // For invitee.created events
+      // For invitee.created events - check both possible structures
       bookingDetails = {
-        bookingId: payload.payload?.uuid || payload.payload?.uri?.split('/').pop(),
+        bookingId: payload.payload?.uuid || payload.payload?.invitee?.uri?.split('/').pop() || 'unknown',
         start: payload.payload?.event?.start_time,
         end: payload.payload?.event?.end_time,
-        inviteeEmail: payload.payload?.email,
+        inviteeEmail: payload.payload?.invitee?.email || payload.payload?.email,
         eventType: payload.payload?.event?.name || payload.payload?.event_type?.name,
       };
     } else if (payload.event === 'invitee.canceled') {

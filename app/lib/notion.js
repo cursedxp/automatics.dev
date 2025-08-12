@@ -172,56 +172,80 @@ export const isBookingProcessed = async (bookingId) => {
 // Update page with booking details
 export const updatePageWithBooking = async (pageId, bookingDetails) => {
   try {
-    const response = await notion.pages.update({
-      page_id: pageId,
-      properties: {
-        Status: {
-          select: {
-            name: 'Booked',
-          },
-        },
-        BookingId: {
-          rich_text: [
-            {
-              text: {
-                content: bookingDetails.bookingId,
-              },
-            },
-          ],
-        },
-        BookingStart: {
-          date: {
-            start: bookingDetails.start,
-          },
-        },
-        BookingEnd: {
-          date: {
-            start: bookingDetails.end,
-          },
-        },
-        InviteeEmail: {
-          email: bookingDetails.inviteeEmail,
-        },
-        EventType: {
-          rich_text: [
-            {
-              text: {
-                content: bookingDetails.eventType || '',
-              },
-            },
-          ],
-        },
-        BookedAt: {
-          date: {
-            start: new Date().toISOString(),
-          },
+    // Start with just the Status update - this is the most critical
+    const properties = {
+      Status: {
+        select: {
+          name: 'Booked',
         },
       },
+    };
+
+    // Add optional fields only if they have values
+    if (bookingDetails.bookingId) {
+      properties.BookingId = {
+        rich_text: [
+          {
+            text: {
+              content: bookingDetails.bookingId,
+            },
+          },
+        ],
+      };
+    }
+
+    if (bookingDetails.start) {
+      properties.BookingStart = {
+        date: {
+          start: bookingDetails.start,
+        },
+      };
+    }
+
+    if (bookingDetails.end) {
+      properties.BookingEnd = {
+        date: {
+          start: bookingDetails.end,
+        },
+      };
+    }
+
+    if (bookingDetails.inviteeEmail) {
+      properties.InviteeEmail = {
+        email: bookingDetails.inviteeEmail,
+      };
+    }
+
+    if (bookingDetails.eventType) {
+      properties.EventType = {
+        rich_text: [
+          {
+            text: {
+              content: bookingDetails.eventType,
+            },
+          },
+        ],
+      };
+    }
+
+    // Always add BookedAt timestamp
+    properties.BookedAt = {
+      date: {
+        start: new Date().toISOString(),
+      },
+    };
+
+    console.log('Updating Notion page:', pageId, 'with properties:', properties);
+
+    const response = await notion.pages.update({
+      page_id: pageId,
+      properties,
     });
 
     return { success: true, pageId: response.id };
   } catch (error) {
     console.error('Error updating Notion page with booking:', error);
+    console.error('Error details:', error.body || error.message);
     throw new Error('Failed to update booking in Notion');
   }
 };
