@@ -187,9 +187,14 @@ export default function PremiumServices() {
           <p className="text-gray-600 mb-4">
             Ready to add executive-level leadership to your team?
           </p>
-          <button className="bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition-colors duration-300">
+          <a
+            href="https://calendly.com/d/csxj-m6y-ssx/meet-with-the-automatics-team"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition-colors duration-300 inline-block"
+          >
             Book A Call
-          </button>
+          </a>
         </div>
       </div>
     </section>

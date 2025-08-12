@@ -80,7 +80,9 @@ export default function Navbar() {
           </li>
         </ul>
         <Link
-          href="#"
+          href="https://calendly.com/d/csxj-m6y-ssx/meet-with-the-automatics-team"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden lg:flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full hover:scale-105 hover:shadow-lg hover:cursor-pointer hover:bg-gray-800 transition-colors duration-300"
           role="button"
           aria-label="Book a call"
@@ -166,7 +168,9 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="/book-a-call"
+                href="https://calendly.com/d/csxj-m6y-ssx/meet-with-the-automatics-team"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Book a call"
                 className="bg-black text-white rounded-full py-2 px-6 flex items-center gap-2"
               >

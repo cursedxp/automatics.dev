@@ -45,7 +45,10 @@ export default function HeroSection() {
         technology that lets you focus on growing your business.
       </motion.p>
       <div className="flex justify-center gap-4">
-        <motion.button
+        <motion.a
+          href="https://calendly.com/d/csxj-m6y-ssx/meet-with-the-automatics-team"
+          target="_blank"
+          rel="noopener noreferrer"
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
@@ -53,7 +56,7 @@ export default function HeroSection() {
         >
           <HiPhone className="w-4 h-4" />
           Book A Call
-        </motion.button>
+        </motion.a>
         {/* <div className="flex items-center">
           <ul className="flex">
             <motion.li

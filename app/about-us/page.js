@@ -248,7 +248,9 @@ export default function AboutUs() {
             custom digital solutions. Book a call with our team today.
           </p>
           <motion.a
-            href="/contact"
+            href="https://calendly.com/d/csxj-m6y-ssx/meet-with-the-automatics-team"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-black text-white px-6 py-3 rounded-full text-base sm:text-lg w-fit font-semibold hover:bg-gray-800 transition-colors duration-300 flex items-center gap-2"
