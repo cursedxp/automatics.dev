@@ -1,0 +1,288 @@
+import { Client } from '@notionhq/client';
+import crypto from 'crypto';
+
+// Initialize Notion client
+const notion = new Client({
+  auth: process.env.NOTION_API_KEY,
+});
+
+const databaseId = process.env.NOTION_DATABASE_ID;
+
+// Generate unique reference ID
+export const generateRefId = () => {
+  const timestamp = Date.now().toString(36);
+  const randomStr = crypto.randomBytes(4).toString('hex');
+  return `ref_${timestamp}_${randomStr}`;
+};
+
+// Create a new funnel submission in Notion
+export const createFunnelSubmission = async (answers) => {
+  try {
+    const refId = generateRefId();
+    
+    // Build properties object based on available fields
+    const properties = {
+      RefId: {
+        title: [
+          {
+            text: {
+              content: refId,
+            },
+          },
+        ],
+      },
+      Status: {
+        select: {
+          name: 'pending',
+        },
+      },
+      CreatedAt: {
+        date: {
+          start: new Date().toISOString(),
+        },
+      },
+    };
+
+    // Add team size if present
+    if (answers.team_size !== undefined && answers.team_size !== null) {
+      properties.TeamSize = {
+        number: Number(answers.team_size),
+      };
+    }
+
+    // Add project complexity if present
+    if (answers.project_complexity) {
+      properties.ProjectComplexity = {
+        select: {
+          name: answers.project_complexity,
+        },
+      };
+    }
+
+    // Add subscription plan (from budget field) if present
+    if (answers.budget) {
+      properties.SubscriptionPlan = {
+        select: {
+          name: answers.budget,
+        },
+      };
+    }
+
+    // Add timeline if present
+    if (answers.timeline) {
+      properties.Timeline = {
+        select: {
+          name: answers.timeline,
+        },
+      };
+    }
+
+    // Add support level if present
+    if (answers.support_level) {
+      properties.SupportLevel = {
+        select: {
+          name: answers.support_level,
+        },
+      };
+    }
+
+    // Add recommended plan if present
+    if (answers.recommendation) {
+      properties.RecommendedPlan = {
+        select: {
+          name: answers.recommendation,
+        },
+      };
+    }
+
+    // Always add raw answers for debugging
+    properties.RawAnswers = {
+      rich_text: [
+        {
+          text: {
+            content: JSON.stringify(answers, null, 2).substring(0, 2000), // Notion has text limits
+          },
+        },
+      ],
+    };
+
+    const response = await notion.pages.create({
+      parent: {
+        database_id: databaseId,
+      },
+      properties,
+    });
+
+    return { 
+      success: true, 
+      refId, 
+      pageId: response.id 
+    };
+  } catch (error) {
+    console.error('Error creating Notion page:', error);
+    console.error('Error details:', error.body || error.message);
+    throw new Error('Failed to create submission in Notion');
+  }
+};
+
+// Find a page by refId
+export const findPageByRefId = async (refId) => {
+  try {
+    const response = await notion.databases.query({
+      database_id: databaseId,
+      filter: {
+        property: 'RefId',
+        title: {
+          equals: refId,
+        },
+      },
+    });
+
+    if (response.results.length === 0) {
+      return null;
+    }
+
+    return response.results[0];
+  } catch (error) {
+    console.error('Error finding Notion page:', error);
+    throw new Error('Failed to find page in Notion');
+  }
+};
+
+// Check if booking already exists (idempotency)
+export const isBookingProcessed = async (bookingId) => {
+  try {
+    const response = await notion.databases.query({
+      database_id: databaseId,
+      filter: {
+        property: 'BookingId',
+        rich_text: {
+          equals: bookingId,
+        },
+      },
+    });
+
+    return response.results.length > 0;
+  } catch (error) {
+    console.error('Error checking booking:', error);
+    return false;
+  }
+};
+
+// Update page with booking details
+export const updatePageWithBooking = async (pageId, bookingDetails) => {
+  try {
+    const response = await notion.pages.update({
+      page_id: pageId,
+      properties: {
+        Status: {
+          select: {
+            name: 'booked',
+          },
+        },
+        BookingId: {
+          rich_text: [
+            {
+              text: {
+                content: bookingDetails.bookingId,
+              },
+            },
+          ],
+        },
+        BookingStart: {
+          date: {
+            start: bookingDetails.start,
+          },
+        },
+        BookingEnd: {
+          date: {
+            start: bookingDetails.end,
+          },
+        },
+        InviteeEmail: {
+          email: bookingDetails.inviteeEmail,
+        },
+        EventType: {
+          rich_text: [
+            {
+              text: {
+                content: bookingDetails.eventType || '',
+              },
+            },
+          ],
+        },
+        BookedAt: {
+          date: {
+            start: new Date().toISOString(),
+          },
+        },
+      },
+    });
+
+    return { success: true, pageId: response.id };
+  } catch (error) {
+    console.error('Error updating Notion page with booking:', error);
+    throw new Error('Failed to update booking in Notion');
+  }
+};
+
+// Log webhook processing attempts
+export const logWebhookAttempt = async (webhookData, status, error = null) => {
+  try {
+    await notion.pages.create({
+      parent: {
+        database_id: process.env.NOTION_WEBHOOK_LOG_DATABASE_ID || databaseId,
+      },
+      properties: {
+        WebhookId: {
+          title: [
+            {
+              text: {
+                content: webhookData.id || 'unknown',
+              },
+            },
+          ],
+        },
+        Status: {
+          select: {
+            name: status, // 'success', 'failed', 'retry'
+          },
+        },
+        EventType: {
+          rich_text: [
+            {
+              text: {
+                content: webhookData.event || 'unknown',
+              },
+            },
+          ],
+        },
+        Payload: {
+          rich_text: [
+            {
+              text: {
+                content: JSON.stringify(webhookData, null, 2).substring(0, 2000),
+              },
+            },
+          ],
+        },
+        Error: {
+          rich_text: [
+            {
+              text: {
+                content: error ? error.toString() : '',
+              },
+            },
+          ],
+        },
+        ProcessedAt: {
+          date: {
+            start: new Date().toISOString(),
+          },
+        },
+      },
+    });
+  } catch (logError) {
+    console.error('Failed to log webhook attempt:', logError);
+  }
+};
