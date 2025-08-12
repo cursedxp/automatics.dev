@@ -19,7 +19,17 @@ function verifyWebhookSignature(payload, signature, secret) {
 
 // Extract refId from various sources
 function extractRefId(payload) {
-  // Option 1: From UTM campaign parameter
+  // Option 1: From UTM campaign parameter in payload.payload.tracking (Calendly webhook structure)
+  if (payload.payload?.tracking?.utm_campaign) {
+    const campaign = payload.payload.tracking.utm_campaign;
+    if (campaign.startsWith('ref_')) {
+      return campaign;
+    }
+    // Also check if the entire campaign is the refId
+    return campaign;
+  }
+  
+  // Option 2: From UTM campaign parameter in payload.tracking (fallback)
   if (payload.tracking?.utm_campaign) {
     const campaign = payload.tracking.utm_campaign;
     if (campaign.startsWith('ref_')) {
@@ -29,7 +39,16 @@ function extractRefId(payload) {
     return campaign;
   }
 
-  // Option 2: From custom questions/answers
+  // Option 3: From invitee tracking data (for invitee.created events)
+  if (payload.payload?.invitee?.tracking?.utm_campaign) {
+    const campaign = payload.payload.invitee.tracking.utm_campaign;
+    if (campaign.startsWith('ref_')) {
+      return campaign;
+    }
+    return campaign;
+  }
+
+  // Option 4: From custom questions/answers
   if (payload.questions_and_answers) {
     for (const qa of payload.questions_and_answers) {
       if (qa.question.toLowerCase().includes('reference') || 
@@ -176,10 +195,13 @@ export async function POST(request) {
     // Parse the webhook payload
     const payload = JSON.parse(rawBody);
     
-    // Log the incoming webhook
+    // Log the incoming webhook with full details
     console.log('Received Calendly webhook:', {
       event: payload.event,
       timestamp: new Date().toISOString(),
+      tracking: payload.tracking,
+      payload_tracking: payload.payload?.tracking,
+      full_payload: JSON.stringify(payload, null, 2)
     });
     
     // Process the webhook with retry logic

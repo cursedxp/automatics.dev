@@ -13,7 +13,7 @@ async function testWebhook() {
       }
     },
     tracking: {
-      utm_campaign: 'ref_me8b1eng_feac68a9' // Use a real refId from your Notion
+      utm_campaign: 'ref_me8jwdnt_c0ff44a6' // Use a real refId from your Notion
     }
   };
 
