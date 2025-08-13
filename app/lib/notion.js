@@ -50,38 +50,65 @@ export const createFunnelSubmission = async (answers) => {
       };
     }
 
-    // Add project complexity if present
+    // Add project complexity if present - map funnel values to Notion options
     if (answers.project_complexity) {
+      const complexityMapping = {
+        'validation': 'Validation',
+        'development': 'Development', 
+        'enterprise': 'Enterprise'
+      };
+      
       properties.ProjectComplexity = {
         select: {
-          name: answers.project_complexity,
+          name: complexityMapping[answers.project_complexity] || answers.project_complexity,
         },
       };
     }
 
-    // Add subscription plan (from budget field) if present
+    // Add subscription plan (from budget field) if present - map funnel values to Notion options
     if (answers.budget) {
+      const budgetMapping = {
+        'essential': 'Essential',
+        'growth': 'Growth', 
+        'premium': 'Premium',
+        'enterprise': 'Enterprise'
+      };
+      
       properties.SubscriptionPlan = {
         select: {
-          name: answers.budget,
+          name: budgetMapping[answers.budget] || answers.budget,
         },
       };
     }
 
-    // Add timeline if present
+    // Add timeline if present - map funnel values to Notion options
     if (answers.timeline) {
+      const timelineMapping = {
+        'urgent': 'Urgent',
+        'standard': 'Standard', 
+        'planned': 'Planned',
+        'flexible': 'Flexible'
+      };
+      
       properties.Timeline = {
         select: {
-          name: answers.timeline,
+          name: timelineMapping[answers.timeline] || answers.timeline,
         },
       };
     }
 
-    // Add support level if present
+    // Add support level if present - map funnel values to Notion options
     if (answers.support_level) {
+      const supportMapping = {
+        'basic': 'Basic',
+        'standard': 'Standard', 
+        'premium': 'Premium',
+        'dedicated': 'Dedicated'
+      };
+      
       properties.SupportLevel = {
         select: {
-          name: answers.support_level,
+          name: supportMapping[answers.support_level] || answers.support_level,
         },
       };
     }
