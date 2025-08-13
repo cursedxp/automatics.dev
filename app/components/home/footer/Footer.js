@@ -87,6 +87,14 @@ const Footer = () => {
                   Privacy Policy
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/impressum"
+                  className="text-black hover:scale-105 transition-all duration-300"
+                >
+                  Impressum
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -119,7 +127,7 @@ const Footer = () => {
               <div className="flex items-start gap-2 text-black">
                 <HiLocationMarker className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-black">Berlin, Germany</p>
+                  <p className="text-black">Dusseldorf, Germany</p>
                 </div>
               </div>
               <div className="flex space-x-4">
