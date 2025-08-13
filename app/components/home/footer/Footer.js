@@ -47,28 +47,22 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/pricing"
-                  className="text-black hover:scale-105 transition-all duration-300"
+                <a
+                  href="#pricing"
+                  onClick={(e) => scrollToSection(e, 'pricing')}
+                  className="text-black hover:scale-105 transition-all duration-300 cursor-pointer"
                 >
                   Pricing
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  href="/faq"
-                  className="text-black hover:scale-105 transition-all duration-300"
+                <a
+                  href="#faq"
+                  onClick={(e) => scrollToSection(e, 'faq')}
+                  className="text-black hover:scale-105 transition-all duration-300 cursor-pointer"
                 >
                   FAQ
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact-us"
-                  className="text-black hover:scale-105 transition-all duration-300"
-                >
-                  Contact Us
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -98,7 +92,7 @@ const Footer = () => {
 
           {/* Contact & Social */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-black">Connect</h3>
+            <h3 className="text-lg font-semibold mb-4 text-black">Contact Us</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-2 text-black">
                 <HiMail className="w-5 h-5" />

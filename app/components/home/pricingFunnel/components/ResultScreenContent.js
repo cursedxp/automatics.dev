@@ -117,7 +117,7 @@ export default function ResultScreenContent({ recommendation, plans, onRestart }
       setIsSubmitting(false);
       
       // Fallback: redirect to regular Calendly URL
-      const fallbackUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || '/contact-us';
+      const fallbackUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || 'https://calendly.com/d/csxj-m6y-ssx/meet-with-the-automatics-team';
       setTimeout(() => {
         window.location.href = fallbackUrl;
       }, 2000);

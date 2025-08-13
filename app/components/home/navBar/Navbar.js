@@ -73,11 +73,6 @@ export default function Navbar() {
               FAQ
             </a>
           </li>
-          <li className="hover:scale-105 transition-all duration-300">
-            <Link href="/contact-us" aria-label="contact us">
-              Contact Us
-            </Link>
-          </li>
         </ul>
         <Link
           href="https://calendly.com/d/csxj-m6y-ssx/meet-with-the-automatics-team"
@@ -156,15 +151,6 @@ export default function Navbar() {
               >
                 FAQ
               </a>
-            </li>
-            <li>
-              <Link
-                href="/contact-us"
-                aria-label="Contact"
-                className="hover:scale-105 transition-all duration-300"
-              >
-                Contact Us
-              </Link>
             </li>
             <li>
               <Link
