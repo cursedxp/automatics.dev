@@ -88,7 +88,6 @@ async function updateNotionPage(refId, bookingDetails) {
     console.log('[Notion] Found page:', page.id);
 
     // Step 2: Update the page with booking details
-    // Only update fields that exist in your Notion database
     const updateProperties = {
       Status: {
         select: {
@@ -97,20 +96,32 @@ async function updateNotionPage(refId, bookingDetails) {
       },
     };
 
-    // Add optional fields if they exist in your database
-    // You can add these fields to your Notion database if needed:
-    // - BookingId (text)
-    // - InviteeEmail (email)
-    // - InviteeName (text)
-    // - EventName (text)
-    // - BookingStart (date)
-    // - BookingEnd (date)
-    // - BookedAt (date)
-
+    // Add Email if provided (you mentioned you have an Email column)
     if (bookingDetails.inviteeEmail) {
-      // Only add if InviteeEmail property exists in your database
-      // updateProperties.InviteeEmail = { email: bookingDetails.inviteeEmail };
+      updateProperties.Email = {
+        email: bookingDetails.inviteeEmail,
+      };
     }
+
+    // Add Name if provided (you mentioned you have a Name column)
+    if (bookingDetails.inviteeName) {
+      updateProperties.Name = {
+        rich_text: [
+          {
+            text: {
+              content: bookingDetails.inviteeName,
+            },
+          },
+        ],
+      };
+    }
+
+    // Add timestamp when booking was made
+    updateProperties.BookedAt = {
+      date: {
+        start: new Date().toISOString(),
+      },
+    };
 
     console.log('[Notion] Updating page with properties:', updateProperties);
 
