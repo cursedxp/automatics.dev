@@ -1,7 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import { HiChevronDown, HiPhone } from "react-icons/hi";
+import { HiChevronDown } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
@@ -35,13 +34,6 @@ export default function FaqSection() {
           {faqData.title}
         </h2>
         <p className="text-gray-500 text-xl">{faqData.description}</p>
-        <Link
-          href={faqData.cta.href}
-          className="bg-black text-white px-6 py-3 rounded-full flex items-center gap-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer w-fit mt-8 hover:bg-gray-800 transition-colors duration-300"
-        >
-          <HiPhone className="w-4 h-4" />
-          {faqData.cta.text}
-        </Link>
       </motion.div>
       <motion.div
         className="flex flex-col w-full space-y-4 bg-white rounded-2xl p-8 sm:w-full"
