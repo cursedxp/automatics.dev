@@ -97,6 +97,18 @@ async function updateNotionPage(refId, bookingDetails) {
           name: bookingDetails.status,
         },
       },
+      Email: {
+        email: bookingDetails.inviteeEmail,
+      },
+      Name: {
+        rich_text: [
+          {
+            text: {
+              content: bookingDetails.inviteeName,
+            },
+          },
+        ],
+      },
     };
 
     console.log("[Notion] Updating page with properties:", updateProperties);
