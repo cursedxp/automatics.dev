@@ -13,7 +13,7 @@ export default function FindMyPlanCard({ onLearnMore }) {
         </p>
         <button
           onClick={onLearnMore}
-          className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full font-bold text-base hover:bg-gray-800 transition-all transform hover:scale-105 shadow-lg"
+          className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full font-bold text-base hover:bg-gray-800 transition-all transform hover:scale-105 shadow-lg hover:cursor-pointer"
         >
           Find My Plan
           <HiOutlineSparkles className="w-5 h-5" />

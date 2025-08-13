@@ -24,7 +24,7 @@ export default function TeamSizeStep({
         <div className="text-center mt-8">
           <button
             onClick={() => onAnswer(sliderValue)}
-            className="px-8 py-3 bg-black text-white rounded-full font-semibold hover:bg-gray-800 transition-all"
+            className="px-8 py-3 bg-black text-white rounded-full font-semibold hover:bg-gray-800 transition-all hover:cursor-pointer"
           >
             Continue
           </button>

@@ -14,7 +14,7 @@ export default function MultipleChoiceOptions({ question, currentAnswer, onAnswe
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.98 }}
           onClick={() => onAnswer(option.value)}
-          className={`p-4 rounded-2xl border transition-all duration-300 text-left ${
+          className={`p-4 rounded-2xl border transition-all duration-300 text-left hover:cursor-pointer ${
             currentAnswer === option.value
               ? "border-gray-900 bg-white shadow-lg"
               : "border-gray-200 bg-white hover:shadow-md hover:border-gray-300"

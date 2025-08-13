@@ -63,7 +63,7 @@ function ActionButtons({ recommendedPlan, onRestart, onBookCall, isSubmitting })
       <button
         onClick={onRestart}
         disabled={isSubmitting}
-        className="py-3 px-6 bg-transparent border border-gray-300 text-gray-700 rounded-full font-semibold hover:border-gray-400 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+        className="py-3 px-6 bg-transparent border border-gray-300 text-gray-700 rounded-full font-semibold hover:border-gray-400 transition-all disabled:opacity-50 disabled:cursor-not-allowed hover:cursor-pointer"
       >
         Compare All Plans
       </button>
