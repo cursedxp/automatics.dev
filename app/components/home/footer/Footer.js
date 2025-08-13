@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { HiPhone, HiMail } from "react-icons/hi";
+import { HiPhone, HiMail, HiLocationMarker } from "react-icons/hi";
 import { FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 import Logo from "@/app/components/common/Logo";
 const Footer = () => {
@@ -49,7 +49,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#pricing"
-                  onClick={(e) => scrollToSection(e, 'pricing')}
+                  onClick={(e) => scrollToSection(e, "pricing")}
                   className="text-black hover:scale-105 transition-all duration-300 cursor-pointer"
                 >
                   Pricing
@@ -58,7 +58,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#faq"
-                  onClick={(e) => scrollToSection(e, 'faq')}
+                  onClick={(e) => scrollToSection(e, "faq")}
                   className="text-black hover:scale-105 transition-all duration-300 cursor-pointer"
                 >
                   FAQ
@@ -92,7 +92,9 @@ const Footer = () => {
 
           {/* Contact & Social */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-black">Contact Us</h3>
+            <h3 className="text-lg font-semibold mb-4 text-black">
+              Contact Us
+            </h3>
             <div className="space-y-4">
               <div className="flex items-center gap-2 text-black">
                 <HiMail className="w-5 h-5" />
@@ -113,6 +115,12 @@ const Footer = () => {
                 >
                   Book A Call
                 </Link>
+              </div>
+              <div className="flex items-start gap-2 text-black">
+                <HiLocationMarker className="w-5 h-5 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-black">Berlin, Germany</p>
+                </div>
               </div>
               <div className="flex space-x-4">
                 <a
