@@ -34,7 +34,7 @@ CALENDLY_PERSONAL_ACCESS_TOKEN=your_calendly_token_here
 ### 2. Calendly Setup
 1. Go to Calendly Integrations
 2. Create a webhook subscription
-3. Set the webhook URL to: `https://automatics.dev/api/calendly-webhook-v2`
+3. Set the webhook URL to: `https://automatics.dev/api/calendly/webhook`
 4. Select events: `invitee.created`, `invitee.canceled`
 
 ### 3. Webhook Configuration
@@ -69,7 +69,7 @@ node test-notion-update.js ref_me8jwdnt_c0ff44a6 Booked
 
 ## API Endpoints
 
-### POST /api/calendly-webhook-v2
+### POST /api/calendly/webhook
 Handles Calendly webhook events and updates Notion records.
 
 **Request Body:**

@@ -36,6 +36,8 @@ function extractRefId(webhookPayload) {
     return qa.answer;
   }
 
+  console.log("[Webhook] No refId found in payload");
+  console.log("[Webhook] Tracking object:", JSON.stringify(tracking, null, 2));
   return null;
 }
 
@@ -90,17 +92,23 @@ async function updateNotionPage(refId, bookingDetails) {
     console.log("[Notion] Found page:", page.id);
 
     // Step 2: Update the page with booking details
-    // Only update Status field to avoid validation errors
     const updateProperties = {
       Status: {
         select: {
           name: bookingDetails.status,
         },
       },
-      Email: {
+    };
+
+    // Add Email and Name if available
+    if (bookingDetails.inviteeEmail) {
+      updateProperties.Email = {
         email: bookingDetails.inviteeEmail,
-      },
-      Name: {
+      };
+    }
+
+    if (bookingDetails.inviteeName) {
+      updateProperties.Name = {
         rich_text: [
           {
             text: {
@@ -108,8 +116,8 @@ async function updateNotionPage(refId, bookingDetails) {
             },
           },
         ],
-      },
-    };
+      };
+    }
 
     console.log("[Notion] Updating page with properties:", updateProperties);
 
@@ -130,15 +138,15 @@ async function updateNotionPage(refId, bookingDetails) {
  * Main webhook handler
  */
 export async function POST(request) {
-  console.log("[Webhook] Received Calendly webhook");
+  console.log("[Calendly Webhook] Received webhook event");
 
   try {
     // Parse the webhook payload
     const webhookPayload = await request.json();
 
-    console.log("[Webhook] Event type:", webhookPayload.event);
+    console.log("[Calendly Webhook] Event type:", webhookPayload.event);
     console.log(
-      "[Webhook] Payload structure:",
+      "[Calendly Webhook] Payload structure:",
       JSON.stringify(webhookPayload, null, 2)
     );
 
@@ -146,7 +154,7 @@ export async function POST(request) {
     if (
       !["invitee.created", "invitee.canceled"].includes(webhookPayload.event)
     ) {
-      console.log("[Webhook] Ignoring event type:", webhookPayload.event);
+      console.log("[Calendly Webhook] Ignoring event type:", webhookPayload.event);
       return NextResponse.json({
         success: true,
         message: "Event ignored",
@@ -157,9 +165,9 @@ export async function POST(request) {
     const refId = extractRefId(webhookPayload);
 
     if (!refId) {
-      console.error("[Webhook] No refId found in webhook payload");
+      console.error("[Calendly Webhook] No refId found in webhook payload");
       console.error(
-        "[Webhook] Full payload:",
+        "[Calendly Webhook] Full payload:",
         JSON.stringify(webhookPayload, null, 2)
       );
 
@@ -173,13 +181,13 @@ export async function POST(request) {
 
     // Extract booking details
     const bookingDetails = extractBookingDetails(webhookPayload);
-    console.log("[Webhook] Booking details:", bookingDetails);
+    console.log("[Calendly Webhook] Booking details:", bookingDetails);
 
     // Update Notion page
     const result = await updateNotionPage(refId, bookingDetails);
 
     if (result.success) {
-      console.log("[Webhook] Successfully processed webhook");
+      console.log("[Calendly Webhook] Successfully processed webhook");
       return NextResponse.json({
         success: true,
         message: "Notion page updated",
@@ -187,7 +195,7 @@ export async function POST(request) {
         pageId: result.pageId,
       });
     } else {
-      console.error("[Webhook] Failed to update Notion:", result.error);
+      console.error("[Calendly Webhook] Failed to update Notion:", result.error);
       // Still return 200 to prevent Calendly from retrying
       return NextResponse.json({
         success: false,
@@ -196,7 +204,7 @@ export async function POST(request) {
       });
     }
   } catch (error) {
-    console.error("[Webhook] Handler error:", error);
+    console.error("[Calendly Webhook] Handler error:", error);
 
     // Still return 200 to prevent Calendly from retrying
     return NextResponse.json({
@@ -216,7 +224,7 @@ export async function GET() {
 
   return NextResponse.json({
     status: "healthy",
-    endpoint: "/api/calendly-webhook-v2",
+    endpoint: "/api/calendly/webhook",
     timestamp: new Date().toISOString(),
     config: {
       notionConfigured: hasNotionKey && hasNotionDb,
