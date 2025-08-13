@@ -36,8 +36,6 @@ function extractRefId(webhookPayload) {
     return qa.answer;
   }
 
-  console.log("[Webhook] No refId found in payload");
-  console.log("[Webhook] Tracking object:", JSON.stringify(tracking, null, 2));
   return null;
 }
 
@@ -92,12 +90,11 @@ async function updateNotionPage(refId, bookingDetails) {
     console.log("[Notion] Found page:", page.id);
 
     // Step 2: Update the page with booking details
+    // Only update Status field to avoid validation errors
     const updateProperties = {
       Status: {
         select: {
           name: bookingDetails.status,
-          email: bookingDetails.inviteeEmail,
-          name: bookingDetails.inviteeName,
         },
       },
     };
