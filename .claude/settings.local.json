@@ -4,7 +4,8 @@
       "Bash(rm:*)",
       "Bash(npm install:*)",
       "Bash(curl:*)",
-      "Bash(vercel env:*)"
+      "Bash(vercel env:*)",
+      "WebFetch(domain:developer.calendly.com)"
     ],
     "deny": []
   }
