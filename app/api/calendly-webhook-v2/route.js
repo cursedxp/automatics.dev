@@ -88,38 +88,12 @@ async function updateNotionPage(refId, bookingDetails) {
     console.log('[Notion] Found page:', page.id);
 
     // Step 2: Update the page with booking details
+    // Only update Status field to keep it simple and working
     const updateProperties = {
       Status: {
         select: {
           name: bookingDetails.status,
         },
-      },
-    };
-
-    // Add Email if provided (you mentioned you have an Email column)
-    if (bookingDetails.inviteeEmail) {
-      updateProperties.Email = {
-        email: bookingDetails.inviteeEmail,
-      };
-    }
-
-    // Add Name if provided (you mentioned you have a Name column)
-    if (bookingDetails.inviteeName) {
-      updateProperties.Name = {
-        rich_text: [
-          {
-            text: {
-              content: bookingDetails.inviteeName,
-            },
-          },
-        ],
-      };
-    }
-
-    // Add timestamp when booking was made
-    updateProperties.BookedAt = {
-      date: {
-        start: new Date().toISOString(),
       },
     };
 
