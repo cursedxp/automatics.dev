@@ -21,6 +21,11 @@
         "name": "Hubspot",
         "description": "Marketing automation platform",
         "logo": "/assets/techLogos/hubspot.svg"
+      },
+      {
+        "name": "Notion",
+        "description": "All-in-one workspace",
+        "logo": "/assets/techLogos/notion.svg"
       }
     ]
   },
