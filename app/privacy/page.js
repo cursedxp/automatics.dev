@@ -53,10 +53,17 @@ export default function Privacy() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  At Automatics ("we," "our," or "us"), we respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website www.automatics.dev and use our services.
+                  At Automatics (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or
+                  &ldquo;us&rdquo;), we respect your privacy and are committed
+                  to protecting your personal data. This Privacy Policy explains
+                  how we collect, use, disclose, and safeguard your information
+                  when you visit our website www.automatics.dev and use our
+                  services.
                 </p>
                 <p>
-                  This policy applies to all information collected through our website, services, and any related services, sales, marketing, or events.
+                  This policy applies to all information collected through our
+                  website, services, and any related services, sales, marketing,
+                  or events.
                 </p>
               </div>
             </section>
@@ -68,19 +75,30 @@ export default function Privacy() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <div>
-                  <h3 className="font-semibold text-black mb-2">Personal Information</h3>
-                  <p>We may collect personal information that you voluntarily provide, including:</p>
+                  <h3 className="font-semibold text-black mb-2">
+                    Personal Information
+                  </h3>
+                  <p>
+                    We may collect personal information that you voluntarily
+                    provide, including:
+                  </p>
                   <ul className="list-disc ml-6 space-y-2 mt-2">
                     <li>Name and contact information (email, phone number)</li>
                     <li>Business information (company name, job title)</li>
                     <li>Project requirements and specifications</li>
                     <li>Communication preferences</li>
-                    <li>Information provided during consultations or meetings</li>
+                    <li>
+                      Information provided during consultations or meetings
+                    </li>
                   </ul>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-black mb-2">Automatically Collected Information</h3>
-                  <p>We may automatically collect certain information, including:</p>
+                  <h3 className="font-semibold text-black mb-2">
+                    Automatically Collected Information
+                  </h3>
+                  <p>
+                    We may automatically collect certain information, including:
+                  </p>
                   <ul className="list-disc ml-6 space-y-2 mt-2">
                     <li>IP address and browser information</li>
                     <li>Device and operating system information</li>
@@ -116,13 +134,23 @@ export default function Privacy() {
                 4. Information Sharing and Disclosure
               </h2>
               <div className="space-y-4 text-gray-700">
-                <p>We do not sell, trade, or otherwise transfer your personal information to third parties, except in the following circumstances:</p>
+                <p>
+                  We do not sell, trade, or otherwise transfer your personal
+                  information to third parties, except in the following
+                  circumstances:
+                </p>
                 <ul className="list-disc ml-6 space-y-2">
                   <li>With your explicit consent</li>
-                  <li>To trusted service providers who assist us in operating our business</li>
+                  <li>
+                    To trusted service providers who assist us in operating our
+                    business
+                  </li>
                   <li>When required by law or to protect our legal rights</li>
                   <li>In connection with a business transfer or merger</li>
-                  <li>To protect the safety and security of our users or the public</li>
+                  <li>
+                    To protect the safety and security of our users or the
+                    public
+                  </li>
                 </ul>
               </div>
             </section>
@@ -134,7 +162,10 @@ export default function Privacy() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These measures include:
+                  We implement appropriate technical and organizational security
+                  measures to protect your personal information against
+                  unauthorized access, alteration, disclosure, or destruction.
+                  These measures include:
                 </p>
                 <ul className="list-disc ml-6 space-y-2">
                   <li>Encryption of data in transit and at rest</li>
@@ -143,7 +174,9 @@ export default function Privacy() {
                   <li>Secure hosting and backup procedures</li>
                 </ul>
                 <p>
-                  However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.
+                  However, no method of transmission over the internet or
+                  electronic storage is 100% secure, and we cannot guarantee
+                  absolute security.
                 </p>
               </div>
             </section>
@@ -155,18 +188,25 @@ export default function Privacy() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  Depending on your location, you may have the following rights regarding your personal information:
+                  Depending on your location, you may have the following rights
+                  regarding your personal information:
                 </p>
                 <ul className="list-disc ml-6 space-y-2">
-                  <li>Right to access and receive a copy of your personal data</li>
+                  <li>
+                    Right to access and receive a copy of your personal data
+                  </li>
                   <li>Right to rectify inaccurate or incomplete data</li>
-                  <li>Right to erase your personal data under certain circumstances</li>
+                  <li>
+                    Right to erase your personal data under certain
+                    circumstances
+                  </li>
                   <li>Right to restrict or object to processing</li>
                   <li>Right to data portability</li>
                   <li>Right to withdraw consent at any time</li>
                 </ul>
                 <p>
-                  To exercise these rights, please contact us using the information provided below.
+                  To exercise these rights, please contact us using the
+                  information provided below.
                 </p>
               </div>
             </section>
@@ -178,11 +218,12 @@ export default function Privacy() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  We use cookies and similar tracking technologies to enhance your experience on our website. You can control cookies through your browser settings, but disabling cookies may affect website functionality.
+                  We use cookies and similar tracking technologies to enhance
+                  your experience on our website. You can control cookies
+                  through your browser settings, but disabling cookies may
+                  affect website functionality.
                 </p>
-                <p>
-                  We use cookies for:
-                </p>
+                <p>We use cookies for:</p>
                 <ul className="list-disc ml-6 space-y-2">
                   <li>Essential website functionality</li>
                   <li>Analytics and performance monitoring</li>
@@ -199,7 +240,8 @@ export default function Privacy() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  Our website may contain links to third-party websites or integrate with third-party services such as:
+                  Our website may contain links to third-party websites or
+                  integrate with third-party services such as:
                 </p>
                 <ul className="list-disc ml-6 space-y-2">
                   <li>Calendly for appointment scheduling</li>
@@ -208,7 +250,9 @@ export default function Privacy() {
                   <li>Social media platforms</li>
                 </ul>
                 <p>
-                  We are not responsible for the privacy practices of these third-party services. We encourage you to review their privacy policies.
+                  We are not responsible for the privacy practices of these
+                  third-party services. We encourage you to review their privacy
+                  policies.
                 </p>
               </div>
             </section>
@@ -220,10 +264,14 @@ export default function Privacy() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  We retain your personal information only as long as necessary to fulfill the purposes outlined in this privacy policy, comply with legal obligations, resolve disputes, and enforce our agreements.
+                  We retain your personal information only as long as necessary
+                  to fulfill the purposes outlined in this privacy policy,
+                  comply with legal obligations, resolve disputes, and enforce
+                  our agreements.
                 </p>
                 <p>
-                  When data is no longer needed, we securely delete or anonymize it according to our data retention policies.
+                  When data is no longer needed, we securely delete or anonymize
+                  it according to our data retention policies.
                 </p>
               </div>
             </section>
@@ -235,7 +283,10 @@ export default function Privacy() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  Your information may be transferred to and processed in countries other than your country of residence. We ensure that such transfers comply with applicable data protection laws and provide appropriate safeguards.
+                  Your information may be transferred to and processed in
+                  countries other than your country of residence. We ensure that
+                  such transfers comply with applicable data protection laws and
+                  provide appropriate safeguards.
                 </p>
               </div>
             </section>
@@ -247,7 +298,10 @@ export default function Privacy() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new policy on this page and updating the "Last Updated" date. We encourage you to review this policy periodically.
+                  We may update this Privacy Policy from time to time. We will
+                  notify you of any material changes by posting the new policy
+                  on this page and updating the &ldquo;Last Updated&rdquo; date.
+                  We encourage you to review this policy periodically.
                 </p>
               </div>
             </section>
@@ -259,14 +313,17 @@ export default function Privacy() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  If you have any questions about this Privacy Policy or our privacy practices, please contact us at:
+                  If you have any questions about this Privacy Policy or our
+                  privacy practices, please contact us at:
                 </p>
                 <p>
-                  <strong>Email:</strong> hi@automatics.io<br />
+                  <strong>Email:</strong> hi@automatics.io
+                  <br />
                   <strong>Address:</strong> Dusseldorf, Germany
                 </p>
                 <p>
-                  For data protection inquiries, you can also contact your local data protection authority.
+                  For data protection inquiries, you can also contact your local
+                  data protection authority.
                 </p>
               </div>
             </section>

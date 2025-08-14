@@ -35,7 +35,8 @@ export default function Terms() {
             Terms of Service
           </h1>
           <p className="text-gray-600 text-lg">
-            Please read these terms and conditions carefully before using our services.
+            Please read these terms and conditions carefully before using our
+            services.
           </p>
         </motion.div>
 
@@ -53,10 +54,16 @@ export default function Terms() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  Welcome to Automatics ("we," "our," or "us"). These Terms of Service ("Terms") govern your use of our website located at www.automatics.dev (the "Service") operated by Automatics.
+                  Welcome to Automatics (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or
+                  &ldquo;us&rdquo;). These Terms of Service
+                  (&ldquo;Terms&rdquo;) govern your use of our website located
+                  at www.automatics.dev (the &ldquo;Service&rdquo;) operated by
+                  Automatics.
                 </p>
                 <p>
-                  By accessing or using our Service, you agree to be bound by these Terms. If you disagree with any part of these terms, then you may not access the Service.
+                  By accessing or using our Service, you agree to be bound by
+                  these Terms. If you disagree with any part of these terms,
+                  then you may not access the Service.
                 </p>
               </div>
             </section>
@@ -68,7 +75,8 @@ export default function Terms() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  Automatics provides digital solutions and software development services including but not limited to:
+                  Automatics provides digital solutions and software development
+                  services including but not limited to:
                 </p>
                 <ul className="list-disc ml-6 space-y-2">
                   <li>Custom software development</li>
@@ -89,7 +97,10 @@ export default function Terms() {
               <div className="space-y-4 text-gray-700">
                 <p>You agree to:</p>
                 <ul className="list-disc ml-6 space-y-2">
-                  <li>Provide accurate and complete information when using our services</li>
+                  <li>
+                    Provide accurate and complete information when using our
+                    services
+                  </li>
                   <li>Use our services only for lawful purposes</li>
                   <li>Respect intellectual property rights</li>
                   <li>Not interfere with or disrupt our services</li>
@@ -105,13 +116,18 @@ export default function Terms() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  Payment terms will be specified in individual project agreements. Generally:
+                  Payment terms will be specified in individual project
+                  agreements. Generally:
                 </p>
                 <ul className="list-disc ml-6 space-y-2">
                   <li>Payment schedules are defined per project</li>
-                  <li>Invoices are due within 30 days unless otherwise specified</li>
+                  <li>
+                    Invoices are due within 30 days unless otherwise specified
+                  </li>
                   <li>Late payments may incur additional fees</li>
-                  <li>All prices are exclusive of taxes unless stated otherwise</li>
+                  <li>
+                    All prices are exclusive of taxes unless stated otherwise
+                  </li>
                 </ul>
               </div>
             </section>
@@ -122,14 +138,20 @@ export default function Terms() {
                 5. Intellectual Property
               </h2>
               <div className="space-y-4 text-gray-700">
-                <p>
-                  Unless otherwise agreed in writing:
-                </p>
+                <p>Unless otherwise agreed in writing:</p>
                 <ul className="list-disc ml-6 space-y-2">
                   <li>Clients retain ownership of their data and content</li>
-                  <li>Custom-developed solutions become client property upon full payment</li>
-                  <li>We retain rights to general methodologies and know-how</li>
-                  <li>Third-party components remain subject to their respective licenses</li>
+                  <li>
+                    Custom-developed solutions become client property upon full
+                    payment
+                  </li>
+                  <li>
+                    We retain rights to general methodologies and know-how
+                  </li>
+                  <li>
+                    Third-party components remain subject to their respective
+                    licenses
+                  </li>
                 </ul>
               </div>
             </section>
@@ -141,13 +163,16 @@ export default function Terms() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  To the fullest extent permitted by law, Automatics shall not be liable for:
+                  To the fullest extent permitted by law, Automatics shall not
+                  be liable for:
                 </p>
                 <ul className="list-disc ml-6 space-y-2">
                   <li>Indirect, incidental, or consequential damages</li>
                   <li>Loss of profits, data, or business opportunities</li>
                   <li>Damages exceeding the amount paid for services</li>
-                  <li>Issues arising from third-party services or components</li>
+                  <li>
+                    Issues arising from third-party services or components
+                  </li>
                 </ul>
               </div>
             </section>
@@ -159,7 +184,9 @@ export default function Terms() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  Your privacy is important to us. Please review our Privacy Policy, which also governs your use of the Service, to understand our practices.
+                  Your privacy is important to us. Please review our Privacy
+                  Policy, which also governs your use of the Service, to
+                  understand our practices.
                 </p>
               </div>
             </section>
@@ -171,7 +198,9 @@ export default function Terms() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  We may terminate or suspend your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.
+                  We may terminate or suspend your access immediately, without
+                  prior notice or liability, for any reason whatsoever,
+                  including without limitation if you breach the Terms.
                 </p>
               </div>
             </section>
@@ -183,7 +212,10 @@ export default function Terms() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days notice prior to any new terms taking effect.
+                  We reserve the right, at our sole discretion, to modify or
+                  replace these Terms at any time. If a revision is material, we
+                  will try to provide at least 30 days notice prior to any new
+                  terms taking effect.
                 </p>
               </div>
             </section>
@@ -195,10 +227,12 @@ export default function Terms() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  If you have any questions about these Terms of Service, please contact us at:
+                  If you have any questions about these Terms of Service, please
+                  contact us at:
                 </p>
                 <p>
-                  <strong>Email:</strong> hi@automatics.io<br />
+                  <strong>Email:</strong> hi@automatics.io
+                  <br />
                   <strong>Address:</strong> Dusseldorf, Germany
                 </p>
               </div>
