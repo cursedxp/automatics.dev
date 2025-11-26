@@ -1,7 +1,7 @@
 export const PLANS_DATA = [
   {
     id: "essential",
-    name: "Essential",
+    name: "Audit",
     tagline: "1 Task at a Time",
     price: "$2,600",
     description: "Perfect for validating your idea and getting initial feedback",
@@ -20,7 +20,7 @@ export const PLANS_DATA = [
   },
   {
     id: "growth",
-    name: "Growth",
+    name: "Build",
     tagline: "2 Tasks at a Time",
     price: "$5,200",
     description: "Ideal for rapid development and quick market entry",
@@ -42,7 +42,7 @@ export const PLANS_DATA = [
   },
   {
     id: "enterprise",
-    name: "Enterprise Plan",
+    name: "Operate",
     tagline: "Dedicated Support",
     price: "Custom",
     description: "Tailored solution for complex business needs",

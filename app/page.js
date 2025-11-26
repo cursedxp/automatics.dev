@@ -19,7 +19,6 @@ export default function Home() {
         <ProcessSection />
         <PricingFunnel />
         <PremiumServices />
-
         <FaqSection />
       </div>
     </div>
