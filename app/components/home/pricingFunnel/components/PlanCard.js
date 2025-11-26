@@ -20,7 +20,7 @@ export default function PlanCard({ plan, index, plans }) {
         {plan.subtitle && (
           <p className="text-sm text-gray-600 mb-4">{plan.subtitle}</p>
         )}
-        <div className="text-4xl font-bold mb-4">{plan.price}</div>
+        {/* Price removed - will discuss pricing in consultation */}
         <p className="text-gray-600">{plan.description}</p>
       </div>
       <ul className="space-y-4 mb-8 flex-grow">
@@ -31,6 +31,16 @@ export default function PlanCard({ plan, index, plans }) {
           </li>
         ))}
       </ul>
+      <div className="mt-auto">
+        <a
+          href="https://calendly.com/d/csxj-m6y-ssx/meet-with-the-automatics-team"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-black text-white py-3 px-6 rounded-full text-center font-semibold hover:bg-gray-800 transition-colors duration-300 inline-block"
+        >
+          Book A Call
+        </a>
+      </div>
     </div>
   );
 }
