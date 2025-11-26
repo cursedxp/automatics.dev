@@ -10,6 +10,7 @@ const initialState = {
   showResult: false,
   recommendation: null,
   showSidebar: true,
+  showDetails: false,
 };
 
 function pricingFunnelReducer(state, action) {
@@ -30,6 +31,8 @@ function pricingFunnelReducer(state, action) {
       return { ...state, showSidebar: !state.showSidebar };
     case 'GO_TO_TABLE':
       return { ...state, showFunnel: false, showResult: false };
+    case 'TOGGLE_DETAILS':
+      return { ...state, showDetails: !state.showDetails };
     default:
       return state;
   }
