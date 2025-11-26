@@ -1,11 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
 import { HiPhone } from "react-icons/hi2";
+import { HiArrowDown } from "react-icons/hi2";
 import Particles from "@/app/components/common/Particles";
 
 export default function HeroSection() {
   return (
-    <section className="relative flex flex-col items-center justify-center 2xl:py-40 xl:py-40 lg:pt-40 md:pt-40 sm:pt-20 mb-10 overflow-hidden w-screen">
+    <section className="relative flex flex-col items-center justify-center min-h-screen w-screen overflow-hidden">
       <div className="absolute inset-0 -z-10 overflow-hidden blur-xs">
         <Particles
           id="hero-particles"
@@ -23,15 +24,15 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.2 }}
           className="text-center "
         >
-          Time is money.
+          We improve your
         </motion.span>
         <motion.span
-          initial={{ filter: "blur(10px)", opacity: 0 }}
-          animate={{ filter: "blur(0px)", opacity: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="block mt-4 md:text-8xl text-6xl"
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.4 }}
+          className="block mt-2"
         >
-          Save both.
+          business operations
         </motion.span>
       </h1>
       <motion.p
@@ -40,11 +41,9 @@ export default function HeroSection() {
         transition={{ duration: 1, delay: 0.6 }}
         className="text-center text-gray-500 sm:px-30 px-10 text-xl mb-10 max-w-6xl"
       >
-        We help SMEs reclaim time by automating processes and building custom
-        digital solutions. No tech team? We&apos;ve got you covered with
-        technology that lets you focus on growing your business.
+        We design your revenue operations, build the business apps your teams and customers use, and connect everything to BI so you can actually see revenue — not just guess it.
       </motion.p>
-      <div className="flex justify-center gap-4">
+      <div className="flex flex-col items-center justify-center gap-2">
         <motion.a
           href="https://calendly.com/d/csxj-m6y-ssx/meet-with-the-automatics-team"
           target="_blank"
@@ -57,7 +56,47 @@ export default function HeroSection() {
           <HiPhone className="w-4 h-4" />
           Book A Call
         </motion.a>
-        {/* <div className="flex items-center">
+        <motion.p
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+          className="text-gray-500 text-sm"
+        >
+          30 minute consultation call
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
+          className="mt-8"
+        >
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+            className="flex flex-col items-center gap-2 text-black"
+          >
+            <div className="w-6 h-10 border-2 border-black rounded-full flex justify-center p-2">
+              <motion.div
+                animate={{ y: [0, 12, 0] }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                className="w-1.5 h-1.5 bg-black rounded-full"
+              />
+            </div>
+            <HiArrowDown className="w-4 h-4" />
+          </motion.div>
+        </motion.div>
+      </div>
+
+      {/* <div className="flex items-center">
           <ul className="flex">
             <motion.li
               initial={{ x: -20, opacity: 0 }}
@@ -108,7 +147,6 @@ export default function HeroSection() {
             <Link href="/testimonials">Our Testimonials</Link>
           </motion.div>
         </div> */}
-      </div>
       {/* <div className="absolute xs:top-[120px] lg:top-[260px] md:top-[260px] sm:top-[160px] top-[65px] right-1/2 -translate-x-1/2 w-20 h-20 transform">
         <motion.div
           className="h-10 w-fit text-black flex justify-center items-center"
