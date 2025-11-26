@@ -31,6 +31,16 @@
         "name": "Zendesk",
         "description": "Customer support platform",
         "logo": "/assets/techLogos/zendesk.svg"
+      },
+      {
+        "name": "Airtable",
+        "description": "Collaborative database",
+        "logo": "/assets/techLogos/airtable.svg"
+      },
+      {
+        "name": "Make",
+        "description": "Workflow automation",
+        "logo": "/assets/techLogos/make.svg"
       }
     ]
   },
@@ -56,6 +66,16 @@
         "name": "Tailwind",
         "description": "Utility-first CSS",
         "logo": "/assets/techLogos/tailwind.svg"
+      },
+      {
+        "name": "Vue.js",
+        "description": "Progressive JavaScript framework",
+        "logo": "/assets/techLogos/vue.svg"
+      },
+      {
+        "name": "TypeScript",
+        "description": "Typed JavaScript",
+        "logo": "/assets/techLogos/typescript.svg"
       }
     ]
   },
@@ -76,6 +96,21 @@
         "name": "PostgreSQL",
         "description": "SQL database",
         "logo": "/assets/techLogos/postgresql.svg"
+      },
+      {
+        "name": "Python",
+        "description": "Programming language",
+        "logo": "/assets/techLogos/python.svg"
+      },
+      {
+        "name": "Express",
+        "description": "Web framework",
+        "logo": "/assets/techLogos/express.svg"
+      },
+      {
+        "name": "Supabase",
+        "description": "Backend as a service",
+        "logo": "/assets/techLogos/supabase.svg"
       }
     ]
   },
@@ -136,6 +171,16 @@
         "name": "AWS",
         "description": "Cloud infrastructure",
         "logo": "/assets/techLogos/aws.svg"
+      },
+      {
+        "name": "GitHub",
+        "description": "Version control",
+        "logo": "/assets/techLogos/github.svg"
+      },
+      {
+        "name": "Netlify",
+        "description": "Web hosting",
+        "logo": "/assets/techLogos/netlify.svg"
       }
     ]
   },

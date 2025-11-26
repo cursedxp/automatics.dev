@@ -15,7 +15,6 @@ export default function Home() {
     <div className="flex flex-col items-center h-full">
       <HeroSection />
       <div className="flex flex-col max-w-screen-xl mx-auto items-center w-full">
-        <WhyUsSection />
         <Services />
         <Technologies />
         <QuoteSection />
