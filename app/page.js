@@ -1,5 +1,6 @@
 import HeroSection from "./components/home/heroSection/HeroSection";
 import Services from "./components/home/servicesSection/Services";
+import AboutSection from "./components/home/aboutSection/AboutSection";
 import WhyUsSection from "./components/home/whyUsSection/WhyUsSection";
 import Technologies from "./components/home/technologiesSection/Technologies";
 import QuoteSection from "./components/home/quoteSection/quoteSection";
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroSection />
       <div className="flex flex-col max-w-screen-xl mx-auto items-center w-full">
         <Services />
+        <AboutSection />
         <Technologies />
         <QuoteSection />
         <ProcessSection />
