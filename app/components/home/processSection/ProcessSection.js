@@ -10,7 +10,7 @@ import {
 export default function ProcessSection() {
   return (
     <motion.section
-      className="flex flex-col w-full gap-8 xl:px-10 lg:px-10 md:px-10 sm:px-10 py-20 bg-white rounded-2xl shadow-2xl xs:px-8"
+      className="flex flex-col w-full gap-8 xl:px-10 lg:px-10 md:px-10 sm:px-10 py-20 bg-white rounded-2xl shadow-2xl xs:px-8 my-20 px-4"
       animate={{ y: [-3, 3, -3] }}
       transition={{
         duration: 3,

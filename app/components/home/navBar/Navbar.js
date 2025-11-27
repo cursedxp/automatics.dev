@@ -44,15 +44,30 @@ export default function Navbar() {
         {/* Desktop Navbar */}
         <ul className="gap-12 hidden lg:flex" role="list">
           <li className="hover:scale-105 transition-all duration-300">
-            <Link href="/blog" aria-label="Blog">
-              Insights
-            </Link>
+            <a
+              href="#services"
+              onClick={(e) => scrollToSection(e, 'services')}
+              aria-label="Services"
+              className="cursor-pointer"
+            >
+              Services
+            </a>
+          </li>
+          <li className="hover:scale-105 transition-all duration-300">
+            <a
+              href="#about"
+              onClick={(e) => scrollToSection(e, 'about')}
+              aria-label="About"
+              className="cursor-pointer"
+            >
+              About
+            </a>
           </li>
           <li className="hover:scale-105 transition-all duration-300">
             <a
               href="#pricing"
               onClick={(e) => scrollToSection(e, 'pricing')}
-              aria-label="pricing"
+              aria-label="Pricing"
               className="cursor-pointer"
             >
               Pricing
@@ -62,7 +77,7 @@ export default function Navbar() {
             <a
               href="#faq"
               onClick={(e) => scrollToSection(e, 'faq')}
-              aria-label="faq"
+              aria-label="FAQ"
               className="cursor-pointer"
             >
               FAQ
@@ -100,24 +115,25 @@ export default function Navbar() {
         >
           <ul className="flex flex-col gap-4 items-center justify-center h-full">
             <li>
-              <Link
-                href="/services"
+              <a
+                href="#services"
+                onClick={(e) => scrollToSection(e, 'services')}
                 aria-label="Services"
-                className="hover:scale-105 transition-all duration-300"
+                className="hover:scale-105 transition-all duration-300 cursor-pointer"
               >
                 Services
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                href="/blog"
-                aria-label="Blog"
-                className="hover:scale-105 transition-all duration-300"
+              <a
+                href="#about"
+                onClick={(e) => scrollToSection(e, 'about')}
+                aria-label="About"
+                className="hover:scale-105 transition-all duration-300 cursor-pointer"
               >
-                Insights
-              </Link>
+                About
+              </a>
             </li>
-
             <li>
               <a
                 href="#pricing"

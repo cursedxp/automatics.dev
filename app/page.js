@@ -16,9 +16,9 @@ export default function Home() {
       <div className="flex flex-col max-w-screen-xl mx-auto items-center w-full">
         <Services />
         <AboutSection />
-        <Technologies />
         <QuoteSection />
         <ProcessSection />
+        <Technologies />
         <PricingFunnel />
         <PremiumServices />
         <FaqSection />

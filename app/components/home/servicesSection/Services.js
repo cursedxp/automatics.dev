@@ -97,7 +97,7 @@ export default function Services() {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center my-20 px-4 sm:px-10">
+    <section id="services" className="flex flex-col items-center justify-center my-20 px-4 sm:px-10">
       <div className="w-full max-w-7xl">
         <h2 className="text-5xl sm:text-6xl mb-6 text-center">
           Tailored Solutions for Your Business
@@ -108,7 +108,7 @@ export default function Services() {
         </p>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-[35%_65%] gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-[35%_65%] gap-8 lg:gap-10">
           {/* Left Side - Title and Description */}
           <div className="space-y-4">
             <h3 className="md:text-5xl lg:text-6xl sm:text-4xl text-5xl lg:leading-18 sm:leading-12 xs:text-4xl xs:leading-10">
@@ -129,7 +129,7 @@ export default function Services() {
             {/* Solution Cards Carousel */}
             <div className="relative overflow-hidden py-8 -my-8">
               <div
-                className="flex gap-4 transition-transform duration-500 ease-out"
+                className="flex gap-4 pl-4 transition-transform duration-500 ease-out"
                 style={{
                   transform: `translateX(-${currentSlide * 38}%)`,
                 }}

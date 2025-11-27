@@ -27,7 +27,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="flex flex-col items-center justify-center my-20 px-4 sm:px-10">
+    <section id="about" className="flex flex-col items-center justify-center my-20 px-4 sm:px-10">
       <div className="w-full max-w-7xl">
         <h2 className="text-5xl sm:text-6xl mb-6 text-center">Meet The Team</h2>
         <p className="text-center text-gray-500 text-lg sm:text-xl mb-16 max-w-3xl mx-auto">
