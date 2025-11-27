@@ -31,20 +31,22 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link
-                  href="/about-us"
-                  className="text-black hover:scale-105 transition-all duration-300"
+                <a
+                  href="#services"
+                  onClick={(e) => scrollToSection(e, "services")}
+                  className="text-black hover:scale-105 transition-all duration-300 cursor-pointer"
                 >
-                  Automatics
-                </Link>
+                  Services
+                </a>
               </li>
               <li>
-                <Link
-                  href="/blog"
-                  className="text-black hover:scale-105 transition-all duration-300"
+                <a
+                  href="#about"
+                  onClick={(e) => scrollToSection(e, "about")}
+                  className="text-black hover:scale-105 transition-all duration-300 cursor-pointer"
                 >
-                  Insights
-                </Link>
+                  About
+                </a>
               </li>
               <li>
                 <a
