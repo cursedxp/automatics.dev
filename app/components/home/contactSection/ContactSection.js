@@ -115,7 +115,7 @@ export default function ContactSection() {
         >
           <h2 className="text-5xl sm:text-6xl mb-6">Get In Touch</h2>
           <p className="text-gray-500 text-lg sm:text-xl max-w-2xl mx-auto">
-            Ready to automate your business processes? Let's talk about how we can help.
+            Ready to automate your business processes? Let&apos;s talk about how we can help.
           </p>
         </motion.div>
 
@@ -242,7 +242,7 @@ export default function ContactSection() {
                 {submitStatus === "success" && (
                   <div className="bg-green-50 border border-green-200 rounded-lg p-4">
                     <p className="text-green-800 text-sm">
-                      Thank you for your message! We'll get back to you soon.
+                      Thank you for your message! We&apos;ll get back to you soon.
                     </p>
                   </div>
                 )}

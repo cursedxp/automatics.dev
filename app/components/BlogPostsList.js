@@ -52,7 +52,7 @@ export default function BlogPostsList({ initialPosts }) {
         observerRef.current.disconnect();
       }
     };
-  }, [hasMore, isLoading]);
+  }, [hasMore, isLoading, loadMorePosts]);
 
   // Function to load more posts
   const loadMorePosts = () => {

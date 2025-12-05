@@ -156,7 +156,7 @@ export default function ContactModal() {
                   <div className="mb-6">
                     <h2 className="text-2xl font-bold mb-2">Get In Touch</h2>
                     <p className="text-gray-500 text-sm">
-                      Let's talk about how we can help.
+                      Let&apos;s talk about how we can help.
                     </p>
                   </div>
 
@@ -269,7 +269,7 @@ export default function ContactModal() {
                     {submitStatus === "success" && (
                       <div className="bg-green-50 border border-green-200 rounded-lg p-3">
                         <p className="text-green-800 text-xs">
-                          Thank you! We'll get back to you soon.
+                          Thank you! We&apos;ll get back to you soon.
                         </p>
                       </div>
                     )}
