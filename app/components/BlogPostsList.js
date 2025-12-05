@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,6 +25,24 @@ export default function BlogPostsList({ initialPosts }) {
       setHasMore(initialPosts.length > POSTS_PER_LOAD);
     }
   }, [initialPosts]);
+
+  // Function to load more posts - defined before the useEffect that uses it
+  const loadMorePosts = useCallback(() => {
+    setIsLoading(true);
+
+    // Simulate API delay
+    setTimeout(() => {
+      const currentLength = visiblePosts.length;
+      const nextPosts = initialPosts.slice(
+        currentLength,
+        currentLength + POSTS_PER_LOAD
+      );
+
+      setVisiblePosts((prevPosts) => [...prevPosts, ...nextPosts]);
+      setHasMore(currentLength + POSTS_PER_LOAD < initialPosts.length);
+      setIsLoading(false);
+    }, 500);
+  }, [visiblePosts, initialPosts]);
 
   // Setup intersection observer for infinite scroll
   useEffect(() => {
@@ -53,24 +71,6 @@ export default function BlogPostsList({ initialPosts }) {
       }
     };
   }, [hasMore, isLoading, loadMorePosts]);
-
-  // Function to load more posts
-  const loadMorePosts = () => {
-    setIsLoading(true);
-
-    // Simulate API delay
-    setTimeout(() => {
-      const currentLength = visiblePosts.length;
-      const nextPosts = initialPosts.slice(
-        currentLength,
-        currentLength + POSTS_PER_LOAD
-      );
-
-      setVisiblePosts((prevPosts) => [...prevPosts, ...nextPosts]);
-      setHasMore(currentLength + POSTS_PER_LOAD < initialPosts.length);
-      setIsLoading(false);
-    }, 500);
-  };
 
   if (!initialPosts || initialPosts.length === 0) {
     return (
