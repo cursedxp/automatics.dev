@@ -4,11 +4,11 @@ import { Metadata } from "next";
 import Footer from "./components/home/footer/Footer";
 export const metadata = {
   title: {
-    default: "automatics - Your Digital Solutions Partner",
+    default: "automatics — Workflows and apps that keep your data consistent",
     template: "%s | automatics",
   },
   description:
-    "Learn about automatics&apos;s mission to build custom digital solutions. We&apos;re more than just a tech company - we&apos;re your partner in building the future of digital solutions.",
+    "We automate workflows and build internal + customer-facing apps that keep your data consistent. Audit, Build Sprints, and Operate retainers.",
   keywords: [
     "automatics",
     "digital solutions",
@@ -17,9 +17,9 @@ export const metadata = {
     "digital transformation",
   ],
   openGraph: {
-    title: "automatics - Your Digital Solutions Partner",
+    title: "Business apps & workflows that keep your data consistent",
     description:
-      "Learn about automatics&apos;s mission to build custom digital solutions. We&apos;re more than just a tech company - we&apos;re your partner in building the future of digital solutions.",
+      "Automate workflows, connect tools, and build internal + customer-facing apps. Clear delivery through Audit, Build Sprints, and Operate.",
     type: "website",
   },
 };

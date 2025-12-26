@@ -53,7 +53,7 @@ export default function Impressum() {
               </h2>
               <div className="space-y-2 text-gray-700">
                 <p><strong>Company:</strong> automatics</p>
-                <p><strong>Address:</strong> Dusseldorf, Germany</p>
+                <p><strong>Address:</strong> Düsseldorf, Germany</p>
                 <p><strong>Email:</strong> hi@automatics.io</p>
                 <p><strong>Website:</strong> www.automatics.dev</p>
               </div>
@@ -67,7 +67,7 @@ export default function Impressum() {
               <div className="space-y-2 text-gray-700">
                 <p>According to § 55 Abs. 2 RStV:</p>
                 <p><strong>Name:</strong> Anil Ozsoy</p>
-                <p><strong>Address:</strong> Dusseldorf, Germany</p>
+                <p><strong>Address:</strong> Düsseldorf, Germany</p>
                 <p><strong>Email:</strong> hi@automatics.io</p>
               </div>
             </section>

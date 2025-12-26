@@ -233,7 +233,7 @@ export default function Terms() {
                 <p>
                   <strong>Email:</strong> hi@automatics.io
                   <br />
-                  <strong>Address:</strong> Dusseldorf, Germany
+                  <strong>Address:</strong> Düsseldorf, Germany
                 </p>
               </div>
             </section>

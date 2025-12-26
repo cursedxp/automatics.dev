@@ -319,7 +319,7 @@ export default function Privacy() {
                 <p>
                   <strong>Email:</strong> hi@automatics.io
                   <br />
-                  <strong>Address:</strong> Dusseldorf, Germany
+                  <strong>Address:</strong> Düsseldorf, Germany
                 </p>
                 <p>
                   For data protection inquiries, you can also contact your local

@@ -34,7 +34,7 @@ export default function Services() {
     {
       icon: HiOutlineCommandLine,
       title: "Workflows",
-      description: "Define how work moves end-to-end, then standardize stages, rules, and responsibilities so nothing slips through cracks.",
+      description: "Define how work moves end-to-end, then standardize stages, rules, and responsibilities so nothing slips through the cracks.",
     },
     {
       icon: HiOutlineCommandLine,
@@ -138,7 +138,7 @@ export default function Services() {
           What we build
         </h2>
         <p className="text-center text-gray-500 text-lg sm:text-xl mb-16 max-w-3xl mx-auto">
-          The apps, automations, and data layer that your team and customers use.
+          The portals, workflows, automations, reports and data layers that your team and customers use.
         </p>
 
         {/* Grid Layout */}

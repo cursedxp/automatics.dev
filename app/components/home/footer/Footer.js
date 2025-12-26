@@ -19,8 +19,7 @@ const Footer = () => {
           <div className="space-y-4">
             <Logo className="w-35" />
             <p className="text-black">
-              Empowering businesses with innovative solutions and cutting-edge
-              technology.
+              Workflows and apps that keep your data consistent.
             </p>
           </div>
 
@@ -129,10 +128,10 @@ const Footer = () => {
               <div className="flex items-start gap-2 text-black">
                 <HiLocationMarker className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-black">Dusseldorf, Germany</p>
+                  <p className="text-black">Düsseldorf, Germany</p>
                 </div>
               </div>
-              <div className="flex space-x-4">
+              {/* <div className="flex space-x-4">
                 <a
                   href="#"
                   className="text-black hover:scale-105 transition-all duration-300"
@@ -151,7 +150,7 @@ const Footer = () => {
                 >
                   <FaGithub className="w-6 h-6" />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
