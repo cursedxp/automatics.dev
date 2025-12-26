@@ -1,4 +1,5 @@
 "use client";
+import { desc } from "framer-motion/client";
 import { useState } from "react";
 import {
   HiOutlineCommandLine,
@@ -20,8 +21,10 @@ export default function Services() {
   const solutions = [
     {
       icon: HiOutlineCommandLine,
-      title: "Customer Portals & Onboarding",
-      description: "Self-serve portals for customers, partners, or vendors that sync with your internal systems.",
+      title: "Customer Portals",
+      // description: "Self-serve portals for customers, partners, or vendors that sync with your internal systems.",
+      description: "Self-serve portals for customers, partners, or vendors where they can upload documents, request changes, and complete payments.",
+      
     },
     {
       icon: HiOutlineCommandLine,
@@ -31,18 +34,24 @@ export default function Services() {
     {
       icon: HiOutlineCommandLine,
       title: "Workflows",
-      description: "Define how work moves end-to-end (lead → deal → delivery → invoice), then standardize stages, rules, and responsibilities so nothing slips through cracks.",
+      description: "Define how work moves end-to-end, then standardize stages, rules, and responsibilities so nothing slips through cracks.",
     },
     {
       icon: HiOutlineCommandLine,
-      title: "Automations & Integrations",
-      description: "Connect your tools via APIs/webhooks, automate repetitive steps, and add AI where it actually saves time (triage, enrichment, classification, summaries).",
+      title: "Automations",
+      description: "Connect your tools via APIs/webhooks, automate repetitive steps, and add AI where it saves time (triage, enrichment, classification, summaries).",
+    },
+    {
+      icon: HiOutlineChartBar,
+      title: "Reporting",
+      description: "Custom dashboards and reporting tools that turn scattered data into clear, decision-ready insights."
     },
     {
       icon: HiOutlineCommandLine,
-      title: "Adoption, UX & Governance",
+      title: "Adoption & UX",
       description: "User-centered design with roles and permissions that creates intuitive, delightful experiences so the system gets used.",
     },
+
 
     // {
     //   icon: HiOutlineCommandLine,
