@@ -1,46 +1,50 @@
 {
   "title": "Frequently Asked Questions",
-  "description": "We're here to help. Our team of experts is ready to assist you with any questions about our services, pricing model, or business solutions. We aim to respond within 24 hours on business days.",
+  "description": "The questions people ask before they book a call — scope, timelines, pricing, and how we work. Quick answers so you don’t waste time.",
   "cta": {
     "text": "Book A Call",
     "href": "#pricing"
   },
   "items": [
     {
-      "question": "What services does automatics provide?",
-      "answer": "We specialize in four core areas: Smart Process Automation (eliminating repetitive tasks), UI/UX Design (creating user-friendly interfaces), CMS Systems (tailored content management), and Business Apps (custom applications). We also offer premium add-on services like CTO-as-a-Service and UX Strategy Service for executive-level expertise."
+      "question": "What does automatics actually do?",
+      "answer": "We fix how work moves through your business by designing workflows and building the apps around them — internal tools and customer-facing portals — so data stays consistent and delivery stops breaking."
     },
     {
-      "question": "How does the Plan-Build-Ship process work?",
-      "answer": "We work in monthly iterations: Plan (quick discovery meeting to identify pain points and set OKRs), Build (our team implements solutions while you focus on your business), and Ship (deliver completed improvements, review results, gather feedback). This ensures steady progress without long wait times."
+      "question": "What’s the best way to start?",
+      "answer": "Start with a Systems Audit if you want clarity and a plan in ~2 weeks. If you already know exactly what you need built, a Build Sprint can be the fastest path."
     },
     {
-      "question": "Can I change or cancel my subscription anytime?",
-      "answer": "Yes! Our subscription model is completely flexible with no long-term contracts. Need to speed up development? Increase parallel tasks. Need to slow down? Scale back anytime. You're in full control of your subscription level month-to-month."
+      "question": "What happens in a Systems Audit?",
+      "answer": "We map the end-to-end flow, identify bottlenecks and failure points across people and tools, then deliver a prioritized execution plan with sequencing and ownership."
     },
     {
-      "question": "What does 'unlimited requests' mean?",
-      "answer": "There's no limit to the number of ideas, improvements, or bug fixes you can propose. Simply add them to your backlog and we'll plan and execute them systematically in our monthly cycles. The number of parallel tasks depends on your subscription tier."
+      "question": "How do Build Sprints work?",
+      "answer": "We pick the highest-impact items, implement them, and ship in weekly releases with a short changelog so progress is visible and decisions don’t get lost."
     },
     {
-      "question": "What technologies do you work with?",
-      "answer": "We work with modern technologies including React, Next.js, Node.js, Python, TypeScript, and various databases. We leverage the latest technology to deliver results quickly and effectively, choosing the best tools for your specific project requirements."
+      "question": "How does Operate work and what are the guardrails?",
+      "answer": "Operate is ongoing delivery within agreed capacity. You can submit as many requests as you want, but we only execute what fits the capacity and weekly priority. Larger builds get scoped as a Build Sprint so Operate doesn’t turn into unlimited development."
     },
     {
-      "question": "Do you provide ongoing support and maintenance?",
-      "answer": "Yes, support is built into our subscription model. The Growth plan includes 2 weeks of maintenance, while Enterprise plans include custom maintenance and 24/7 support. All plans include regular updates, security patches, and performance optimization as part of the monthly cycle."
+      "question": "Do you work with our existing tools, or do we need to replace everything?",
+      "answer": "We prefer connecting what you already use. If a tool is actively hurting you, we’ll recommend a change — but we don’t force rip-and-replace by default."
     },
     {
-      "question": "What are your Premium Add-on Services for executive-level expertise?",
-      "answer": "We offer two premium services for companies needing senior leadership without full-time executive hires. CTO-as-a-Service provides on-demand technical leadership including technology roadmapping, vendor management, system architecture, and risk mitigation (fraction of $200K+/year cost). UX Strategy Service delivers expert design leadership with UX vision, research planning, design audits, and team coaching (fraction of $150K+/year cost). Both services give you decades of executive experience on-demand."
+      "question": "Who will I work with day-to-day?",
+      "answer": "You work directly with the people doing the work. No junior handoffs, no account-manager telephone game."
     },
     {
-      "question": "How quickly can I get started?",
-      "answer": "Very quickly! Our Essential plan is perfect for rapid validation (under 4 weeks), while Growth and Enterprise plans can accommodate various timelines from ASAP to long-term planned projects. We start with a quick discovery meeting and can begin work immediately after."
+      "question": "What do you need from us to move fast?",
+      "answer": "One decision-maker, access to the relevant tools, and quick answers when we hit tradeoffs. Speed is usually a responsiveness problem, not an engineering problem."
     },
     {
-      "question": "What if I need help determining the right plan?",
-      "answer": "Use our interactive pricing funnel on the homepage! Answer a few questions about your team size, project complexity, budget, timeline, and support needs, and we'll recommend the perfect plan for your situation. You can also book a call with our team for personalized guidance."
+      "question": "What’s not a good fit?",
+      "answer": "If you want a cheap dev shop, unlimited design, or brand/marketing work, we’re not it. We focus on workflows, apps, integrations, and reporting."
+    },
+    {
+      "question": "How quickly can we start?",
+      "answer": "If you can grant access and name an owner, you can usually start within days. The bottleneck is almost always access and availability, not delivery."
     }
   ]
 }
