@@ -4,8 +4,8 @@ export const PLANS_DATA = [
   {
     id: "audit",
     name: "Systems Audit",
-    tagline: "Fixed-scope, outcome-focused",
-    subtitle: "We trace the full workflow across people and tools, identify bottlenecks and failure points, and translate them into a practical, prioritized execution plan.",
+    tagline: "Starting at €3,500 · Delivered in ~2 weeks",
+    subtitle: "We trace the full workflow across people and tools, identify bottlenecks and failure points, and turn them into a clear, prioritized execution plan.",
     description: "Deliverables:",
     features: [
       "workflow map",
@@ -14,12 +14,13 @@ export const PLANS_DATA = [
       "ROI-prioritized backlog and sequencing",
       "execution roadmap",
     ],
+    cta: "Start with an Audit",
     popular: false,
   },
   {
     id: "build",
     name: "Build Sprint",
-    tagline: "Weekly releases, rapid impact",
+    tagline: "Starting at €8000 · Typical sprint: 4–8 weeks",
     subtitle: "We implement the highest-impact items from the audit: workflows, automations, integrations, and the internal or customer-facing apps that make the process actually run.",
     description: "Typical output:",
     features: [
@@ -29,12 +30,14 @@ export const PLANS_DATA = [
       "reporting foundation: clean metrics and dashboards",
       "documentation and changelog",
     ],
+    cta: "Discuss a Build Sprint",
     popular: true,
   },
   {
     id: "operate",
     name: "Operate",
-    tagline: "Ongoing delivery & reliability",
+    tagline: "Weekly prioritization · Clear capacity",
+    price: "Custom",
     subtitle: "Continuous improvements within agreed capacity. We run a managed queue, reprioritize weekly, and you can submit as many ideas, improvements, or bug fixes as you want.",
     description: "Includes:",
     features: [
@@ -44,7 +47,7 @@ export const PLANS_DATA = [
       "data hygiene and reporting upkeep",
       "adoption support and documentation updates",
     ],
-    highlights: ["Enterprise grade", "Fully customizable", "Dedicated support"],
+    cta: "Contact Us",
     popular: false,
   },
 ];

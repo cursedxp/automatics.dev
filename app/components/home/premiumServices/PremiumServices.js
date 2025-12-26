@@ -63,22 +63,6 @@ function CombinedServiceCard({ services, index }) {
                 </div>
               ))}
             </div>
-
-            {/* Cost Comparison */}
-            <div className="bg-gray-50 rounded-lg p-3">
-              <div className="flex justify-between items-center">
-                <div>
-                  <p className="text-xs text-gray-500">
-                    Traditional: {service.traditionalCost}
-                  </p>
-                </div>
-                <div className="text-right">
-                  <p className="text-xs font-semibold text-gray-900">
-                    Fraction of the cost
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         ))}
       </div>
@@ -88,70 +72,38 @@ function CombinedServiceCard({ services, index }) {
 
 const servicesData = [
   {
-    title: "CTO-as-a-Service",
+    title: "Fractional CTO",
     subtitle: "Senior technical leadership on-demand",
     compactDescription:
-      "For businesses looking for senior technical leadership without hiring a full-time CTO, automatics offers CTO as a Service. In this arrangement, we act as your on-demand Chief Technology Officer – taking full responsibility for your digital assets and tech strategy. We'll oversee everything from big-picture architecture and technology roadmapping to the nitty-gritty of vendor management and system maintenance.\n\nThis is a concierge-level service ideal for companies that want an expert guiding their technology decisions and ensuring all digital initiatives align with business goals. You get the benefit of decades of experience in strategy and implementation, at a fraction of the cost of a full-time executive.",
+      "If you don’t need a full-time CTO, but you do need someone to own architecture decisions and keep delivery sane, this is it. I translate business priorities into a technical plan, set guardrails, and make sure your systems stay reliable as you ship.\n\nThis is ideal when you’re scaling, integrating multiple tools, working with vendors, or you need a senior person to de-risk decisions without turning every topic into a weeks-long workshop.",
     icon: <HiOutlineChartBar className="w-5 h-5 text-gray-900" />,
     traditionalCost: "$200K+/year",
     keyFeatures: [
-      "Technology roadmapping",
-      "Vendor management",
-      "System architecture",
-      "Risk mitigation",
-      "Team leadership",
-      "Strategic planning",
-    ],
-    features: [
-      {
-        icon: (
-          <HiOutlinePresentationChartLine className="w-5 h-5 text-gray-700" />
-        ),
-        title: "Strategic Technology Roadmapping",
-        description:
-          "Long-term vision and planning for your technology infrastructure",
-      },
-      {
-        icon: <HiOutlineCog className="w-5 h-5 text-gray-700" />,
-        title: "Vendor & System Management",
-        description:
-          "Oversee all technology partnerships and infrastructure maintenance",
-      },
-      {
-        icon: <HiOutlineArrowTrendingUp className="w-5 h-5 text-gray-700" />,
-        title: "Business-Aligned Technology Decisions",
-        description:
-          "Ensure all digital initiatives support your core business objectives",
-      },
-      {
-        icon: <HiOutlineLightBulb className="w-5 h-5 text-gray-700" />,
-        title: "Executive-Level Expertise",
-        description:
-          "Decades of strategic experience at a fraction of the cost",
-      },
-    ],
-    included: [
-      "Technology strategy & roadmapping",
-      "Vendor evaluation & management",
-      "System architecture oversight",
-      "Risk assessment & mitigation",
-      "Team leadership guidance",
+
+      "Architecture & integration strategy",
+      "Roadmap & prioritization",
+      "Delivery governance",
+      "Vendor selection & oversight",
+      "Security, reliability & risk management",
+      "Hiring support",
     ],
   },
   {
-    title: "UX Strategy Service",
+    title: "Fractional UX Lead",
     subtitle: "Senior design leadership on-demand",
     compactDescription:
-      "For organizations seeking expert UX leadership but not ready to commit to a full-time Head of UX or Director of Design, we offer UX Strategy Consulting-as-a-Service. In this arrangement, we act as your on-demand UX executive—taking ownership of your user experience vision, research planning, strategic design roadmaps, and ensuring every digital touchpoint delivers measurable impact.\n\nThis is a concierge-level service ideal for companies that want an expert guiding their design decisions and ensuring all UX initiatives align with business goals. You get the benefit of decades of experience in strategy and implementation, at a fraction of the cost of a full-time executive.",
+      "Tools only work if people actually use them. I design workflows and interfaces that reduce friction internally, and customer-facing flows that remove drop-offs — then I make sure the design survives implementation.\n\nThis is ideal if you’re building portals/onboarding, modernizing internal tools, or you need UX leadership that ties design decisions to measurable adoption and conversion.",
     icon: <HiOutlineEye className="w-5 h-5 text-gray-900" />,
     traditionalCost: "$150K+/year",
     keyFeatures: [
-      "UX vision & roadmapping",
-      "Research planning",
-      "Design audits",
-      "Team coaching",
-      "Tool ecosystem",
-      "Change management",
+
+    "UX audit & roadmapping",
+    "User journeys & flows",
+    "Prototypes, UI patterns & design system",
+    "Usability testing & iteration",
+    "Clear UX for flows and edge cases",
+    "Handoff support & implementation QA",
+
     ],
   },
 ];
@@ -172,8 +124,7 @@ export default function PremiumServices() {
             Premium Add-on Services
           </h2>
           <p className="text-gray-500 text-xl max-w-3xl mx-auto leading-relaxed">
-            Executive-level expertise on demand. Get senior technical and design
-            leadership without the overhead of full-time executive hires.
+            Senior technical and UX leadership when you need it — to make better decisions, unblock delivery, and keep execution aligned with business outcomes.
           </p>
         </motion.div>
 

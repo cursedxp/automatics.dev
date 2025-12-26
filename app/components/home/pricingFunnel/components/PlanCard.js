@@ -31,16 +31,19 @@ export default function PlanCard({ plan, index, plans }) {
           </li>
         ))}
       </ul>
-      <div className="mt-auto">
-        <a
-          href="https://calendly.com/mircea-automatics/30min"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-black text-white py-3 px-6 rounded-full text-center font-semibold hover:bg-gray-800 transition-colors duration-300 inline-block"
-        >
-          Book A Call
-        </a>
+      {plan.cta && (
+        <div className="mt-auto">
+          <a
+            href="https://calendly.com/mircea-automatics/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-black text-white py-3 px-6 rounded-full text-center font-semibold hover:bg-gray-800 transition-colors duration-300 inline-block"
+          >
+            {plan.cta}
+          </a>
       </div>
+      )}
+      
     </div>
   );
 }
