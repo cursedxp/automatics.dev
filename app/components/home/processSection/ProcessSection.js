@@ -36,16 +36,14 @@ export default function ProcessSection() {
           {/* Title */}
           <div className="w-full">
             <h2 className="md:text-5xl lg:text-6xl sm:text-4xl text-5xl lg:leading-18 sm:leading-12 xs:text-4xl xs:leading-10">
-              Plan, Build, Ship in Monthly Iterations
+              How we work
             </h2>
           </div>
 
           {/* Description */}
           <div className="w-full">
             <p className="text-gray-500 text-sm leading-relaxed">
-              We follow a simple yet effective process to deliver continuous
-              value to your business, iterating monthly so you see steady
-              progress without long wait times.
+              We keep it simple: pick the highest-impact problem, ship an improvement fast, then measure what changed. You get momentum without constant meetings.
             </p>
           </div>
 
@@ -58,11 +56,7 @@ export default function ProcessSection() {
                 <h3 className="text-xl text-gray-800">Plan</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We kick off each cycle with a focused planning session. In a
-                quick discovery meeting, we identify your biggest pain points
-                and opportunities. Together, we set clear Objectives and Key
-                Results (OKRs) with measurable KPIs, so we know exactly what
-                success looks like for the next iteration.
+                We start by mapping how work actually flows today (lead → deal → delivery → invoice), where it breaks, and what it costs you. We agree on a clear outcome and 1–3 numbers to improve, then turn that into a short, prioritized backlog.
               </p>
             </div>
 
@@ -73,12 +67,7 @@ export default function ProcessSection() {
                 <h3 className="text-xl text-gray-800">Build</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Our team gets to work implementing the solution. Whether
-                we&apos;re configuring an automation bot, designing a new
-                interface, or developing a custom feature, we execute the tasks
-                using the best tools available. Throughout this stage, we handle
-                all the details – you won&apos;t be stuck in status meetings or
-                micromanaging tasks.
+                We implement the solution: workflows, automations, integrations, and the internal or customer-facing apps needed to make the process run end-to-end. You get a live view of progress, decisions, and what’s next — with minimal overhead on your side.
               </p>
             </div>
 
@@ -89,11 +78,7 @@ export default function ProcessSection() {
                 <h3 className="text-xl text-gray-800">Ship</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">
-                At the end of the month, we deliver the completed improvements
-                and integrate them into your business. We review the results
-                against the OKRs we set, confirm the KPIs are met, and gather
-                your feedback. Then it&apos;s straight into the next cycle,
-                using what we learned to plan the following month&apos;s tasks.
+                We roll out the changes and help your team adopt them. Every cycle includes a shipped improvement and a short changelog. Once per month we review results, adjust priorities, and pick the next highest-impact move.
               </p>
             </div>
           </div>
