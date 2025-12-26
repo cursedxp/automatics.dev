@@ -188,7 +188,7 @@ export default function PremiumServices() {
             Ready to add executive-level leadership to your team?
           </p>
           <a
-            href="https://calendly.com/d/csxj-m6y-ssx/meet-with-the-automatics-team"
+            href="https://calendly.com/mircea-automatics/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition-colors duration-300 inline-block"

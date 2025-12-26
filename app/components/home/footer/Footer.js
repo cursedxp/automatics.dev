@@ -118,7 +118,7 @@ const Footer = () => {
               <div className="flex items-center gap-2 text-black">
                 <HiPhone className="w-5 h-5" />
                 <Link
-                  href="https://calendly.com/d/csxj-m6y-ssx/meet-with-the-automatics-team"
+                  href="https://calendly.com/mircea-automatics/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-black hover:scale-105 transition-all duration-300"

@@ -85,7 +85,7 @@ export default function Navbar() {
           </li>
         </ul>
         <Link
-          href="https://calendly.com/d/csxj-m6y-ssx/meet-with-the-automatics-team"
+          href="https://calendly.com/mircea-automatics/30min"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden lg:flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full hover:scale-105 hover:shadow-lg hover:cursor-pointer hover:bg-gray-800 transition-colors duration-300"
@@ -156,7 +156,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="https://calendly.com/d/csxj-m6y-ssx/meet-with-the-automatics-team"
+                href="https://calendly.com/mircea-automatics/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Book a call"

@@ -33,7 +33,7 @@ export default function PlanCard({ plan, index, plans }) {
       </ul>
       <div className="mt-auto">
         <a
-          href="https://calendly.com/d/csxj-m6y-ssx/meet-with-the-automatics-team"
+          href="https://calendly.com/mircea-automatics/30min"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-black text-white py-3 px-6 rounded-full text-center font-semibold hover:bg-gray-800 transition-colors duration-300 inline-block"
