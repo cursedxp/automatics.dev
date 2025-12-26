@@ -24,7 +24,7 @@
     },
     {
       "question": "How does Operate work and what are the guardrails?",
-      "answer": "Operate is ongoing delivery within agreed capacity. You can submit as many requests as you want, but we only execute what fits the capacity and weekly priority. Larger builds get scoped as a Build Sprint so Operate doesn’t turn into unlimited development."
+      "answer": "Operate is ongoing delivery within agreed capacity. You can submit as many requests as you want, but we only execute what fits the capacity and weekly priority. Larger builds get scoped as a Build Sprint."
     },
     {
       "question": "Do you work with our existing tools, or do we need to replace everything?",
@@ -40,7 +40,7 @@
     },
     {
       "question": "What’s not a good fit?",
-      "answer": "If you want a cheap dev shop, unlimited design, or brand/marketing work, we’re not it. We focus on workflows, apps, integrations, and reporting."
+      "answer": "If you want a dev shop, unlimited design, or brand/marketing work, we’re not it. We focus on workflows, apps, integrations, and reporting."
     },
     {
       "question": "How quickly can we start?",
