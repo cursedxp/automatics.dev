@@ -18,12 +18,12 @@ export default function Home() {
       <HeroSection />
       <div className="flex flex-col max-w-7xl mx-auto items-center w-full">
         <Services />
+        <ProcessSection />
         <Technologies />
-        <AboutSection />
         {/* <QuoteSection /> */}
         <PricingFunnel />
         <PremiumServices />
-        <ProcessSection />
+        <AboutSection />
         <FaqSection />
       </div>
       <ContactModal />
