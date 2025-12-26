@@ -20,67 +20,93 @@ export default function Services() {
   const solutions = [
     {
       icon: HiOutlineCommandLine,
-      title: "Process Automation",
-      description:
-        "Smart automation solutions that eliminate repetitive tasks and boost team efficiency with intelligent workflows.",
-      tags: ["API Integration", "Workflow Automation", "Data Processing"],
+      title: "Customer Portals & Onboarding",
+      description: "Self-serve portals for customers, partners, or vendors that sync with your internal systems.",
     },
     {
-      icon: HiOutlineSquares2X2,
-      title: "Custom Business Apps",
-      description:
-        "Tailored applications built for your unique business processes, from internal tools to customer-facing platforms.",
-      tags: ["Web Apps", "Mobile Apps", "Internal Tools"],
+      icon: HiOutlineCommandLine,
+      title: "Internal Business Apps",
+      description: "Role-based internal tools that replace spreadsheets, built around your real process, with clean handoffs and ownership.",
     },
     {
-      icon: HiOutlineDocumentText,
-      title: "CMS & Content Systems",
-      description:
-        "Powerful content management solutions that make it easy to manage your data without technical headaches.",
-      tags: ["Headless CMS", "Admin Panels", "Content Workflows"],
+      icon: HiOutlineCommandLine,
+      title: "Workflows",
+      description: "Define how work moves end-to-end (lead → deal → delivery → invoice), then standardize stages, rules, and responsibilities so nothing slips through cracks.",
     },
     {
-      icon: HiOutlineCloud,
-      title: "Cloud Solutions",
-      description:
-        "Scalable cloud infrastructure and migration services to ensure your systems grow with your business.",
-      tags: ["AWS", "Azure", "Scalability"],
+      icon: HiOutlineCommandLine,
+      title: "Automations & Integrations",
+      description: "Connect your tools via APIs/webhooks, automate repetitive steps, and add AI where it actually saves time (triage, enrichment, classification, summaries).",
     },
     {
-      icon: HiOutlineChartBar,
-      title: "Analytics & Reporting",
-      description:
-        "Data-driven insights with custom dashboards and reporting tools to make informed business decisions.",
-      tags: ["Dashboards", "BI Tools", "Data Visualization"],
+      icon: HiOutlineCommandLine,
+      title: "Adoption, UX & Governance",
+      description: "User-centered design with roles and permissions that creates intuitive, delightful experiences so the system gets used.",
     },
-    {
-      icon: HiOutlineSwatch,
-      title: "UI/UX Design",
-      description:
-        "User-centered design that creates intuitive, delightful experiences ensuring your product works seamlessly.",
-      tags: ["User Research", "Wireframing", "Prototyping"],
-    },
-    {
-      icon: HiOutlineDevicePhoneMobile,
-      title: "Responsive Design",
-      description:
-        "Mobile-first approach ensuring your product looks and works perfectly on any device or screen size.",
-      tags: ["Mobile First", "Adaptive Layouts", "Cross-platform"],
-    },
-    {
-      icon: HiOutlinePaintBrush,
-      title: "Brand Identity",
-      description:
-        "Cohesive visual identity and design systems that make your brand memorable and consistent.",
-      tags: ["Design Systems", "Style Guides", "Branding"],
-    },
-    {
-      icon: HiOutlineSparkles,
-      title: "Product Design",
-      description:
-        "End-to-end product design from concept to launch, creating solutions users love to use.",
-      tags: ["Product Strategy", "Design Thinking", "User Testing"],
-    },
+
+    // {
+    //   icon: HiOutlineCommandLine,
+    //   title: "Process Automation",
+    //   description:
+    //     "Smart automation solutions that eliminate repetitive tasks and boost team efficiency with intelligent workflows.",
+    //   tags: ["API Integration", "Workflow Automation", "Data Processing"],
+    // },
+    // {
+    //   icon: HiOutlineSquares2X2,
+    //   title: "Custom Business Apps",
+    //   description:
+    //     "Tailored applications built for your unique business processes, from internal tools to customer-facing platforms.",
+    //   tags: ["Web Apps", "Mobile Apps", "Internal Tools"],
+    // },
+    // {
+    //   icon: HiOutlineDocumentText,
+    //   title: "CMS & Content Systems",
+    //   description:
+    //     "Powerful content management solutions that make it easy to manage your data without technical headaches.",
+    //   tags: ["Headless CMS", "Admin Panels", "Content Workflows"],
+    // },
+    // {
+    //   icon: HiOutlineCloud,
+    //   title: "Cloud Solutions",
+    //   description:
+    //     "Scalable cloud infrastructure and migration services to ensure your systems grow with your business.",
+    //   tags: ["AWS", "Azure", "Scalability"],
+    // },
+    // {
+    //   icon: HiOutlineChartBar,
+    //   title: "Analytics & Reporting",
+    //   description:
+    //     "Data-driven insights with custom dashboards and reporting tools to make informed business decisions.",
+    //   tags: ["Dashboards", "BI Tools", "Data Visualization"],
+    // },
+    // {
+    //   icon: HiOutlineSwatch,
+    //   title: "UI/UX Design",
+    //   description:
+    //     "User-centered design that creates intuitive, delightful experiences ensuring your product works seamlessly.",
+    //   tags: ["User Research", "Wireframing", "Prototyping"],
+    // },
+    // {
+    //   icon: HiOutlineDevicePhoneMobile,
+    //   title: "Responsive Design",
+    //   description:
+    //     "Mobile-first approach ensuring your product looks and works perfectly on any device or screen size.",
+    //   tags: ["Mobile First", "Adaptive Layouts", "Cross-platform"],
+    // },
+    // {
+    //   icon: HiOutlinePaintBrush,
+    //   title: "Brand Identity",
+    //   description:
+    //     "Cohesive visual identity and design systems that make your brand memorable and consistent.",
+    //   tags: ["Design Systems", "Style Guides", "Branding"],
+    // },
+    // {
+    //   icon: HiOutlineSparkles,
+    //   title: "Product Design",
+    //   description:
+    //     "End-to-end product design from concept to launch, creating solutions users love to use.",
+    //   tags: ["Product Strategy", "Design Thinking", "User Testing"],
+    // },
   ];
 
   const totalSlides = solutions.length;
@@ -100,17 +126,16 @@ export default function Services() {
     <section id="services" className="flex flex-col items-center justify-center my-20 px-4 sm:px-10">
       <div className="w-full max-w-7xl">
         <h2 className="text-5xl sm:text-6xl mb-6 text-center">
-          Tailored Solutions for Your Business
+          What we build
         </h2>
         <p className="text-center text-gray-500 text-lg sm:text-xl mb-16 max-w-3xl mx-auto">
-          Every business faces unique challenges. We transform your pain points
-          into opportunities with tailored solutions.
+          The apps, automations, and data layer that your team and customers use.
         </p>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-[35%_65%] gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-[100%_0%] gap-8 lg:gap-10">
           {/* Left Side - Title and Description */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h3 className="md:text-5xl lg:text-6xl sm:text-4xl text-5xl lg:leading-18 sm:leading-12 xs:text-4xl xs:leading-10">
               Problems we solve
             </h3>
@@ -122,7 +147,7 @@ export default function Services() {
               Google Sheet. When the CEO wants a forecast, someone spends two
               days in Excel hoping the formulas work.
             </p>
-          </div>
+          </div> */}
 
           {/* Right Side - Carousel with Controls */}
           <div className="relative w-full">
