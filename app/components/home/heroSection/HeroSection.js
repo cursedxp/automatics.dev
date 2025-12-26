@@ -41,11 +41,11 @@ export default function HeroSection() {
         transition={{ duration: 1, delay: 0.6 }}
         className="text-center text-gray-500 sm:px-30 px-10 text-xl mb-10 max-w-6xl"
       >
-        We design your revenue operations, build the business apps your teams and customers use, and connect everything to BI so you can actually see revenue — not just guess it.
+      We automate your workflows and build internal and customer-facing apps that keep your data consistent.
       </motion.p>
       <div className="flex flex-col items-center justify-center gap-2">
         <motion.a
-          href="https://calendly.com/d/csxj-m6y-ssx/meet-with-the-automatics-team"
+          href="https://calendly.com/mircea-automatics/30min"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ y: -20, opacity: 0 }}
