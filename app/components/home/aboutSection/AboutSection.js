@@ -8,18 +8,19 @@ export default function AboutSection() {
   const team = [
     {
       name: "Mircea Preotu",
-      role: "Co-Founder & Solution Architect",
+      role: "Co-Founder. Solution Architect",
       image: "/assets/team/mircea.jpeg",
-      bio: "I help companies figure out how their business actually works, then build systems that make sense for them. Most of my time goes into understanding the mess, designing something better, and making sure it gets built right.",
+      bio: "I’m responsible for turning messy reality into a working system: aligning stakeholders, making the tradeoffs, and keeping delivery grounded in what moves the business.",
       linkedin: "https://www.linkedin.com/in/mirceapreotu/",
       email: "mircea@automatics.dev",
       github: "https://github.com/yourprofile",
     },
     {
       name: "Anil Ozsoy",
-      role: "Co-Founder & UX Designer / Frontend Developer",
+      role: "Co-Founder. UX & Frontend Lead",
       image: "/assets/team/anil.png",
-      bio: "I do both design and code. Spent years as a designer before switching to development, so I care a lot about how things actually feel to use. It's pretty useful being able to design something and then build it myself.",
+      // bio: "I do both design and code. Spent years as a designer before switching to development, so I care a lot about how things actually feel to use. It's pretty useful being able to design something and then build it myself.",
+      bio: "I turn complex workflows into interfaces people actually use. I care about clarity, speed, and adoption so the system feels obvious, not like another tool your team avoids.",
       linkedin: "https://linkedin.com/in/partnerprofile",
       email: "anil@automatics.dev",
       github: "https://github.com/partnerprofile",
@@ -29,9 +30,9 @@ export default function AboutSection() {
   return (
     <section id="about" className="flex flex-col items-center justify-center my-20 px-4 sm:px-10">
       <div className="w-full max-w-7xl">
-        <h2 className="text-5xl sm:text-6xl mb-6 text-center">Meet The Team</h2>
+        <h2 className="text-5xl sm:text-6xl mb-6 text-center">Team</h2>
         <p className="text-center text-gray-500 text-lg sm:text-xl mb-16 max-w-3xl mx-auto">
-          Just two people who got tired of seeing businesses struggle with bad software.
+          Senior, hands-on, and accountable — no juniors, no disappearing acts.
         </p>
 
         {/* Single Card with Left Story and Right Profiles */}
@@ -44,13 +45,15 @@ export default function AboutSection() {
               </h3>
               <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
                 <p>
-                  We started this because everywhere we looked, companies were dealing with the same problems. Too much manual work, tools that don&apos;t talk to each other, systems that make simple things complicated.
+                  You work directly with the people doing the work. 
                 </p>
+                
                 <p>
-                  Mircea spent years fixing broken business processes. Anil designed interfaces at companies where bad UX actually cost money. We got good at understanding what&apos;s really broken and how to fix it without making things worse.
+                  We keep communication lean, decisions written down, and progress visible so you spend less time in meetings and more time seeing things move.
                 </p>
+                
                 <p>
-                  Here&apos;s how we work: first, we figure out what you&apos;re actually doing today. Then we build something that fits into your workflow instead of forcing you to change everything. No fancy jargon, no overcomplicated solutions.
+                  We’re practical. We build what fits your business, avoid “rip-and-replace” projects, and don’t ship clever complexity you’ll regret. If something isn’t worth building, we’ll tell you.
                 </p>
               </div>
             </div>
