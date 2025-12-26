@@ -6,11 +6,11 @@ export const PLANS_DATA = [
     name: "Systems Audit",
     tagline: "Fixed-scope, outcome-focused",
     subtitle: "We trace the full workflow across people and tools, identify bottlenecks and failure points, and translate them into a practical, prioritized execution plan.",
-    description: "What you get:",
+    description: "Deliverables:",
     features: [
       "workflow map",
       "data/tool audit (CRM, billing, support, sheets)",
-      "“single source of truth” plan" ,
+      "single source of truth plan" ,
       "ROI-prioritized backlog and sequencing",
       "execution roadmap",
     ],
@@ -19,7 +19,7 @@ export const PLANS_DATA = [
   {
     id: "build",
     name: "Build Sprint",
-    tagline: "Ship improvements fast",
+    tagline: "Weekly releases, rapid impact",
     subtitle: "We implement the highest-impact items from the audit: workflows, automations, integrations, and the internal or customer-facing apps that make the process actually run.",
     description: "Typical output:",
     features: [
@@ -34,7 +34,7 @@ export const PLANS_DATA = [
   {
     id: "operate",
     name: "Operate",
-    tagline: "Ongoing delivery and reliability",
+    tagline: "Ongoing delivery & reliability",
     subtitle: "Continuous improvements within agreed capacity. We run a managed queue, reprioritize weekly, and you can submit as many ideas, improvements, or bug fixes as you want.",
     description: "Includes:",
     features: [
