@@ -11,8 +11,8 @@ export default function AboutSection() {
       role: "Co-Founder & Solution Architect",
       image: "/assets/team/mircea.jpeg",
       bio: "I help companies figure out how their business actually works, then build systems that make sense for them. Most of my time goes into understanding the mess, designing something better, and making sure it gets built right.",
-      linkedin: "https://linkedin.com/in/yourprofile",
-      email: "mircea@automatics.com",
+      linkedin: "https://www.linkedin.com/in/mirceapreotu/",
+      email: "mircea@automatics.dev",
       github: "https://github.com/yourprofile",
     },
     {
@@ -21,7 +21,7 @@ export default function AboutSection() {
       image: "/assets/team/anil.png",
       bio: "I do both design and code. Spent years as a designer before switching to development, so I care a lot about how things actually feel to use. It's pretty useful being able to design something and then build it myself.",
       linkedin: "https://linkedin.com/in/partnerprofile",
-      email: "anil@automatics.com",
+      email: "anil@automatics.dev",
       github: "https://github.com/partnerprofile",
     },
   ];

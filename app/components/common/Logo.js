@@ -5,7 +5,7 @@ const Logo = ({ className = "" }) => {
     <div className={`inline-block ${className}`}>
       <Image
         src="/assets/images/logo.svg"
-        alt="Automatics Logo"
+        alt="automatics Logo"
         width={163}
         height={28}
         priority

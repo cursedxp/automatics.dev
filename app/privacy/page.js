@@ -53,7 +53,7 @@ export default function Privacy() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  At Automatics (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or
+                  At automatics (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or
                   &ldquo;us&rdquo;), we respect your privacy and are committed
                   to protecting your personal data. This Privacy Policy explains
                   how we collect, use, disclose, and safeguard your information

@@ -54,11 +54,11 @@ export default function Terms() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  Welcome to Automatics (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or
+                  Welcome to automatics (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or
                   &ldquo;us&rdquo;). These Terms of Service
                   (&ldquo;Terms&rdquo;) govern your use of our website located
                   at www.automatics.dev (the &ldquo;Service&rdquo;) operated by
-                  Automatics.
+                  automatics.
                 </p>
                 <p>
                   By accessing or using our Service, you agree to be bound by
@@ -75,7 +75,7 @@ export default function Terms() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  Automatics provides digital solutions and software development
+                  automatics provides digital solutions and software development
                   services including but not limited to:
                 </p>
                 <ul className="list-disc ml-6 space-y-2">
@@ -163,7 +163,7 @@ export default function Terms() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  To the fullest extent permitted by law, Automatics shall not
+                  To the fullest extent permitted by law, automatics shall not
                   be liable for:
                 </p>
                 <ul className="list-disc ml-6 space-y-2">

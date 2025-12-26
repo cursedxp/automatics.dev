@@ -4,22 +4,22 @@ import { Metadata } from "next";
 import Footer from "./components/home/footer/Footer";
 export const metadata = {
   title: {
-    default: "Automatics - Your Digital Solutions Partner",
-    template: "%s | Automatics",
+    default: "automatics - Your Digital Solutions Partner",
+    template: "%s | automatics",
   },
   description:
-    "Learn about Automatics&apos;s mission to build custom digital solutions. We&apos;re more than just a tech company - we&apos;re your partner in building the future of digital solutions.",
+    "Learn about automatics&apos;s mission to build custom digital solutions. We&apos;re more than just a tech company - we&apos;re your partner in building the future of digital solutions.",
   keywords: [
-    "Automatics",
+    "automatics",
     "digital solutions",
     "custom software",
     "tech company",
     "digital transformation",
   ],
   openGraph: {
-    title: "Automatics - Your Digital Solutions Partner",
+    title: "automatics - Your Digital Solutions Partner",
     description:
-      "Learn about Automatics&apos;s mission to build custom digital solutions. We&apos;re more than just a tech company - we&apos;re your partner in building the future of digital solutions.",
+      "Learn about automatics&apos;s mission to build custom digital solutions. We&apos;re more than just a tech company - we&apos;re your partner in building the future of digital solutions.",
     type: "website",
   },
 };

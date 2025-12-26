@@ -52,7 +52,7 @@ export default function Impressum() {
                 Company Information
               </h2>
               <div className="space-y-2 text-gray-700">
-                <p><strong>Company:</strong> Automatics</p>
+                <p><strong>Company:</strong> automatics</p>
                 <p><strong>Address:</strong> Dusseldorf, Germany</p>
                 <p><strong>Email:</strong> hi@automatics.io</p>
                 <p><strong>Website:</strong> www.automatics.dev</p>
