@@ -20,7 +20,7 @@ const PricingCard = () => {
       aria-label="Pricing options"
     >
       {/* Toggle Switch in top right corner - only show in table view */}
-      {currentView === 'table' && (
+      {currentView === 'hide-forever' && (
         <div className="absolute top-8 right-8 z-20 group">
           <button
             onClick={() => dispatch({ type: 'TOGGLE_DETAILS' })}
