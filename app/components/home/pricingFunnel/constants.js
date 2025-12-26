@@ -4,7 +4,7 @@ export const PLANS_DATA = [
   {
     id: "audit",
     name: "Systems Audit",
-    tagline: "Starting at €3,500 · Delivered in 2 weeks",
+    tagline: "Starting at €4000 · Delivered in 2 weeks",
     subtitle: "We trace the full workflow across people and tools, identify bottlenecks and failure points, and turn them into a clear, prioritized execution plan.",
     description: "Deliverables:",
     features: [
@@ -20,7 +20,7 @@ export const PLANS_DATA = [
   {
     id: "build",
     name: "Build Sprint",
-    tagline: "Starting at €8,000 · Typical sprint: 4–8 weeks",
+    tagline: "Starting at €11,000 · Sprint duration: 4 weeks",
     subtitle: "We implement the highest-impact items from the audit: workflows, automations, integrations, and the internal or customer-facing apps that make the process actually run.",
     description: "Typical output:",
     features: [
