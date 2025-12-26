@@ -80,16 +80,15 @@ export default function Technologies() {
     <section className="flex flex-col items-center justify-center my-20 w-full overflow-hidden">
       <div className="text-center mb-12 px-10">
         <h2 className="mb-8 md:text-5xl lg:text-6xl sm:text-4xl text-5xl">
-          Modern Tech Stack
+          {/* Modern Tech Stack */}
+          Tools we use
         </h2>
         <p className="text-gray-500 text-xl md:max-w-4xl mx-auto mb-8">
-          We use cutting-edge technologies to build robust and scalable
-          solutions. Our tech stack is carefully chosen to ensure the best
-          performance, maintainability, and user experience.
+          No rip-and-replace. We plug into what you have, automate the handoffs, so workflows run end-to-end and reporting is consistent.
         </p>
 
         {/* Category Tabs */}
-        <div className="flex flex-wrap gap-3 justify-center mb-8">
+        {/* <div className="flex flex-wrap gap-3 justify-center mb-8">
           {categoryOrder.map((cat) => (
             <button
               key={cat.key}
@@ -103,10 +102,10 @@ export default function Technologies() {
               {cat.name}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Selected Category Technologies */}
-        <div className="w-full max-w-[1400px] mx-auto px-4">
+        {/* <div className="w-full max-w-[1400px] mx-auto px-4">
           <div className="flex flex-wrap gap-x-8 gap-y-3 justify-center">
             {categories[selectedCategory]?.technologies.map((tech, techIndex) => (
               <span
@@ -117,7 +116,7 @@ export default function Technologies() {
               </span>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Scrolling Technologies */}
