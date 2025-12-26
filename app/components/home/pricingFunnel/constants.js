@@ -4,7 +4,7 @@ export const PLANS_DATA = [
   {
     id: "audit",
     name: "Systems Audit",
-    tagline: "Starting at €4000 · Delivered in 2 weeks",
+    tagline: "Starting at €3500 · Delivered in 2 weeks",
     subtitle: "We trace the full workflow across people and tools, identify bottlenecks and failure points, and turn them into a clear, prioritized execution plan.",
     description: "Deliverables:",
     features: [
@@ -31,14 +31,15 @@ export const PLANS_DATA = [
       "documentation and changelog",
     ],
     cta: "Discuss a Build Sprint",
-    popular: true,
+    popular: false,
   },
   {
     id: "operate",
     name: "Operate",
-    tagline: "Weekly prioritization · Clear capacity",
+    tagline: "Starting at €4000 · Monthly subscription",
     price: "Custom",
-    subtitle: "Continuous improvements within agreed capacity. We run a managed queue, reprioritize weekly, and you can submit as many ideas, improvements, or bug fixes as you want.",
+    // subtitle: "Continuous improvements within agreed capacity. We run a managed queue, reprioritize weekly, and you can submit as many ideas, improvements, or bug fixes as you want.",
+    subtitle: "Continuous improvements within agreed capacity. We reprioritize weekly, you can submit tasks through a dedicated platform. We scope larger tasks to Build Sprints.",
     description: "Includes:",
     features: [
       "managed queue with weekly prioritization",
