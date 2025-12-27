@@ -10,7 +10,7 @@ import {
   HiOutlineArrowPath,
 } from "react-icons/hi2";
 
-const PricingTableView = ({ onLearnMore }) => {
+const PricingTableView = () => {
   const { state } = usePricingFunnel();
 
   return (
@@ -22,10 +22,7 @@ const PricingTableView = ({ onLearnMore }) => {
       aria-label="Pricing plans"
     >
       <div className="p-8">
-        <PricingTableContent
-          plans={PLANS_DATA}
-          onLearnMore={onLearnMore}
-        />
+        <PricingTableContent plans={PLANS_DATA} />
 
         {/* Details Section - Shows below pricing cards when toggle is on */}
         <AnimatePresence>

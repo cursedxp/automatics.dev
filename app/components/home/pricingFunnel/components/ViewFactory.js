@@ -5,11 +5,11 @@ import FunnelView from "./FunnelView";
 
 const ViewFactory = ({ viewType, state, handlers, gridLayout }) => {
   const views = {
-    table: <PricingTableView onLearnMore={handlers.handleLearnMore} />,
+    table: <PricingTableView />,
     result: (
-      <ResultView 
-        recommendation={state.recommendation} 
-        onRestart={handlers.handleRestart} 
+      <ResultView
+        recommendation={state.recommendation}
+        onRestart={handlers.handleRestart}
       />
     ),
     funnel: <FunnelView state={state} gridLayout={gridLayout} />,

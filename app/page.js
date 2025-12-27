@@ -19,11 +19,10 @@ export default function Home() {
       <div className="flex flex-col max-w-7xl mx-auto items-center w-full">
         <Services />
         <ProcessSection />
-        <Technologies />
-        {/* <QuoteSection /> */}
         <PricingFunnel />
         <PremiumServices />
         <AboutSection />
+        <Technologies />
         <FaqSection />
       </div>
       <ContactModal />

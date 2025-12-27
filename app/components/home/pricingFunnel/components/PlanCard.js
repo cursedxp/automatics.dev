@@ -1,10 +1,6 @@
-export default function PlanCard({ plan, index, plans }) {
+export default function PlanCard({ plan }) {
   return (
-    <div
-      className={`relative p-8 transition-all duration-300 flex flex-col text-sm min-h-[500px] ${
-        index < plans.length - 1 ? "" : ""
-      }`}
-    >
+    <div className="relative p-8 transition-all duration-300 flex flex-col text-sm min-h-[500px]">
       <div className="text-left mb-8">
         <div className="flex items-center gap-3 mb-2">
           <h3 className="text-2xl font-bold">{plan.name}</h3>
@@ -18,7 +14,10 @@ export default function PlanCard({ plan, index, plans }) {
           <p className="text-sm text-gray-500 mb-2"> {plan.tagline}</p>
         )}
         {plan.subtitle && (
-          <p className="text-sm text-gray-600 mb-4">{plan.subtitle}</p>
+          <p className="text-sm text-gray-600 mb-2">{plan.subtitle}</p>
+        )}
+        {plan.priceNote && (
+          <p className="text-sm text-black font-medium mb-4">{plan.priceNote}</p>
         )}
         {/* Price removed - will discuss pricing in consultation */}
         <p className="text-gray-600">{plan.description}</p>
