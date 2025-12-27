@@ -1,89 +1,67 @@
 "use client";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import {
-  HiOutlineClipboardDocumentList,
-  HiOutlineWrenchScrewdriver,
-  HiOutlineRocketLaunch,
-} from "react-icons/hi2";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export default function ProcessSection() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const processSteps = [
+    {
+      title: "Plan",
+      description:
+        "We start by mapping how work actually flows today (lead → deal → delivery → invoice), where it breaks, and what it costs you. We agree on a clear outcome and 1–3 numbers to improve, then turn that into a short, prioritized backlog.",
+    },
+    {
+      title: "Build",
+      description:
+        "We implement the solution: workflows, automations, integrations, and the internal or customer-facing apps needed to make the process run end-to-end. You get a live view of progress, decisions, and what's next — with minimal overhead on your side.",
+    },
+    {
+      title: "Ship",
+      description:
+        "We roll out the changes and help your team adopt them. Every cycle includes a shipped improvement and a short changelog. Once per month we review results, adjust priorities, and pick the next highest-impact move.",
+    },
+  ];
+
   return (
-    <motion.section
-      className="flex flex-col w-full gap-8 xl:px-10 lg:px-10 md:px-10 sm:px-10 py-20 bg-white rounded-2xl shadow-2xl xs:px-8 my-20 px-4"
-      animate={{ y: [-3, 3, -3] }}
-      transition={{
-        duration: 3,
-        repeat: Infinity,
-        ease: "easeInOut",
-      }}
-    >
-      <div className="flex w-full gap-8 xs:flex-col lg:flex-row">
-        {/* Left Side - Image Only */}
-        <div className="flex flex-col lg:w-1/2 w-full">
-          <div className="relative w-full h-full min-h-[400px] lg:min-h-[500px]">
-            <Image
-              src="/assets/images/built.jpg"
-              alt="Our Process"
-              fill
-              className="object-cover rounded-2xl"
-            />
-          </div>
-        </div>
+    <section ref={ref} className="flex flex-col w-full gap-8 my-10">
+      <div className="w-full max-w-7xl mx-auto">
+        {/* Layout with Left Card and Right Header */}
+        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8 items-start">
+          {/* Left Side - Single Card containing all process steps */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="bg-white rounded-2xl p-8 border-2 border-gray-100"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {processSteps.map((step, index) => (
+                <div key={index} className="flex flex-col items-start">
+                  <h3 className="text-xl font-bold mb-3">{step.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
 
-        {/* Right Side - Title, Description, and Process Steps */}
-        <div className="flex flex-col lg:w-1/2 w-full gap-8">
-          {/* Title */}
-          <div className="w-full">
-            <h2 className="md:text-5xl lg:text-6xl sm:text-4xl text-5xl lg:leading-18 sm:leading-12 xs:text-4xl xs:leading-10">
-              How we work
-            </h2>
-          </div>
-
-          {/* Description */}
-          <div className="w-full">
-            <p className="text-gray-500 text-sm leading-relaxed">
-              We keep it simple: pick the highest-impact problem, ship an improvement fast, then measure what changed. You get momentum without constant meetings.
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <h2 className="text-5xl sm:text-6xl mb-6">How we work</h2>
+            <p className="text-gray-500 text-lg sm:text-xl">
+              We keep it simple: pick the highest-impact problem, ship an
+              improvement fast, then measure what changed. You get momentum
+              without constant meetings.
             </p>
-          </div>
-
-          {/* Process Steps */}
-          <div className="flex flex-col gap-8">
-            {/* Step 1 - Plan */}
-            <div className="flex flex-col items-start">
-              <div className="flex items-center mb-2">
-                <HiOutlineClipboardDocumentList className="w-6 h-6 text-gray-900 mr-4" />
-                <h3 className="text-xl text-gray-800">Plan</h3>
-              </div>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                We start by mapping how work actually flows today (lead → deal → delivery → invoice), where it breaks, and what it costs you. We agree on a clear outcome and 1–3 numbers to improve, then turn that into a short, prioritized backlog.
-              </p>
-            </div>
-
-            {/* Step 2 - Build */}
-            <div className="flex flex-col items-start">
-              <div className="flex items-center mb-2">
-                <HiOutlineWrenchScrewdriver className="w-6 h-6 text-gray-900 mr-4" />
-                <h3 className="text-xl text-gray-800">Build</h3>
-              </div>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                We implement the solution: workflows, automations, integrations, and the internal or customer-facing apps needed to make the process run end-to-end. You get a live view of progress, decisions, and what’s next — with minimal overhead on your side.
-              </p>
-            </div>
-
-            {/* Step 3 - Ship */}
-            <div className="flex flex-col items-start">
-              <div className="flex items-center mb-2">
-                <HiOutlineRocketLaunch className="w-6 h-6 text-gray-900 mr-4" />
-                <h3 className="text-xl text-gray-800">Ship</h3>
-              </div>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                We roll out the changes and help your team adopt them. Every cycle includes a shipped improvement and a short changelog. Once per month we review results, adjust priorities, and pick the next highest-impact move.
-              </p>
-            </div>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }
