@@ -17,12 +17,14 @@ export default function PlanCard({ plan }) {
           <p className="text-sm text-gray-600 mb-2">{plan.subtitle}</p>
         )}
         {plan.priceNote && (
-          <p className="text-sm text-black font-medium mb-4">{plan.priceNote}</p>
+          <p className="text-sm text-black font-medium mb-4">
+            {plan.priceNote}
+          </p>
         )}
         {/* Price removed - will discuss pricing in consultation */}
         <p className="text-gray-600">{plan.description}</p>
       </div>
-      <ul className="space-y-4 mb-8 flex-grow">
+      <ul className="space-y-4 mb-8 grow">
         {plan.features.map((feature) => (
           <li key={feature} className="flex items-center gap-2 text-sm">
             <span className="w-2 h-2 rounded-full bg-black"></span>
@@ -40,9 +42,8 @@ export default function PlanCard({ plan }) {
           >
             {plan.cta}
           </a>
-      </div>
+        </div>
       )}
-      
     </div>
   );
 }
