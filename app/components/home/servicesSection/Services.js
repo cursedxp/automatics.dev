@@ -13,12 +13,12 @@ export default function Services() {
         "Self-service portals where customers, partners, or vendors can upload documents, request changes, and complete payments—synced with your internal systems.",
     },
     {
-      title: "Internal Operations",
+      title: "Internal Systems",
       description:
         "Role-based apps that replace spreadsheets, standardized workflows with clear handoffs, and dashboards that turn scattered data into decision-ready insights.",
     },
     {
-      title: "Integration & Automation",
+      title: "Connect & Automate",
       description:
         "Connect your tools via APIs, automate repetitive steps, and add AI where it saves time—triage, enrichment, classification, summaries.",
     },
@@ -41,8 +41,10 @@ export default function Services() {
           >
             <h2 className="text-5xl sm:text-6xl mb-6">What we deliver</h2>
             <p className="text-gray-500 text-lg sm:text-xl">
-              Complete solutions that connect your people, processes, and
-              tools—not just isolated features.
+              {/* Complete solutions that connect your people, processes, and
+              tools—not just isolated features. */}
+
+              Complete solutions that connect people, processes, and tools.
             </p>
           </motion.div>
 

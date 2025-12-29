@@ -123,7 +123,7 @@ export default function PremiumServices() {
             rel="noopener noreferrer"
             className="bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition-colors duration-300 inline-block"
           >
-            Book A Call
+            Get in touch
           </a>
         </div>
 

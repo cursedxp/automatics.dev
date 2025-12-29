@@ -20,7 +20,7 @@ export default function ProcessSection() {
     {
       title: "Ship",
       description:
-        "We roll out the changes and help your team adopt them. Every cycle includes a shipped improvement and a short changelog. Once per month we review results, adjust priorities, and pick the next highest-impact move.",
+        "We roll out the changes and help your team adopt them. Every cycle includes a shipped improvement and a short changelog. At the end of each cycle, we review results, adjust priorities, and pick the next highest-impact task.",
     },
   ];
 
@@ -55,9 +55,9 @@ export default function ProcessSection() {
           >
             <h2 className="text-5xl sm:text-6xl mb-6">How we work</h2>
             <p className="text-gray-500 text-lg sm:text-xl">
-              We keep it simple: pick the highest-impact problem, ship an
-              improvement fast, then measure what changed. You get momentum
-              without constant meetings.
+              {/* We keep it simple: we pick the highest-impact problem, ship an improvement fast, and measure what changed—so you get momentum without constant meetings. You work directly with the people doing the work, while we keep communication lean, decisions written down, and progress visible, so you spend less time talking and more time seeing things move. We’re practical: we build what fits your business, avoid “rip-and-replace” projects, and don’t dump complexity on you that you’ll regret—and if something isn’t worth building, we’ll tell you. */}
+              {/* We keep it simple: pick the highest-impact problem, ship an improvement fast, and measure what changed—so you get momentum without constant meetings. You work directly with the people doing the work, with lean communication, written decisions, and visible progress. We build what fits your business, avoid rip-and-replace projects, and won’t ship complexity you’ll regret—if it isn’t worth building, we’ll tell you. */}
+              We pick the highest-impact problem, ship an improvement and measure results. You work directly with the people doing the work, with lean communication and visible progress. We build what fits, avoid rip-and-replace, and won’t ship complexity you’ll regret.
             </p>
           </motion.div>
         </div>

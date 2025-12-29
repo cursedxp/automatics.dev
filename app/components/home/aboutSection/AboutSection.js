@@ -43,14 +43,15 @@ export default function AboutSection() {
       className="flex flex-col items-center justify-center my-20 px-4 sm:px-10"
     >
       <div className="w-full max-w-7xl">
-        <h2 className="text-5xl sm:text-6xl mb-6 text-center">Who We Are</h2>
+        <h2 className="text-5xl sm:text-6xl mb-6 text-center">Who we are</h2>
         <p className="text-center text-gray-500 text-lg sm:text-xl mb-16 max-w-3xl mx-auto">
           Senior, hands-on, and accountable — direct access, no layers, no
           handoffs.
         </p>
 
         {/* Layout with Left Card and Right Text */}
-        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8 items-start">
+        {/* <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8 items-start"> */}
+        <div className="grid grid-cols-1 gap-8 items-start">
           {/* Left Side - Team Profiles Card */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -114,26 +115,6 @@ export default function AboutSection() {
                 </div>
               ))}
             </div>
-          </motion.div>
-
-          {/* Right Side - Philosophy Text */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="flex flex-col gap-6"
-          >
-            <p className="text-gray-700 text-base leading-relaxed">
-              You work directly with the people doing the work. We keep
-              communication lean, decisions written down, and progress visible —
-              so you spend less time in meetings and more time seeing things
-              move.
-            </p>
-            <p className="text-gray-700 text-base leading-relaxed">
-              We're practical. We build what fits your business, avoid
-              "rip-and-replace" projects, and don't ship complexity you'll
-              regret. If something isn't worth building, we'll tell you.
-            </p>
           </motion.div>
         </div>
       </div>
