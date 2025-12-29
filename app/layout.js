@@ -4,7 +4,8 @@ import { Metadata } from "next";
 import Footer from "./components/home/footer/Footer";
 export const metadata = {
   title: {
-    default: "automatics — Workflows and apps that keep your data consistent",
+    // default: "automatics — Workflows and apps that keep your data consistent",
+    default: "automatics - Business apps & automations for SMBs",
     template: "%s | automatics",
   },
   description:
