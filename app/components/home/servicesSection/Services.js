@@ -8,7 +8,7 @@ export default function Services() {
 
   const solutions = [
     {
-      title: "Customer-Facing Systems",
+      title: "Customer-Facing Apps",
       description:
         "Self-service portals where customers, partners, or vendors can upload documents, request changes, and complete payments—synced with your internal systems.",
     },
