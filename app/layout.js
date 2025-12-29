@@ -22,6 +22,9 @@ export const metadata = {
       "Automate workflows, connect tools, and build internal + customer-facing apps. Clear delivery through Audit, Build Sprints, and Operate.",
     type: "website",
   },
+  alternates: {
+    canonical: "https://automatics.dev",
+  },
 };
 
 export default function RootLayout({ children }) {
