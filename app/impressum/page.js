@@ -34,9 +34,9 @@ export default function Impressum() {
           <h1 className="text-4xl sm:text-5xl font-bold text-black mb-4">
             Impressum
           </h1>
-          <p className="text-gray-600 text-lg">
+          <h2 className="text-gray-600 text-lg">
             Legal information according to German law (§5 TMG)
-          </p>
+          </h2>
         </motion.div>
 
         {/* Content */}
@@ -48,9 +48,9 @@ export default function Impressum() {
           <div className="space-y-8">
             {/* Company Information */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 Company Information
-              </h2>
+              </h3>
               <div className="space-y-2 text-gray-700">
                 <p><strong>Company:</strong> automatics</p>
                 <p><strong>Address:</strong> Düsseldorf, Germany</p>
@@ -61,9 +61,9 @@ export default function Impressum() {
 
             {/* Responsible Person */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 Responsible for Content
-              </h2>
+              </h3>
               <div className="space-y-2 text-gray-700">
                 <p>According to § 55 Abs. 2 RStV:</p>
                 <p><strong>Name:</strong> Anil Ozsoy</p>
@@ -74,9 +74,9 @@ export default function Impressum() {
 
             {/* Disclaimer */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 Disclaimer
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <div>
                   <h3 className="font-semibold text-black mb-2">Liability for Contents</h3>
@@ -103,9 +103,9 @@ export default function Impressum() {
 
             {/* EU Dispute Resolution */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 EU Dispute Resolution
-              </h2>
+              </h3>
               <div className="text-gray-700">
                 <p>
                   The European Commission provides a platform for online dispute resolution (ODR): 
@@ -126,9 +126,9 @@ export default function Impressum() {
 
             {/* Consumer Dispute Resolution */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 Consumer Dispute Resolution/Universal Arbitration Board
-              </h2>
+              </h3>
               <div className="text-gray-700">
                 <p>
                   We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.

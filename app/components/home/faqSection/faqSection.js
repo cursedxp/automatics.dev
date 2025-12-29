@@ -30,9 +30,9 @@ export default function FaqSection() {
         animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h2 className="md:text-5xl lg:text-6xl sm:text-4xl text-6xl mb-8">
+        <h3 className="md:text-5xl lg:text-6xl sm:text-4xl text-6xl mb-8">
           {faqData.title}
-        </h2>
+        </h3>
         <p className="text-gray-500 text-xl">{faqData.description}</p>
       </motion.div>
       <motion.div

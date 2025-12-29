@@ -39,7 +39,7 @@ export default function Services() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <h2 className="text-5xl sm:text-6xl mb-6">What we deliver</h2>
+            <h3 className="text-5xl sm:text-6xl mb-6">What we deliver</h3>
             <p className="text-gray-500 text-lg sm:text-xl">
               {/* Complete solutions that connect your people, processes, and
               tools—not just isolated features. */}

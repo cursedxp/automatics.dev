@@ -34,10 +34,10 @@ export default function Terms() {
           <h1 className="text-4xl sm:text-5xl font-bold text-black mb-4">
             Terms of Service
           </h1>
-          <p className="text-gray-600 text-lg">
+          <h2 className="text-gray-600 text-lg">
             Please read these terms and conditions carefully before using our
             services.
-          </p>
+          </h2>
         </motion.div>
 
         {/* Content */}
@@ -49,9 +49,9 @@ export default function Terms() {
           <div className="space-y-8">
             {/* Introduction */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 1. Introduction
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   Welcome to automatics (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or
@@ -70,9 +70,9 @@ export default function Terms() {
 
             {/* Services */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 2. Description of Services
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   automatics provides digital solutions and software development
@@ -91,9 +91,9 @@ export default function Terms() {
 
             {/* User Responsibilities */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 3. User Responsibilities
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>You agree to:</p>
                 <ul className="list-disc ml-6 space-y-2">
@@ -111,9 +111,9 @@ export default function Terms() {
 
             {/* Payment Terms */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 4. Payment Terms
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   Payment terms will be specified in individual project
@@ -134,9 +134,9 @@ export default function Terms() {
 
             {/* Intellectual Property */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 5. Intellectual Property
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>Unless otherwise agreed in writing:</p>
                 <ul className="list-disc ml-6 space-y-2">
@@ -158,9 +158,9 @@ export default function Terms() {
 
             {/* Limitation of Liability */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 6. Limitation of Liability
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   To the fullest extent permitted by law, automatics shall not
@@ -179,9 +179,9 @@ export default function Terms() {
 
             {/* Privacy */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 7. Privacy
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   Your privacy is important to us. Please review our Privacy
@@ -193,9 +193,9 @@ export default function Terms() {
 
             {/* Termination */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 8. Termination
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   We may terminate or suspend your access immediately, without
@@ -207,9 +207,9 @@ export default function Terms() {
 
             {/* Changes */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 9. Changes to Terms
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   We reserve the right, at our sole discretion, to modify or
@@ -222,9 +222,9 @@ export default function Terms() {
 
             {/* Contact */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 10. Contact Information
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   If you have any questions about these Terms of Service, please

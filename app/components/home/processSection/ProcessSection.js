@@ -53,7 +53,7 @@ export default function ProcessSection() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <h2 className="text-5xl sm:text-6xl mb-6">How we work</h2>
+            <h3 className="text-5xl sm:text-6xl mb-6">How we work</h3>
             <p className="text-gray-500 text-lg sm:text-xl">
               {/* We keep it simple: we pick the highest-impact problem, ship an improvement fast, and measure what changed—so you get momentum without constant meetings. You work directly with the people doing the work, while we keep communication lean, decisions written down, and progress visible, so you spend less time talking and more time seeing things move. We’re practical: we build what fits your business, avoid “rip-and-replace” projects, and don’t dump complexity on you that you’ll regret—and if something isn’t worth building, we’ll tell you. */}
               {/* We keep it simple: pick the highest-impact problem, ship an improvement fast, and measure what changed—so you get momentum without constant meetings. You work directly with the people doing the work, with lean communication, written decisions, and visible progress. We build what fits your business, avoid rip-and-replace projects, and won’t ship complexity you’ll regret—if it isn’t worth building, we’ll tell you. */}

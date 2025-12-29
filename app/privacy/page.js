@@ -34,9 +34,9 @@ export default function Privacy() {
           <h1 className="text-4xl sm:text-5xl font-bold text-black mb-4">
             Privacy Policy
           </h1>
-          <p className="text-gray-600 text-lg">
+          <h2 className="text-gray-600 text-lg">
             How we collect, use, and protect your personal information.
-          </p>
+          </h2>
         </motion.div>
 
         {/* Content */}
@@ -48,9 +48,9 @@ export default function Privacy() {
           <div className="space-y-8">
             {/* Introduction */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 1. Introduction
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   At automatics (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or
@@ -70,9 +70,9 @@ export default function Privacy() {
 
             {/* Information We Collect */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 2. Information We Collect
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <div>
                   <h3 className="font-semibold text-black mb-2">
@@ -111,9 +111,9 @@ export default function Privacy() {
 
             {/* How We Use Information */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 3. How We Use Your Information
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>We use collected information for:</p>
                 <ul className="list-disc ml-6 space-y-2">
@@ -130,9 +130,9 @@ export default function Privacy() {
 
             {/* Information Sharing */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 4. Information Sharing and Disclosure
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   We do not sell, trade, or otherwise transfer your personal
@@ -157,9 +157,9 @@ export default function Privacy() {
 
             {/* Data Security */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 5. Data Security
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   We implement appropriate technical and organizational security
@@ -183,9 +183,9 @@ export default function Privacy() {
 
             {/* Your Rights */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 6. Your Privacy Rights
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   Depending on your location, you may have the following rights
@@ -213,9 +213,9 @@ export default function Privacy() {
 
             {/* Cookies */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 7. Cookies and Tracking Technologies
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   We use cookies and similar tracking technologies to enhance
@@ -235,9 +235,9 @@ export default function Privacy() {
 
             {/* Third-Party Services */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 8. Third-Party Services
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   Our website may contain links to third-party websites or
@@ -259,9 +259,9 @@ export default function Privacy() {
 
             {/* Data Retention */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 9. Data Retention
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   We retain your personal information only as long as necessary
@@ -278,9 +278,9 @@ export default function Privacy() {
 
             {/* International Transfers */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 10. International Data Transfers
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   Your information may be transferred to and processed in
@@ -293,9 +293,9 @@ export default function Privacy() {
 
             {/* Changes to Policy */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 11. Changes to This Privacy Policy
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   We may update this Privacy Policy from time to time. We will
@@ -308,9 +308,9 @@ export default function Privacy() {
 
             {/* Contact Information */}
             <section>
-              <h2 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-black mb-4">
                 12. Contact Information
-              </h2>
+              </h3>
               <div className="space-y-4 text-gray-700">
                 <p>
                   If you have any questions about this Privacy Policy or our

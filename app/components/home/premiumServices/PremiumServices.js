@@ -105,9 +105,9 @@ export default function PremiumServices() {
           transition={{ duration: 0.6 }}
           className="text-center mb-8"
         >
-          <h2 className="text-6xl text-gray-900 mb-6">
+          <h3 className="text-6xl text-gray-900 mb-6">
             Premium Add-on Services
-          </h2>
+          </h3>
           <p className="text-gray-500 text-xl max-w-3xl mx-auto leading-relaxed">
             Senior technical and UX leadership when you need it — to make better
             decisions, unblock delivery, and keep execution aligned with
