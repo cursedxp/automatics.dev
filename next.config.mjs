@@ -33,6 +33,20 @@ const nextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      {
+        source: "/about-us",
+        destination: "/404",
+        permanent: false,
+      },
+      {
+        source: "/blog",
+        destination: "/404",
+        permanent: false,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
